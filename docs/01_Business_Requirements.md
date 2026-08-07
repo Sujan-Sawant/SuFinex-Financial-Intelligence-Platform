@@ -23,14 +23,15 @@ Sujan Sawant
 SuFinex Financial Intelligence Platform is an end-to-end AI-powered financial analytics platform designed to help banks, payment gateways, fintech companies, and financial institutions detect fraud, assess customer risk, monitor transactions, and generate business insights using Machine Learning, Data Engineering, APIs, and Interactive Dashboards.
 
 Banks, fintechs, and payment companies upload or stream transaction data to SuFinex. 
+
 SuFinex performs: 
-o	Fraud Detection 
-o	Customer Risk Scoring 
-o	Customer Churn Prediction 
-o	Financial Analytics 
-o	Dashboards 
-o	APIs 
-o	Explainable AI 
+- Fraud Detection
+- Customer Risk Scoring
+- Customer Churn Prediction
+- Financial Analytics
+- Dashboards
+- APIs
+- Explainable AI 
 This decision drives everything else.
 
 
