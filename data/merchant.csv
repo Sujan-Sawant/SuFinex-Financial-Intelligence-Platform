@@ -1,0 +1,2001 @@
+merchant_id,institution_id,merchant_name,merchant_category,city,merchant_status
+MER000001,INS000001,Mann-Sheth Store,Healthcare,Chennai,Active
+MER000002,INS000002,"Dave, Suri and Nagarajan Store",Electronics,Chennai,Active
+MER000003,INS000005,Chopra PLC Store,Electronics,Delhi,Active
+MER000004,INS000002,Bail-Chowdhury Store,Grocery,Chennai,Active
+MER000005,INS000002,"Savant, Pant and Iyer Store",Restaurant,Mysuru,Active
+MER000006,INS000005,Mani-Sethi Store,Shopping,Chennai,Active
+MER000007,INS000005,Krishnan-Kala Store,Fuel,Bengaluru,Active
+MER000008,INS000004,"Hari, Raja and Pandya Store",Travel,Delhi,Active
+MER000009,INS000002,Chakraborty LLC Store,Electronics,Patna,Inactive
+MER000010,INS000005,"Dutta, Dubey and Chakrabarti Store",Grocery,Bhubaneswar,Active
+MER000011,INS000004,"Bassi, Babu and Sen Store",Electronics,Lucknow,Active
+MER000012,INS000003,Chakrabarti-Kalita Store,Electronics,Nagpur,Active
+MER000013,INS000004,"Gala, Balan and Palla Store",Electronics,Nagpur,Active
+MER000014,INS000005,Kurian PLC Store,Grocery,Jaipur,Active
+MER000015,INS000002,"Mallick, Nori and Patla Store",Shopping,Lucknow,Active
+MER000016,INS000001,Vyas-Babu Store,Entertainment,Patna,Inactive
+MER000017,INS000004,Gupta-Krish Store,Restaurant,Bengaluru,Active
+MER000018,INS000005,Chowdhury-Raj Store,Restaurant,Surat,Active
+MER000019,INS000005,"Walla, Bal and Lal Store",Fuel,Indore,Active
+MER000020,INS000001,Jani-Rattan Store,Grocery,Mysuru,Active
+MER000021,INS000004,Sane-Mangal Store,Restaurant,Kolkata,Active
+MER000022,INS000005,"Srinivasan, Ratti and Salvi Store",Restaurant,Bhopal,Active
+MER000023,INS000002,"Parmar, Nadig and Chawla Store",Shopping,Bengaluru,Active
+MER000024,INS000002,Narain Ltd Store,Travel,Indore,Active
+MER000025,INS000001,Hora-Ranganathan Store,Restaurant,Patna,Active
+MER000026,INS000001,Bansal-Lall Store,Electronics,Kochi,Active
+MER000027,INS000004,Baria-Rajagopal Store,Shopping,Kolkata,Active
+MER000028,INS000002,Pall-Rajagopalan Store,Electronics,Chennai,Active
+MER000029,INS000004,"Varty, Kibe and Patel Store",Healthcare,Nagpur,Active
+MER000030,INS000005,Shanker and Sons Store,Shopping,Hyderabad,Active
+MER000031,INS000005,Dugar Ltd Store,Fuel,Mysuru,Active
+MER000032,INS000004,Gupta LLC Store,Shopping,Chandigarh,Active
+MER000033,INS000003,"Mukherjee, Shanker and Koshy Store",Fuel,Hyderabad,Active
+MER000034,INS000003,Mittal LLC Store,Shopping,Lucknow,Active
+MER000035,INS000002,Wagle-Johal Store,Healthcare,Chennai,Active
+MER000036,INS000002,Basak-Nigam Store,Restaurant,Chandigarh,Inactive
+MER000037,INS000004,Raj-Bora Store,Travel,Nagpur,Active
+MER000038,INS000002,"Sawhney, Virk and Srinivasan Store",Healthcare,Bengaluru,Active
+MER000039,INS000002,"Mandal, Mani and Naidu Store",Electronics,Bengaluru,Active
+MER000040,INS000003,"Shankar, Uppal and Walla Store",Entertainment,Thane,Active
+MER000041,INS000001,Bala-Lala Store,Entertainment,Bengaluru,Inactive
+MER000042,INS000001,Shetty-Sethi Store,Healthcare,Indore,Active
+MER000043,INS000001,"Memon, Dey and Pandit Store",Electronics,Nagpur,Active
+MER000044,INS000003,Sankaran and Sons Store,Travel,Surat,Active
+MER000045,INS000001,"Wable, Ranganathan and Deol Store",Travel,Chandigarh,Active
+MER000046,INS000005,Dar Ltd Store,Travel,Bengaluru,Inactive
+MER000047,INS000001,Dhillon-Dhillon Store,Healthcare,Thane,Active
+MER000048,INS000005,Varty-Malhotra Store,Electronics,Thane,Active
+MER000049,INS000001,Prakash Inc Store,Shopping,Hyderabad,Active
+MER000050,INS000001,Dewan-Dhawan Store,Travel,Patna,Active
+MER000051,INS000001,Patil-Raj Store,Electronics,Lucknow,Active
+MER000052,INS000002,"Pai, Mani and Contractor Store",Electronics,Kolkata,Active
+MER000053,INS000001,"Parmar, Mahal and Sarin Store",Travel,Thane,Active
+MER000054,INS000003,Ghose Inc Store,Travel,Kochi,Inactive
+MER000055,INS000002,"Naidu, Sangha and Sarkar Store",Restaurant,Mysuru,Active
+MER000056,INS000005,Sani and Sons Store,Fuel,Chennai,Active
+MER000057,INS000004,Sabharwal and Sons Store,Fuel,Patna,Active
+MER000058,INS000002,Rajagopalan-Hayer Store,Healthcare,Chandigarh,Active
+MER000059,INS000003,Suri Group Store,Electronics,Indore,Active
+MER000060,INS000005,Pai-Choudhary Store,Restaurant,Hyderabad,Active
+MER000061,INS000001,Bail-Chandra Store,Fuel,Mumbai,Active
+MER000062,INS000005,Aurora PLC Store,Healthcare,Nagpur,Active
+MER000063,INS000001,Dash PLC Store,Healthcare,Thane,Active
+MER000064,INS000005,"Das, Kapadia and Sachdeva Store",Electronics,Mumbai,Active
+MER000065,INS000001,Agate-Modi Store,Electronics,Kolkata,Active
+MER000066,INS000005,Bajaj-Tella Store,Restaurant,Thane,Inactive
+MER000067,INS000005,"Sathe, Ganesan and Parmar Store",Grocery,Mysuru,Active
+MER000068,INS000004,"Virk, Kurian and Vasa Store",Healthcare,Mysuru,Active
+MER000069,INS000005,Rajagopalan-Vyas Store,Fuel,Bengaluru,Active
+MER000070,INS000002,Oza Inc Store,Grocery,Delhi,Active
+MER000071,INS000004,Swaminathan-Deol Store,Fuel,Jaipur,Active
+MER000072,INS000002,Swamy-Din Store,Healthcare,Mumbai,Active
+MER000073,INS000002,Chaudhry-Biswas Store,Electronics,Mysuru,Active
+MER000074,INS000003,"Uppal, Rout and Roy Store",Travel,Mumbai,Active
+MER000075,INS000002,"Ahluwalia, Sarma and Verma Store",Travel,Jaipur,Active
+MER000076,INS000003,Rout PLC Store,Restaurant,Kolkata,Active
+MER000077,INS000003,Raman-Shan Store,Travel,Mumbai,Active
+MER000078,INS000002,Gola-Grover Store,Travel,Chennai,Active
+MER000079,INS000005,"Kaur, Sibal and Chad Store",Fuel,Indore,Active
+MER000080,INS000001,"Hayer, Golla and Sangha Store",Shopping,Surat,Active
+MER000081,INS000004,Prakash Group Store,Restaurant,Bengaluru,Active
+MER000082,INS000002,Tripathi Ltd Store,Travel,Patna,Inactive
+MER000083,INS000004,Sunder-Saraf Store,Shopping,Mumbai,Active
+MER000084,INS000004,Rajagopal PLC Store,Fuel,Kolkata,Active
+MER000085,INS000003,Dutta-Sarma Store,Entertainment,Mumbai,Active
+MER000086,INS000001,Kulkarni Inc Store,Shopping,Indore,Active
+MER000087,INS000002,Korpal and Sons Store,Travel,Chandigarh,Active
+MER000088,INS000005,Peri-Tank Store,Healthcare,Hyderabad,Active
+MER000089,INS000003,Datta-Karnik Store,Fuel,Chennai,Active
+MER000090,INS000001,"Chokshi, Tara and More Store",Electronics,Bhubaneswar,Active
+MER000091,INS000004,Patla-Sidhu Store,Grocery,Chandigarh,Active
+MER000092,INS000002,"Sinha, Raghavan and Varma Store",Grocery,Kochi,Active
+MER000093,INS000001,"Balay, Krishna and Saran Store",Shopping,Ahmedabad,Active
+MER000094,INS000003,Dhawan-Bir Store,Grocery,Mumbai,Active
+MER000095,INS000002,"Vig, Dhingra and Upadhyay Store",Healthcare,Nagpur,Active
+MER000096,INS000004,Agate-Biswas Store,Healthcare,Surat,Inactive
+MER000097,INS000002,Mall LLC Store,Fuel,Delhi,Active
+MER000098,INS000001,Mannan-Sani Store,Electronics,Bhopal,Active
+MER000099,INS000004,"Kashyap, Sandal and Bakshi Store",Electronics,Nagpur,Active
+MER000100,INS000001,Bahri Ltd Store,Entertainment,Kochi,Active
+MER000101,INS000003,Tripathi LLC Store,Fuel,Chennai,Active
+MER000102,INS000005,"Wali, Goel and Zacharia Store",Restaurant,Lucknow,Active
+MER000103,INS000003,Bhavsar Ltd Store,Fuel,Kolkata,Inactive
+MER000104,INS000003,Arya Group Store,Entertainment,Kolkata,Active
+MER000105,INS000004,Rajagopalan-Bhatti Store,Fuel,Nagpur,Active
+MER000106,INS000005,"Konda, Dewan and Pant Store",Electronics,Bhopal,Active
+MER000107,INS000003,Goel-Jani Store,Grocery,Bhubaneswar,Active
+MER000108,INS000003,Chahal-Bumb Store,Travel,Thane,Active
+MER000109,INS000004,Ahuja-Bala Store,Fuel,Chennai,Active
+MER000110,INS000005,Kashyap Ltd Store,Healthcare,Delhi,Active
+MER000111,INS000002,Dora Inc Store,Travel,Chennai,Active
+MER000112,INS000005,"Basu, Nagarajan and Varma Store",Electronics,Nagpur,Active
+MER000113,INS000004,"Barad, Kulkarni and Dani Store",Entertainment,Pune,Active
+MER000114,INS000002,Wadhwa Inc Store,Fuel,Indore,Active
+MER000115,INS000002,Jayaraman-Shere Store,Restaurant,Nagpur,Active
+MER000116,INS000002,"Gandhi, Sarraf and Krish Store",Restaurant,Bengaluru,Active
+MER000117,INS000002,"Borde, Sastry and Chaudhuri Store",Restaurant,Pune,Active
+MER000118,INS000003,Mander and Sons Store,Fuel,Kochi,Active
+MER000119,INS000003,Balay-Ravi Store,Fuel,Chandigarh,Active
+MER000120,INS000003,"Rana, Balan and Sekhon Store",Electronics,Jaipur,Active
+MER000121,INS000003,Borah-Bhat Store,Restaurant,Bhubaneswar,Active
+MER000122,INS000001,"Mallick, Behl and Sarin Store",Travel,Indore,Active
+MER000123,INS000004,Chacko Inc Store,Healthcare,Delhi,Active
+MER000124,INS000004,Minhas-Chand Store,Restaurant,Surat,Active
+MER000125,INS000003,Master LLC Store,Travel,Thane,Inactive
+MER000126,INS000004,Wagle Ltd Store,Electronics,Indore,Active
+MER000127,INS000001,Chopra-Palan Store,Electronics,Ahmedabad,Active
+MER000128,INS000005,"Bera, Srivastava and Seth Store",Entertainment,Patna,Active
+MER000129,INS000002,"Sachdeva, Choudhary and Gade Store",Healthcare,Jaipur,Active
+MER000130,INS000005,"Handa, Contractor and Dhingra Store",Travel,Pune,Active
+MER000131,INS000002,Dora Group Store,Grocery,Mysuru,Active
+MER000132,INS000005,"Nair, Murthy and Chakrabarti Store",Travel,Bengaluru,Active
+MER000133,INS000001,Ganesh LLC Store,Restaurant,Bengaluru,Active
+MER000134,INS000002,"Karan, Bobal and Modi Store",Travel,Jaipur,Active
+MER000135,INS000004,"Dyal, Chad and Khosla Store",Healthcare,Thane,Active
+MER000136,INS000003,Nagarajan and Sons Store,Grocery,Bhopal,Active
+MER000137,INS000002,"Gill, Shankar and Prasad Store",Shopping,Indore,Active
+MER000138,INS000005,Subramanian-Zachariah Store,Fuel,Hyderabad,Active
+MER000139,INS000005,"Badami, Dhingra and Oak Store",Grocery,Pune,Active
+MER000140,INS000004,Kapoor-Pathak Store,Healthcare,Delhi,Active
+MER000141,INS000003,"Murty, Doshi and Kaur Store",Electronics,Patna,Active
+MER000142,INS000001,Kant Group Store,Entertainment,Ahmedabad,Active
+MER000143,INS000004,Prakash Ltd Store,Grocery,Mumbai,Active
+MER000144,INS000004,Vig Ltd Store,Electronics,Lucknow,Active
+MER000145,INS000001,"Narang, Cherian and Dhaliwal Store",Electronics,Bengaluru,Active
+MER000146,INS000001,"Pandey, Warrior and Sachdeva Store",Grocery,Bhubaneswar,Active
+MER000147,INS000003,"Baria, Loke and Sundaram Store",Restaurant,Bengaluru,Inactive
+MER000148,INS000003,"Singh, Trivedi and Wali Store",Fuel,Lucknow,Active
+MER000149,INS000003,Venkataraman LLC Store,Grocery,Bhubaneswar,Active
+MER000150,INS000003,"Sinha, Sabharwal and Sheth Store",Entertainment,Jaipur,Active
+MER000151,INS000004,"Trivedi, Mahajan and Murty Store",Travel,Indore,Active
+MER000152,INS000004,Radhakrishnan-Mittal Store,Shopping,Ahmedabad,Active
+MER000153,INS000003,Balakrishnan PLC Store,Healthcare,Chennai,Active
+MER000154,INS000003,Nagy LLC Store,Entertainment,Mysuru,Active
+MER000155,INS000004,"Sharaf, Rau and Pandey Store",Grocery,Bengaluru,Active
+MER000156,INS000004,"Warrior, Banerjee and Bhagat Store",Travel,Ahmedabad,Active
+MER000157,INS000001,Mitra Ltd Store,Shopping,Pune,Active
+MER000158,INS000002,"Kapoor, Kalla and Ramachandran Store",Electronics,Bhubaneswar,Active
+MER000159,INS000005,Sridhar Ltd Store,Shopping,Delhi,Active
+MER000160,INS000002,Gandhi-Murthy Store,Shopping,Ahmedabad,Active
+MER000161,INS000003,"Apte, Agrawal and Grover Store",Electronics,Lucknow,Active
+MER000162,INS000002,"Dhaliwal, Shankar and Hayre Store",Travel,Thane,Active
+MER000163,INS000004,Gokhale Group Store,Shopping,Pune,Active
+MER000164,INS000004,"Handa, Borde and Sabharwal Store",Fuel,Bhopal,Active
+MER000165,INS000002,Zacharia PLC Store,Restaurant,Patna,Active
+MER000166,INS000005,Pillay LLC Store,Entertainment,Kolkata,Active
+MER000167,INS000003,"Sen, Luthra and Kapadia Store",Entertainment,Nagpur,Active
+MER000168,INS000004,"Bumb, Pillay and Borah Store",Entertainment,Jaipur,Active
+MER000169,INS000001,Rai Group Store,Healthcare,Bengaluru,Active
+MER000170,INS000005,Devan-Panchal Store,Entertainment,Patna,Active
+MER000171,INS000003,"Saini, Arya and Chad Store",Fuel,Chennai,Active
+MER000172,INS000005,Krishna Inc Store,Fuel,Patna,Active
+MER000173,INS000005,Bajaj Ltd Store,Shopping,Thane,Active
+MER000174,INS000002,Biswas-Dua Store,Restaurant,Chennai,Active
+MER000175,INS000003,Golla Group Store,Restaurant,Kochi,Active
+MER000176,INS000004,Korpal Group Store,Healthcare,Mysuru,Active
+MER000177,INS000005,Bahl-Karnik Store,Healthcare,Kolkata,Active
+MER000178,INS000004,"Gour, Sani and Mane Store",Grocery,Indore,Active
+MER000179,INS000004,Doshi-Bal Store,Shopping,Kolkata,Active
+MER000180,INS000003,Rama LLC Store,Fuel,Indore,Active
+MER000181,INS000005,Bhargava Group Store,Electronics,Surat,Active
+MER000182,INS000005,Tandon-Agarwal Store,Healthcare,Kolkata,Active
+MER000183,INS000002,Agrawal-Buch Store,Travel,Hyderabad,Active
+MER000184,INS000005,Vora Inc Store,Fuel,Mysuru,Active
+MER000185,INS000002,"Sha, Pillai and Khare Store",Grocery,Nagpur,Active
+MER000186,INS000004,Desai-Naidu Store,Healthcare,Hyderabad,Active
+MER000187,INS000001,Shukla-Ben Store,Restaurant,Hyderabad,Active
+MER000188,INS000003,Nagy-Minhas Store,Healthcare,Chennai,Active
+MER000189,INS000002,"Kari, Apte and Naidu Store",Grocery,Indore,Active
+MER000190,INS000003,"Bahri, Ben and Bhardwaj Store",Restaurant,Chandigarh,Active
+MER000191,INS000002,"Sandhu, Guha and Swaminathan Store",Restaurant,Pune,Active
+MER000192,INS000001,Master-Jha Store,Travel,Indore,Active
+MER000193,INS000004,Prasad-More Store,Fuel,Patna,Active
+MER000194,INS000003,"Bandi, Das and Kata Store",Healthcare,Jaipur,Active
+MER000195,INS000003,Bora-Bava Store,Electronics,Nagpur,Active
+MER000196,INS000002,"Krishnamurthy, Ram and Gole Store",Healthcare,Indore,Active
+MER000197,INS000002,Kaul-Sachdev Store,Electronics,Mumbai,Active
+MER000198,INS000002,Roy-Dara Store,Shopping,Kolkata,Active
+MER000199,INS000002,Master-Pant Store,Entertainment,Mumbai,Active
+MER000200,INS000005,Ramanathan-Peri Store,Travel,Chandigarh,Active
+MER000201,INS000001,"Narayanan, Bhatt and Dhillon Store",Fuel,Bhopal,Active
+MER000202,INS000004,Soni-Raj Store,Restaurant,Kolkata,Active
+MER000203,INS000004,Krishna Inc Store,Entertainment,Chennai,Active
+MER000204,INS000004,Raju-Nagar Store,Restaurant,Jaipur,Active
+MER000205,INS000005,"Kohli, Sheth and Sheth Store",Grocery,Chennai,Active
+MER000206,INS000004,"Balan, Sidhu and Dada Store",Fuel,Hyderabad,Active
+MER000207,INS000004,Kapadia-Bose Store,Entertainment,Mumbai,Active
+MER000208,INS000003,Golla-Din Store,Travel,Thane,Active
+MER000209,INS000005,"Puri, Sawhney and Gade Store",Grocery,Nagpur,Active
+MER000210,INS000003,Bawa Group Store,Entertainment,Bhopal,Active
+MER000211,INS000002,Naik LLC Store,Entertainment,Lucknow,Active
+MER000212,INS000001,Bail Inc Store,Grocery,Ahmedabad,Active
+MER000213,INS000004,Cherian PLC Store,Travel,Pune,Active
+MER000214,INS000002,Acharya Group Store,Grocery,Lucknow,Active
+MER000215,INS000001,Shukla and Sons Store,Fuel,Mumbai,Inactive
+MER000216,INS000002,Bhatt Inc Store,Shopping,Hyderabad,Active
+MER000217,INS000002,"Bhagat, Varma and Chokshi Store",Healthcare,Mumbai,Active
+MER000218,INS000004,"Sharma, Patla and Kant Store",Restaurant,Kolkata,Active
+MER000219,INS000005,Manda Inc Store,Shopping,Hyderabad,Active
+MER000220,INS000002,"Rana, Sharaf and Srinivasan Store",Travel,Lucknow,Active
+MER000221,INS000001,Ramachandran LLC Store,Travel,Hyderabad,Active
+MER000222,INS000003,Vora-Pall Store,Entertainment,Kochi,Active
+MER000223,INS000005,"Sane, Deo and Roy Store",Healthcare,Chandigarh,Active
+MER000224,INS000005,Sahni-Balasubramanian Store,Shopping,Indore,Inactive
+MER000225,INS000004,Jaggi Inc Store,Fuel,Surat,Active
+MER000226,INS000001,Hans Ltd Store,Fuel,Bhubaneswar,Active
+MER000227,INS000001,Suri-Dutta Store,Grocery,Bhubaneswar,Active
+MER000228,INS000001,Andra-Patil Store,Fuel,Delhi,Active
+MER000229,INS000003,Nori LLC Store,Entertainment,Ahmedabad,Active
+MER000230,INS000005,Swamy Inc Store,Healthcare,Surat,Active
+MER000231,INS000003,Arya-Mani Store,Travel,Mysuru,Active
+MER000232,INS000002,"Sarkar, Keer and Wable Store",Healthcare,Kolkata,Active
+MER000233,INS000005,Dada Inc Store,Travel,Bhubaneswar,Active
+MER000234,INS000003,Raju Ltd Store,Healthcare,Lucknow,Active
+MER000235,INS000005,Muni-Mander Store,Fuel,Nagpur,Active
+MER000236,INS000005,"Raj, Nigam and Vasa Store",Travel,Mumbai,Active
+MER000237,INS000003,Wagle-Hayer Store,Shopping,Kolkata,Active
+MER000238,INS000004,Mannan-Nagy Store,Shopping,Mysuru,Active
+MER000239,INS000003,Bose and Sons Store,Fuel,Delhi,Active
+MER000240,INS000002,"Khatri, Bala and Sandhu Store",Healthcare,Surat,Active
+MER000241,INS000005,Char-Pandya Store,Healthcare,Ahmedabad,Active
+MER000242,INS000001,"Bumb, Gola and Tak Store",Restaurant,Bhubaneswar,Active
+MER000243,INS000001,"Edwin, Chhabra and Handa Store",Travel,Bhubaneswar,Active
+MER000244,INS000002,Gala-Badal Store,Grocery,Chandigarh,Active
+MER000245,INS000005,Kala PLC Store,Healthcare,Patna,Active
+MER000246,INS000001,Dhar LLC Store,Grocery,Kolkata,Active
+MER000247,INS000004,Gopal-Nath Store,Healthcare,Bhopal,Active
+MER000248,INS000002,Thaman and Sons Store,Fuel,Delhi,Active
+MER000249,INS000005,"Swamy, Madan and Dhillon Store",Shopping,Chennai,Active
+MER000250,INS000002,Sahni-Arora Store,Entertainment,Thane,Active
+MER000251,INS000002,Mishra PLC Store,Fuel,Indore,Active
+MER000252,INS000003,Nadig Ltd Store,Restaurant,Pune,Active
+MER000253,INS000004,Pillai-Dani Store,Entertainment,Mumbai,Active
+MER000254,INS000004,Gade-Natt Store,Healthcare,Surat,Active
+MER000255,INS000001,Issac-Zacharia Store,Electronics,Bhubaneswar,Inactive
+MER000256,INS000004,Iyer-Gara Store,Healthcare,Surat,Active
+MER000257,INS000001,Kannan-Dubey Store,Entertainment,Ahmedabad,Active
+MER000258,INS000004,"Chakrabarti, Deep and Trivedi Store",Grocery,Surat,Active
+MER000259,INS000002,"Nadkarni, Bedi and Acharya Store",Travel,Delhi,Inactive
+MER000260,INS000002,"Soman, Manne and Dixit Store",Shopping,Pune,Active
+MER000261,INS000003,Saraf and Sons Store,Restaurant,Pune,Active
+MER000262,INS000005,Jani-Sarna Store,Fuel,Kolkata,Active
+MER000263,INS000004,"Uppal, Bhatt and Mammen Store",Travel,Bhopal,Active
+MER000264,INS000001,Bobal PLC Store,Grocery,Kochi,Active
+MER000265,INS000005,Sood PLC Store,Electronics,Kochi,Inactive
+MER000266,INS000004,"Mittal, Sagar and Bhardwaj Store",Electronics,Mumbai,Active
+MER000267,INS000004,Wali-Loyal Store,Travel,Jaipur,Active
+MER000268,INS000001,Natt-Swaminathan Store,Restaurant,Chandigarh,Active
+MER000269,INS000004,Kari PLC Store,Restaurant,Thane,Active
+MER000270,INS000001,Taneja-Salvi Store,Healthcare,Nagpur,Active
+MER000271,INS000005,Ramachandran LLC Store,Travel,Patna,Active
+MER000272,INS000003,Gill Group Store,Grocery,Mysuru,Active
+MER000273,INS000005,Biswas LLC Store,Fuel,Ahmedabad,Active
+MER000274,INS000003,Sankaran Inc Store,Restaurant,Lucknow,Active
+MER000275,INS000001,Sawhney-Kashyap Store,Healthcare,Delhi,Active
+MER000276,INS000001,Patla-Halder Store,Travel,Mysuru,Active
+MER000277,INS000004,Tailor-Keer Store,Grocery,Bhubaneswar,Active
+MER000278,INS000003,"Mallick, Ranganathan and Kashyap Store",Grocery,Surat,Active
+MER000279,INS000001,Dayal-Chakraborty Store,Entertainment,Kochi,Active
+MER000280,INS000005,Korpal and Sons Store,Entertainment,Bhubaneswar,Active
+MER000281,INS000001,Sanghvi Inc Store,Travel,Patna,Active
+MER000282,INS000004,Jain-Viswanathan Store,Travel,Hyderabad,Inactive
+MER000283,INS000004,"Saha, Ramaswamy and Khurana Store",Travel,Mysuru,Active
+MER000284,INS000005,"Bali, Deep and Pillai Store",Fuel,Delhi,Active
+MER000285,INS000004,Behl LLC Store,Grocery,Lucknow,Active
+MER000286,INS000002,Dhillon Group Store,Restaurant,Delhi,Active
+MER000287,INS000003,Munshi-Sampath Store,Electronics,Pune,Active
+MER000288,INS000005,Kaul LLC Store,Shopping,Bhopal,Active
+MER000289,INS000003,"Ravel, Chaudry and Thaman Store",Shopping,Mysuru,Active
+MER000290,INS000005,Rai-Natarajan Store,Electronics,Surat,Active
+MER000291,INS000004,Sehgal Inc Store,Healthcare,Bhopal,Active
+MER000292,INS000002,Puri and Sons Store,Restaurant,Mumbai,Active
+MER000293,INS000002,Goyal Inc Store,Electronics,Thane,Active
+MER000294,INS000001,"Narula, Chadha and Krishnan Store",Electronics,Bhubaneswar,Active
+MER000295,INS000001,"Garde, Chawla and Khatri Store",Electronics,Lucknow,Active
+MER000296,INS000003,Merchant Ltd Store,Travel,Chennai,Active
+MER000297,INS000001,Mishra-Samra Store,Electronics,Bhubaneswar,Active
+MER000298,INS000005,Kar-Agrawal Store,Electronics,Bhubaneswar,Active
+MER000299,INS000003,Sankaran-Vig Store,Healthcare,Thane,Active
+MER000300,INS000005,Sood Inc Store,Travel,Bhubaneswar,Active
+MER000301,INS000004,Ahluwalia-Kadakia Store,Travel,Thane,Active
+MER000302,INS000001,Balakrishnan Group Store,Healthcare,Delhi,Active
+MER000303,INS000005,Raghavan Group Store,Travel,Nagpur,Active
+MER000304,INS000002,Mittal Group Store,Fuel,Kolkata,Active
+MER000305,INS000004,"Kamdar, Roy and Sheth Store",Shopping,Hyderabad,Active
+MER000306,INS000001,"Sahni, Nagarajan and Dhingra Store",Healthcare,Bengaluru,Active
+MER000307,INS000004,"Narain, Magar and Virk Store",Entertainment,Surat,Active
+MER000308,INS000003,"Vasa, Basak and Bedi Store",Electronics,Nagpur,Active
+MER000309,INS000002,"Upadhyay, Walia and Dubey Store",Travel,Chennai,Active
+MER000310,INS000005,Bera Ltd Store,Electronics,Hyderabad,Inactive
+MER000311,INS000001,Ravi-Sridhar Store,Healthcare,Thane,Active
+MER000312,INS000005,Naidu-Loyal Store,Travel,Patna,Active
+MER000313,INS000004,Swamy Ltd Store,Fuel,Pune,Active
+MER000314,INS000004,"Deo, Bajaj and Chawla Store",Entertainment,Delhi,Active
+MER000315,INS000003,Kapoor LLC Store,Grocery,Patna,Active
+MER000316,INS000002,D’Alia PLC Store,Healthcare,Pune,Active
+MER000317,INS000005,"Samra, Bakshi and Sachar Store",Entertainment,Bengaluru,Active
+MER000318,INS000004,Murthy LLC Store,Electronics,Pune,Active
+MER000319,INS000005,Dora Group Store,Fuel,Delhi,Active
+MER000320,INS000005,"Luthra, Ravel and Shan Store",Restaurant,Ahmedabad,Active
+MER000321,INS000002,Bhargava PLC Store,Electronics,Kolkata,Active
+MER000322,INS000004,Babu Ltd Store,Fuel,Lucknow,Active
+MER000323,INS000001,"Chadha, Pandit and Basu Store",Shopping,Surat,Inactive
+MER000324,INS000005,"Chad, Randhawa and Kibe Store",Shopping,Bhubaneswar,Active
+MER000325,INS000002,Bhavsar-Prasad Store,Shopping,Jaipur,Active
+MER000326,INS000003,"Sagar, Soman and Mann Store",Entertainment,Lucknow,Active
+MER000327,INS000004,"Butala, Warrior and Kulkarni Store",Shopping,Ahmedabad,Active
+MER000328,INS000004,Varty LLC Store,Restaurant,Bengaluru,Active
+MER000329,INS000003,Mani-Lala Store,Fuel,Kolkata,Inactive
+MER000330,INS000005,"Dass, Singh and Gour Store",Travel,Mumbai,Active
+MER000331,INS000003,Ramaswamy Group Store,Healthcare,Thane,Active
+MER000332,INS000003,Bali PLC Store,Grocery,Jaipur,Active
+MER000333,INS000005,"Nath, Chanda and Minhas Store",Entertainment,Pune,Active
+MER000334,INS000001,"Gour, Bhakta and Yohannan Store",Shopping,Surat,Active
+MER000335,INS000005,"Kata, Seth and Ram Store",Restaurant,Bengaluru,Active
+MER000336,INS000001,Kannan Group Store,Restaurant,Nagpur,Active
+MER000337,INS000003,Yadav Group Store,Restaurant,Patna,Active
+MER000338,INS000001,Kadakia and Sons Store,Shopping,Delhi,Active
+MER000339,INS000003,"Nori, Mane and Thakur Store",Fuel,Bhubaneswar,Active
+MER000340,INS000002,"Muni, Parmar and Natt Store",Healthcare,Thane,Active
+MER000341,INS000002,"Sur, Rastogi and Mitra Store",Shopping,Kochi,Active
+MER000342,INS000002,Grover Group Store,Shopping,Bhubaneswar,Active
+MER000343,INS000002,"Batta, Kalla and Majumdar Store",Grocery,Delhi,Active
+MER000344,INS000004,"Kara, Bawa and Sanghvi Store",Fuel,Kolkata,Active
+MER000345,INS000005,Singh-Rajan Store,Entertainment,Kolkata,Active
+MER000346,INS000003,Joshi and Sons Store,Electronics,Chandigarh,Active
+MER000347,INS000002,Sami LLC Store,Restaurant,Surat,Active
+MER000348,INS000005,Zacharia-Rao Store,Healthcare,Chennai,Active
+MER000349,INS000005,"Chanda, Andra and Karan Store",Fuel,Chandigarh,Active
+MER000350,INS000002,Sen-Seth Store,Entertainment,Delhi,Active
+MER000351,INS000001,Pant-Mani Store,Entertainment,Bhopal,Active
+MER000352,INS000002,"Ganesan, Sami and Peri Store",Electronics,Bhopal,Active
+MER000353,INS000001,Tiwari Inc Store,Electronics,Surat,Active
+MER000354,INS000004,Gour-Tank Store,Restaurant,Thane,Active
+MER000355,INS000002,Tiwari Group Store,Grocery,Jaipur,Active
+MER000356,INS000004,Koshy-Chadha Store,Electronics,Nagpur,Active
+MER000357,INS000003,Pingle-Kar Store,Travel,Indore,Active
+MER000358,INS000001,Dutta and Sons Store,Travel,Hyderabad,Active
+MER000359,INS000001,Bobal-Sarma Store,Travel,Kochi,Active
+MER000360,INS000005,Kumar-Saini Store,Healthcare,Lucknow,Inactive
+MER000361,INS000001,Dayal PLC Store,Travel,Indore,Active
+MER000362,INS000003,Chahal and Sons Store,Restaurant,Chennai,Active
+MER000363,INS000002,Chhabra and Sons Store,Shopping,Delhi,Active
+MER000364,INS000001,Narang and Sons Store,Electronics,Nagpur,Active
+MER000365,INS000001,"Patel, Kurian and Narayan Store",Shopping,Nagpur,Active
+MER000366,INS000002,Choudhury-Batra Store,Grocery,Indore,Active
+MER000367,INS000002,Khatri-Shan Store,Restaurant,Hyderabad,Inactive
+MER000368,INS000004,Walia-Raval Store,Shopping,Mysuru,Active
+MER000369,INS000004,Tiwari Inc Store,Shopping,Patna,Active
+MER000370,INS000005,"Thakkar, Mani and Chauhan Store",Restaurant,Hyderabad,Active
+MER000371,INS000004,Krishnan-Ramaswamy Store,Grocery,Mysuru,Active
+MER000372,INS000003,Ganguly-Sabharwal Store,Restaurant,Ahmedabad,Active
+MER000373,INS000005,Sant-Bora Store,Entertainment,Pune,Active
+MER000374,INS000002,"Contractor, Pau and Dani Store",Fuel,Kochi,Active
+MER000375,INS000003,"Ranganathan, Magar and Padmanabhan Store",Restaurant,Hyderabad,Active
+MER000376,INS000003,Dhaliwal Inc Store,Electronics,Hyderabad,Active
+MER000377,INS000002,Batta-Karnik Store,Entertainment,Bengaluru,Active
+MER000378,INS000002,Merchant Inc Store,Restaurant,Hyderabad,Active
+MER000379,INS000004,Srinivas Group Store,Electronics,Bhopal,Active
+MER000380,INS000004,Tiwari Ltd Store,Electronics,Kochi,Active
+MER000381,INS000004,"Jayaraman, Nair and Ratta Store",Grocery,Bhopal,Active
+MER000382,INS000005,"Dani, Deo and Ahuja Store",Travel,Chennai,Active
+MER000383,INS000005,Magar Inc Store,Grocery,Thane,Active
+MER000384,INS000002,"Sachdev, Singhal and Pillay Store",Fuel,Jaipur,Active
+MER000385,INS000005,Naidu Group Store,Travel,Bhubaneswar,Active
+MER000386,INS000002,Khanna Group Store,Travel,Hyderabad,Active
+MER000387,INS000001,"Shere, Som and Sagar Store",Shopping,Patna,Active
+MER000388,INS000001,"Anand, Mander and Pai Store",Healthcare,Kochi,Active
+MER000389,INS000001,Karan-Gulati Store,Restaurant,Chandigarh,Active
+MER000390,INS000005,"Nigam, Vasa and Basu Store",Grocery,Mumbai,Active
+MER000391,INS000003,Keer Ltd Store,Electronics,Jaipur,Active
+MER000392,INS000002,Lata-Pillai Store,Shopping,Nagpur,Active
+MER000393,INS000002,"Lalla, Vyas and Radhakrishnan Store",Fuel,Patna,Active
+MER000394,INS000001,Deshmukh-Rajagopal Store,Entertainment,Hyderabad,Active
+MER000395,INS000001,Verma-Chand Store,Fuel,Bhopal,Active
+MER000396,INS000004,Mander-Kothari Store,Electronics,Kolkata,Active
+MER000397,INS000004,Banik Group Store,Travel,Indore,Active
+MER000398,INS000003,Palan Ltd Store,Healthcare,Chandigarh,Active
+MER000399,INS000002,Chand PLC Store,Healthcare,Indore,Active
+MER000400,INS000004,Aggarwal-Walia Store,Travel,Chennai,Inactive
+MER000401,INS000001,Thaman-Dhar Store,Grocery,Thane,Active
+MER000402,INS000005,"Swaminathan, Sood and Vig Store",Grocery,Jaipur,Inactive
+MER000403,INS000003,Tara Group Store,Healthcare,Bhopal,Active
+MER000404,INS000001,"Kothari, Bakshi and Naik Store",Fuel,Ahmedabad,Active
+MER000405,INS000003,Nayar Inc Store,Fuel,Delhi,Active
+MER000406,INS000001,Bali LLC Store,Entertainment,Bengaluru,Active
+MER000407,INS000001,Korpal and Sons Store,Entertainment,Chandigarh,Active
+MER000408,INS000001,Bhargava-Padmanabhan Store,Healthcare,Kolkata,Active
+MER000409,INS000004,"Brahmbhatt, Sane and Tata Store",Shopping,Kolkata,Active
+MER000410,INS000003,"Datta, Ghosh and Luthra Store",Entertainment,Chennai,Active
+MER000411,INS000003,Singhal Inc Store,Shopping,Chennai,Active
+MER000412,INS000002,Brar-Bahl Store,Travel,Hyderabad,Active
+MER000413,INS000003,"Venkatesh, Nazareth and Dhawan Store",Fuel,Chandigarh,Active
+MER000414,INS000003,Padmanabhan PLC Store,Healthcare,Hyderabad,Active
+MER000415,INS000005,Natarajan-Rajagopalan Store,Shopping,Lucknow,Active
+MER000416,INS000004,Sawhney-Dubey Store,Entertainment,Jaipur,Active
+MER000417,INS000003,"Dani, Raghavan and Kaul Store",Electronics,Mysuru,Active
+MER000418,INS000001,"Wali, Jaggi and Rana Store",Grocery,Thane,Active
+MER000419,INS000003,"Sandhu, Nagy and Natt Store",Healthcare,Patna,Active
+MER000420,INS000004,Varkey-Suresh Store,Fuel,Delhi,Active
+MER000421,INS000003,"Acharya, Sabharwal and Sarna Store",Travel,Patna,Active
+MER000422,INS000004,Sheth PLC Store,Healthcare,Jaipur,Active
+MER000423,INS000001,"Goel, Menon and Deshmukh Store",Grocery,Ahmedabad,Active
+MER000424,INS000002,"Bassi, Khalsa and Rao Store",Fuel,Chennai,Active
+MER000425,INS000001,"Sandal, Venkatesh and Vohra Store",Electronics,Delhi,Active
+MER000426,INS000004,Borah-Singhal Store,Entertainment,Mumbai,Active
+MER000427,INS000003,"Natt, Gour and Dua Store",Fuel,Bhubaneswar,Active
+MER000428,INS000005,Walla-Rege Store,Travel,Lucknow,Active
+MER000429,INS000002,Kunda-Wali Store,Restaurant,Chennai,Active
+MER000430,INS000002,Parsa and Sons Store,Grocery,Bhopal,Active
+MER000431,INS000002,"Luthra, Bhavsar and Nath Store",Healthcare,Ahmedabad,Active
+MER000432,INS000002,Bhatnagar PLC Store,Fuel,Chandigarh,Active
+MER000433,INS000004,"Wason, Krishna and Nayar Store",Grocery,Chandigarh,Active
+MER000434,INS000002,Sarma Inc Store,Electronics,Chennai,Inactive
+MER000435,INS000002,Modi-Kala Store,Travel,Mysuru,Active
+MER000436,INS000001,Das-Balan Store,Restaurant,Kolkata,Active
+MER000437,INS000004,Kapadia-Patil Store,Entertainment,Chennai,Active
+MER000438,INS000001,"Kakar, Dey and Bhandari Store",Shopping,Ahmedabad,Active
+MER000439,INS000002,Badami-Balan Store,Restaurant,Indore,Active
+MER000440,INS000005,Kar-Krishnan Store,Electronics,Kolkata,Active
+MER000441,INS000003,Sastry-Banerjee Store,Travel,Thane,Inactive
+MER000442,INS000005,Wable PLC Store,Shopping,Mysuru,Active
+MER000443,INS000002,Kala-Sem Store,Grocery,Delhi,Active
+MER000444,INS000003,Nadig-Palla Store,Entertainment,Surat,Active
+MER000445,INS000004,"Comar, Bera and Naik Store",Grocery,Kochi,Active
+MER000446,INS000005,Sekhon LLC Store,Healthcare,Mysuru,Active
+MER000447,INS000005,"Pau, Ramaswamy and Lal Store",Shopping,Delhi,Active
+MER000448,INS000002,Bath-Sheth Store,Shopping,Patna,Active
+MER000449,INS000004,Murty LLC Store,Restaurant,Indore,Active
+MER000450,INS000005,"Prakash, Ganesan and More Store",Entertainment,Indore,Active
+MER000451,INS000004,Sarkar Ltd Store,Grocery,Thane,Active
+MER000452,INS000005,"Sen, Gade and Parekh Store",Electronics,Mysuru,Active
+MER000453,INS000005,Chopra-Mammen Store,Grocery,Nagpur,Active
+MER000454,INS000004,Deep-Srivastava Store,Electronics,Pune,Active
+MER000455,INS000003,Kalla-Keer Store,Fuel,Jaipur,Active
+MER000456,INS000001,Iyer LLC Store,Restaurant,Nagpur,Active
+MER000457,INS000003,Peri-Kaul Store,Healthcare,Chandigarh,Active
+MER000458,INS000002,Bala-Zacharia Store,Healthcare,Surat,Inactive
+MER000459,INS000005,Varty-Minhas Store,Electronics,Mysuru,Active
+MER000460,INS000005,"Brar, Dutt and Cheema Store",Electronics,Kolkata,Active
+MER000461,INS000004,"Johal, Khare and Bath Store",Electronics,Mumbai,Active
+MER000462,INS000001,Chowdhury-Ganesh Store,Healthcare,Jaipur,Active
+MER000463,INS000004,Vala-Dewan Store,Healthcare,Nagpur,Active
+MER000464,INS000003,Mitra-Wable Store,Shopping,Indore,Active
+MER000465,INS000003,"Dave, Venkataraman and Sane Store",Entertainment,Pune,Active
+MER000466,INS000004,Majumdar-Mammen Store,Restaurant,Chandigarh,Active
+MER000467,INS000003,"Mandal, Goda and Shere Store",Grocery,Kochi,Active
+MER000468,INS000001,Shenoy-Borah Store,Fuel,Kochi,Active
+MER000469,INS000005,More LLC Store,Shopping,Delhi,Active
+MER000470,INS000004,Kapoor-Ramaswamy Store,Fuel,Kolkata,Active
+MER000471,INS000002,Saran Ltd Store,Grocery,Hyderabad,Active
+MER000472,INS000005,Divan-Narula Store,Restaurant,Delhi,Active
+MER000473,INS000002,"Karnik, Rao and Jaggi Store",Grocery,Lucknow,Active
+MER000474,INS000004,"Mitra, Char and Magar Store",Fuel,Kochi,Active
+MER000475,INS000003,Zacharia and Sons Store,Restaurant,Chandigarh,Active
+MER000476,INS000004,Sarna Group Store,Fuel,Ahmedabad,Active
+MER000477,INS000003,Deshpande-Ganesan Store,Entertainment,Delhi,Active
+MER000478,INS000004,"Divan, Deep and Rau Store",Travel,Surat,Inactive
+MER000479,INS000004,Mangal-Basu Store,Healthcare,Nagpur,Active
+MER000480,INS000004,Mittal and Sons Store,Restaurant,Ahmedabad,Active
+MER000481,INS000001,Ganesh-Dey Store,Travel,Bengaluru,Inactive
+MER000482,INS000001,"Amble, Mahajan and Koshy Store",Shopping,Hyderabad,Active
+MER000483,INS000005,Narayan Inc Store,Electronics,Delhi,Active
+MER000484,INS000003,"Pal, Edwin and Krishnan Store",Fuel,Delhi,Active
+MER000485,INS000002,Padmanabhan and Sons Store,Shopping,Bhubaneswar,Active
+MER000486,INS000003,Badal-Sidhu Store,Fuel,Chandigarh,Active
+MER000487,INS000001,"Dani, Dada and Varghese Store",Healthcare,Patna,Active
+MER000488,INS000003,Sood-Rattan Store,Grocery,Ahmedabad,Active
+MER000489,INS000002,Brahmbhatt and Sons Store,Electronics,Mumbai,Active
+MER000490,INS000003,Muni-Sandhu Store,Shopping,Pune,Active
+MER000491,INS000005,"Narayan, Banerjee and Kurian Store",Healthcare,Indore,Active
+MER000492,INS000001,Bakshi and Sons Store,Healthcare,Delhi,Active
+MER000493,INS000001,Bora-Luthra Store,Travel,Surat,Active
+MER000494,INS000002,Reddy-Dass Store,Shopping,Thane,Active
+MER000495,INS000004,"Kala, Menon and Johal Store",Restaurant,Delhi,Active
+MER000496,INS000004,Buch Ltd Store,Fuel,Indore,Active
+MER000497,INS000001,Buch-Khatri Store,Fuel,Lucknow,Active
+MER000498,INS000005,Mittal LLC Store,Grocery,Pune,Active
+MER000499,INS000005,Prabhakar-Handa Store,Travel,Mumbai,Active
+MER000500,INS000001,Kale and Sons Store,Electronics,Delhi,Inactive
+MER000501,INS000003,Mitter-Kuruvilla Store,Travel,Surat,Active
+MER000502,INS000004,Narasimhan Group Store,Healthcare,Patna,Inactive
+MER000503,INS000003,Chandra-Menon Store,Travel,Nagpur,Active
+MER000504,INS000001,Char-Nagar Store,Healthcare,Chennai,Active
+MER000505,INS000004,"Sagar, Jani and Pandya Store",Shopping,Mysuru,Inactive
+MER000506,INS000005,Kala and Sons Store,Grocery,Patna,Active
+MER000507,INS000004,"Walla, Tella and Brahmbhatt Store",Fuel,Bhubaneswar,Active
+MER000508,INS000001,"Bhatnagar, Bora and Golla Store",Travel,Ahmedabad,Active
+MER000509,INS000002,"Date, Tripathi and Mammen Store",Travel,Kochi,Active
+MER000510,INS000004,"Sant, Kalla and Malhotra Store",Healthcare,Indore,Active
+MER000511,INS000002,"Choudhry, Saran and Butala Store",Electronics,Thane,Active
+MER000512,INS000003,Gara Inc Store,Healthcare,Mumbai,Active
+MER000513,INS000003,Bhakta-Pillay Store,Fuel,Mysuru,Active
+MER000514,INS000002,Behl Group Store,Shopping,Indore,Active
+MER000515,INS000005,Char-Hari Store,Restaurant,Delhi,Active
+MER000516,INS000003,Sodhi-Prakash Store,Healthcare,Kochi,Active
+MER000517,INS000001,"Sarraf, Mall and Magar Store",Healthcare,Nagpur,Active
+MER000518,INS000003,Handa-Pathak Store,Grocery,Pune,Active
+MER000519,INS000001,Panchal LLC Store,Fuel,Pune,Active
+MER000520,INS000002,"Chandran, Kata and Date Store",Fuel,Pune,Active
+MER000521,INS000002,Natt-Pandit Store,Shopping,Indore,Active
+MER000522,INS000001,Yadav and Sons Store,Healthcare,Hyderabad,Active
+MER000523,INS000002,Dugal-Saraf Store,Entertainment,Chandigarh,Active
+MER000524,INS000003,Pal-Pant Store,Fuel,Delhi,Active
+MER000525,INS000004,Puri Ltd Store,Fuel,Thane,Inactive
+MER000526,INS000004,Sharaf Inc Store,Fuel,Ahmedabad,Active
+MER000527,INS000001,Cheema-Walia Store,Shopping,Hyderabad,Active
+MER000528,INS000003,Bir-Sani Store,Grocery,Bhopal,Active
+MER000529,INS000003,Sahni Group Store,Grocery,Jaipur,Active
+MER000530,INS000004,Doshi and Sons Store,Electronics,Chandigarh,Active
+MER000531,INS000001,"Kurian, Bhatnagar and Hora Store",Travel,Bhopal,Active
+MER000532,INS000003,Narang-Patil Store,Entertainment,Hyderabad,Active
+MER000533,INS000001,"Saini, Edwin and Pant Store",Healthcare,Jaipur,Active
+MER000534,INS000001,"Bhagat, Saxena and Saxena Store",Shopping,Thane,Active
+MER000535,INS000005,"Pandit, Krishnamurthy and Basu Store",Fuel,Delhi,Active
+MER000536,INS000004,"Jhaveri, Kibe and Mani Store",Healthcare,Delhi,Active
+MER000537,INS000001,Misra LLC Store,Restaurant,Mumbai,Inactive
+MER000538,INS000002,"Goswami, Lalla and Sama Store",Fuel,Patna,Active
+MER000539,INS000003,Rama Inc Store,Shopping,Mumbai,Active
+MER000540,INS000005,"Hora, Nigam and Chokshi Store",Travel,Jaipur,Active
+MER000541,INS000003,Kumer and Sons Store,Travel,Indore,Active
+MER000542,INS000001,Trivedi PLC Store,Entertainment,Hyderabad,Active
+MER000543,INS000003,"Gill, Mahajan and Lanka Store",Fuel,Indore,Active
+MER000544,INS000005,Ramesh-Bhavsar Store,Restaurant,Delhi,Inactive
+MER000545,INS000005,Bhandari-Bahl Store,Entertainment,Ahmedabad,Inactive
+MER000546,INS000005,Badami LLC Store,Electronics,Mumbai,Inactive
+MER000547,INS000003,Sen-Zacharia Store,Fuel,Pune,Active
+MER000548,INS000004,Cheema Ltd Store,Entertainment,Bhubaneswar,Active
+MER000549,INS000003,"Bhakta, Naidu and Sehgal Store",Fuel,Hyderabad,Active
+MER000550,INS000003,"Chacko, Srinivasan and Ramakrishnan Store",Travel,Kolkata,Active
+MER000551,INS000004,Reddy-Chana Store,Grocery,Patna,Active
+MER000552,INS000005,Chadha-Kalla Store,Healthcare,Chandigarh,Active
+MER000553,INS000001,"Chaudry, Hari and Tella Store",Electronics,Jaipur,Active
+MER000554,INS000005,"Mitter, Konda and Kalla Store",Entertainment,Bhubaneswar,Inactive
+MER000555,INS000002,Dani Ltd Store,Travel,Chennai,Active
+MER000556,INS000002,"Baria, Dhar and Mall Store",Travel,Mumbai,Active
+MER000557,INS000003,Ray-Raghavan Store,Healthcare,Indore,Active
+MER000558,INS000004,Tata LLC Store,Healthcare,Nagpur,Active
+MER000559,INS000003,Ratti Inc Store,Entertainment,Patna,Active
+MER000560,INS000001,"Pathak, Gade and Nagar Store",Healthcare,Patna,Active
+MER000561,INS000005,"Viswanathan, Suri and Barad Store",Shopping,Bengaluru,Active
+MER000562,INS000004,Thakkar Ltd Store,Fuel,Ahmedabad,Active
+MER000563,INS000002,Narain-Narayan Store,Grocery,Jaipur,Active
+MER000564,INS000002,"Om, Sankaran and Chauhan Store",Electronics,Mysuru,Active
+MER000565,INS000005,Garde LLC Store,Travel,Indore,Active
+MER000566,INS000005,Khalsa and Sons Store,Grocery,Delhi,Active
+MER000567,INS000003,Acharya Ltd Store,Restaurant,Mumbai,Active
+MER000568,INS000001,Dixit LLC Store,Electronics,Kolkata,Active
+MER000569,INS000002,Kala-Bhalla Store,Healthcare,Mysuru,Active
+MER000570,INS000002,Lala Inc Store,Fuel,Chandigarh,Active
+MER000571,INS000005,"Mahal, Murthy and Chaudhuri Store",Healthcare,Bhopal,Inactive
+MER000572,INS000001,Chanda Inc Store,Grocery,Bhopal,Active
+MER000573,INS000005,Agate-Bhasin Store,Restaurant,Nagpur,Active
+MER000574,INS000002,Sagar-Ramaswamy Store,Grocery,Patna,Inactive
+MER000575,INS000005,Shukla-Nagar Store,Entertainment,Bhubaneswar,Active
+MER000576,INS000003,"Bhatt, Apte and Shankar Store",Travel,Lucknow,Active
+MER000577,INS000005,Menon Ltd Store,Entertainment,Chennai,Active
+MER000578,INS000002,Walla-Rege Store,Entertainment,Thane,Active
+MER000579,INS000002,Chana-Magar Store,Fuel,Hyderabad,Active
+MER000580,INS000005,Madan-Sachdev Store,Entertainment,Lucknow,Active
+MER000581,INS000001,Verma-Wason Store,Shopping,Patna,Active
+MER000582,INS000002,Luthra-Bahri Store,Entertainment,Bhubaneswar,Active
+MER000583,INS000004,"Kurian, Sarin and Wagle Store",Travel,Delhi,Active
+MER000584,INS000005,Majumdar Group Store,Restaurant,Lucknow,Active
+MER000585,INS000002,"Salvi, Hora and Chacko Store",Electronics,Hyderabad,Active
+MER000586,INS000004,Cherian-Pant Store,Fuel,Ahmedabad,Active
+MER000587,INS000005,"Jani, Walia and Mangat Store",Travel,Delhi,Active
+MER000588,INS000001,Desai LLC Store,Healthcare,Kochi,Active
+MER000589,INS000003,Sodhi-Edwin Store,Electronics,Pune,Active
+MER000590,INS000003,Sibal Inc Store,Electronics,Pune,Active
+MER000591,INS000002,"Dua, Sarraf and Padmanabhan Store",Fuel,Bengaluru,Active
+MER000592,INS000003,"Thaker, Ramaswamy and Bala Store",Shopping,Bhopal,Active
+MER000593,INS000001,"Zacharia, Sidhu and Cheema Store",Fuel,Surat,Active
+MER000594,INS000004,"Sehgal, Sundaram and Mutti Store",Shopping,Bhopal,Active
+MER000595,INS000005,Baria-Tailor Store,Grocery,Kochi,Active
+MER000596,INS000001,Toor Ltd Store,Restaurant,Delhi,Active
+MER000597,INS000005,Chaudhari-Boase Store,Shopping,Nagpur,Active
+MER000598,INS000002,"Bir, Kurian and Apte Store",Healthcare,Hyderabad,Active
+MER000599,INS000002,Palla Inc Store,Grocery,Hyderabad,Active
+MER000600,INS000002,"Kamdar, Chada and Sachdev Store",Healthcare,Chennai,Active
+MER000601,INS000002,"Sani, Ratta and Nagar Store",Travel,Bengaluru,Active
+MER000602,INS000002,Sachdeva and Sons Store,Fuel,Pune,Inactive
+MER000603,INS000001,Nagarajan-Tandon Store,Electronics,Mysuru,Active
+MER000604,INS000004,Muni-Sachdev Store,Healthcare,Kolkata,Active
+MER000605,INS000004,"Butala, Ravel and Srivastava Store",Restaurant,Mumbai,Active
+MER000606,INS000001,Goel and Sons Store,Electronics,Pune,Active
+MER000607,INS000005,"Behl, Mammen and Lall Store",Shopping,Chandigarh,Inactive
+MER000608,INS000005,Kala and Sons Store,Shopping,Kochi,Active
+MER000609,INS000005,Tank-Brar Store,Fuel,Bhubaneswar,Active
+MER000610,INS000004,Solanki LLC Store,Healthcare,Bhopal,Active
+MER000611,INS000005,Dhingra Inc Store,Grocery,Chennai,Inactive
+MER000612,INS000004,Ravel-Chaudhuri Store,Travel,Bhopal,Active
+MER000613,INS000005,"Bhardwaj, Chopra and Bala Store",Shopping,Bhubaneswar,Active
+MER000614,INS000004,Trivedi-Vasa Store,Shopping,Hyderabad,Active
+MER000615,INS000005,Zachariah-Saha Store,Fuel,Ahmedabad,Active
+MER000616,INS000003,Mutti Ltd Store,Healthcare,Lucknow,Active
+MER000617,INS000003,Jain and Sons Store,Grocery,Delhi,Active
+MER000618,INS000005,Mittal-Barad Store,Entertainment,Bhubaneswar,Active
+MER000619,INS000001,"Randhawa, Batta and Kale Store",Restaurant,Pune,Active
+MER000620,INS000004,Chowdhury-Chander Store,Healthcare,Pune,Active
+MER000621,INS000003,Gola LLC Store,Healthcare,Chandigarh,Active
+MER000622,INS000002,Dhar-Upadhyay Store,Grocery,Bhubaneswar,Active
+MER000623,INS000004,Johal-Agate Store,Fuel,Jaipur,Active
+MER000624,INS000005,"Brahmbhatt, Chokshi and Purohit Store",Electronics,Hyderabad,Active
+MER000625,INS000004,"Chana, Rana and Zachariah Store",Entertainment,Chennai,Active
+MER000626,INS000001,"Date, Toor and Brahmbhatt Store",Entertainment,Hyderabad,Active
+MER000627,INS000003,Gaba-Samra Store,Electronics,Surat,Active
+MER000628,INS000004,Chatterjee Group Store,Travel,Chennai,Inactive
+MER000629,INS000001,"Hora, Saxena and Brahmbhatt Store",Shopping,Jaipur,Active
+MER000630,INS000004,Korpal Inc Store,Electronics,Lucknow,Active
+MER000631,INS000004,"Mital, Shah and Setty Store",Entertainment,Bhopal,Active
+MER000632,INS000002,Datta-Gopal Store,Travel,Mysuru,Active
+MER000633,INS000005,"Chawla, Varty and Narayanan Store",Entertainment,Kolkata,Active
+MER000634,INS000004,Master-Krishnamurthy Store,Grocery,Pune,Active
+MER000635,INS000004,Master-Gopal Store,Grocery,Chandigarh,Active
+MER000636,INS000002,Vora-Chahal Store,Travel,Bengaluru,Active
+MER000637,INS000004,Sethi-Chadha Store,Electronics,Mysuru,Active
+MER000638,INS000004,Devan LLC Store,Fuel,Hyderabad,Active
+MER000639,INS000001,Chokshi-Salvi Store,Shopping,Surat,Active
+MER000640,INS000001,Gour LLC Store,Restaurant,Surat,Active
+MER000641,INS000001,"Kapadia, Mani and Sahota Store",Grocery,Bhubaneswar,Active
+MER000642,INS000002,Kari PLC Store,Shopping,Kolkata,Active
+MER000643,INS000004,"Chopra, Mistry and Sharaf Store",Shopping,Patna,Active
+MER000644,INS000001,Roy-Krishnan Store,Entertainment,Hyderabad,Active
+MER000645,INS000004,Shukla PLC Store,Shopping,Kochi,Active
+MER000646,INS000003,Kumar-Bumb Store,Healthcare,Bengaluru,Active
+MER000647,INS000001,Sachdeva-Rajan Store,Travel,Chandigarh,Active
+MER000648,INS000002,Manne Ltd Store,Electronics,Jaipur,Active
+MER000649,INS000002,Saxena and Sons Store,Entertainment,Hyderabad,Active
+MER000650,INS000004,"Bawa, Sura and Shetty Store",Grocery,Mumbai,Active
+MER000651,INS000001,"Mittal, Krishna and Ramaswamy Store",Electronics,Chandigarh,Active
+MER000652,INS000001,"Mukhopadhyay, Majumdar and Ramaswamy Store",Healthcare,Mumbai,Active
+MER000653,INS000002,Chana LLC Store,Healthcare,Kolkata,Active
+MER000654,INS000003,Khalsa LLC Store,Grocery,Delhi,Active
+MER000655,INS000003,Dhar-Babu Store,Grocery,Jaipur,Active
+MER000656,INS000001,Agrawal LLC Store,Electronics,Chennai,Inactive
+MER000657,INS000001,"Boase, Arora and Mand Store",Travel,Bhubaneswar,Active
+MER000658,INS000005,"Narain, Mand and Nath Store",Restaurant,Bengaluru,Active
+MER000659,INS000002,Om-Edwin Store,Healthcare,Ahmedabad,Active
+MER000660,INS000001,Shanker Group Store,Travel,Lucknow,Inactive
+MER000661,INS000002,Randhawa-Bajaj Store,Travel,Nagpur,Active
+MER000662,INS000001,Mandal PLC Store,Restaurant,Ahmedabad,Active
+MER000663,INS000004,Pillay-Walla Store,Shopping,Hyderabad,Active
+MER000664,INS000004,Salvi-Khosla Store,Healthcare,Mysuru,Active
+MER000665,INS000004,Sani LLC Store,Travel,Chandigarh,Active
+MER000666,INS000004,"Barad, Sachdev and Chand Store",Shopping,Chandigarh,Active
+MER000667,INS000002,Sood Group Store,Entertainment,Kochi,Active
+MER000668,INS000003,Ganguly LLC Store,Electronics,Indore,Active
+MER000669,INS000004,Kulkarni Inc Store,Travel,Jaipur,Active
+MER000670,INS000005,Pandit-Koshy Store,Travel,Delhi,Inactive
+MER000671,INS000003,Johal Inc Store,Travel,Bengaluru,Active
+MER000672,INS000004,Sarma-Bala Store,Healthcare,Mumbai,Active
+MER000673,INS000003,Chana-Lal Store,Travel,Chandigarh,Active
+MER000674,INS000005,"Mitra, Bhattacharyya and Choudhury Store",Restaurant,Bhopal,Active
+MER000675,INS000002,Dhaliwal Ltd Store,Entertainment,Kochi,Active
+MER000676,INS000001,Kara-Brahmbhatt Store,Fuel,Bhubaneswar,Active
+MER000677,INS000004,Sant Group Store,Shopping,Kochi,Active
+MER000678,INS000005,Kari Inc Store,Travel,Thane,Active
+MER000679,INS000001,Chander Inc Store,Electronics,Mumbai,Inactive
+MER000680,INS000003,"Mallick, Venkatesh and Devan Store",Entertainment,Thane,Active
+MER000681,INS000005,"Bhavsar, Narang and Sampath Store",Fuel,Delhi,Active
+MER000682,INS000003,"Vaidya, Tandon and Srivastava Store",Restaurant,Bhopal,Active
+MER000683,INS000001,"Panchal, Gupta and Parikh Store",Electronics,Kochi,Active
+MER000684,INS000002,"Issac, Grover and Bora Store",Fuel,Hyderabad,Active
+MER000685,INS000001,Pradhan LLC Store,Travel,Delhi,Active
+MER000686,INS000002,"Sama, Babu and Bhatt Store",Travel,Bhopal,Active
+MER000687,INS000001,Hora-Dani Store,Travel,Thane,Active
+MER000688,INS000005,"Bassi, Dhingra and Gola Store",Fuel,Indore,Active
+MER000689,INS000005,Khatri-Srinivasan Store,Restaurant,Pune,Active
+MER000690,INS000005,Manda LLC Store,Electronics,Delhi,Active
+MER000691,INS000005,Chaudhuri-Tank Store,Grocery,Thane,Active
+MER000692,INS000004,"Kapur, Keer and Sibal Store",Restaurant,Mumbai,Active
+MER000693,INS000003,Hayre-Kapur Store,Shopping,Kolkata,Active
+MER000694,INS000002,Walia LLC Store,Travel,Patna,Active
+MER000695,INS000002,Ranganathan-Kade Store,Fuel,Chandigarh,Active
+MER000696,INS000001,Sinha-Deo Store,Entertainment,Bhopal,Active
+MER000697,INS000003,Comar Inc Store,Electronics,Lucknow,Active
+MER000698,INS000001,Wadhwa-Datta Store,Restaurant,Ahmedabad,Active
+MER000699,INS000002,"Palla, Apte and Walia Store",Healthcare,Jaipur,Active
+MER000700,INS000005,Mall-Kade Store,Electronics,Chennai,Active
+MER000701,INS000004,Sarraf-Modi Store,Travel,Indore,Active
+MER000702,INS000003,"Wable, Bhatt and Mukherjee Store",Restaurant,Chennai,Active
+MER000703,INS000003,Vasa Group Store,Electronics,Kochi,Inactive
+MER000704,INS000005,Muni-Shroff Store,Shopping,Chennai,Active
+MER000705,INS000005,Rattan-Kapoor Store,Fuel,Kochi,Active
+MER000706,INS000005,Balasubramanian Ltd Store,Grocery,Chandigarh,Active
+MER000707,INS000004,Gara and Sons Store,Healthcare,Hyderabad,Active
+MER000708,INS000005,Kapur Ltd Store,Electronics,Patna,Active
+MER000709,INS000003,"Chatterjee, Sodhi and Korpal Store",Entertainment,Bhubaneswar,Inactive
+MER000710,INS000003,Sani and Sons Store,Fuel,Nagpur,Active
+MER000711,INS000002,Puri-Chakraborty Store,Grocery,Bhopal,Active
+MER000712,INS000003,Pillai-Sidhu Store,Grocery,Delhi,Active
+MER000713,INS000005,Bhavsar and Sons Store,Shopping,Surat,Active
+MER000714,INS000003,"Banerjee, Naidu and Naidu Store",Grocery,Patna,Active
+MER000715,INS000005,Gala-Handa Store,Restaurant,Surat,Active
+MER000716,INS000003,Samra-Hora Store,Restaurant,Delhi,Active
+MER000717,INS000001,Ahuja LLC Store,Travel,Nagpur,Active
+MER000718,INS000004,Chokshi Inc Store,Healthcare,Mysuru,Active
+MER000719,INS000003,"Bawa, Anand and Bajwa Store",Shopping,Jaipur,Active
+MER000720,INS000004,Shenoy-Shah Store,Electronics,Surat,Active
+MER000721,INS000005,Sant and Sons Store,Travel,Chandigarh,Inactive
+MER000722,INS000005,Pillay Ltd Store,Grocery,Indore,Active
+MER000723,INS000002,"Grover, Venkataraman and Dara Store",Fuel,Kolkata,Active
+MER000724,INS000002,Prakash LLC Store,Entertainment,Surat,Active
+MER000725,INS000001,Hayer Inc Store,Travel,Indore,Active
+MER000726,INS000002,Palla LLC Store,Travel,Delhi,Active
+MER000727,INS000003,"Dugar, Mitter and Mohanty Store",Electronics,Indore,Active
+MER000728,INS000004,Bali-Din Store,Grocery,Bhubaneswar,Active
+MER000729,INS000005,Chander-Pandit Store,Healthcare,Kolkata,Active
+MER000730,INS000003,Vyas PLC Store,Shopping,Ahmedabad,Active
+MER000731,INS000005,"Sidhu, Bal and Yogi Store",Travel,Bhopal,Active
+MER000732,INS000004,Subramaniam LLC Store,Healthcare,Surat,Active
+MER000733,INS000001,Gopal Inc Store,Entertainment,Hyderabad,Active
+MER000734,INS000004,Vyas Ltd Store,Travel,Nagpur,Active
+MER000735,INS000002,"Bal, Ravi and Dhillon Store",Grocery,Patna,Active
+MER000736,INS000003,Bhakta and Sons Store,Grocery,Bhubaneswar,Active
+MER000737,INS000004,Sane-Batra Store,Fuel,Pune,Active
+MER000738,INS000003,Bir-Mander Store,Restaurant,Chandigarh,Active
+MER000739,INS000002,Singh-Doshi Store,Restaurant,Chandigarh,Active
+MER000740,INS000001,Kara-Sen Store,Shopping,Surat,Active
+MER000741,INS000003,"Lalla, Divan and Vasa Store",Fuel,Mysuru,Active
+MER000742,INS000002,Chaudry Ltd Store,Grocery,Mumbai,Active
+MER000743,INS000005,Vig Ltd Store,Fuel,Nagpur,Active
+MER000744,INS000005,Sarkar-Dhingra Store,Healthcare,Patna,Active
+MER000745,INS000004,Bose-Bedi Store,Grocery,Bengaluru,Active
+MER000746,INS000002,"Choudhry, Palla and Vaidya Store",Healthcare,Hyderabad,Inactive
+MER000747,INS000004,Contractor-Shroff Store,Fuel,Indore,Active
+MER000748,INS000003,"Gokhale, Kakar and Arora Store",Electronics,Chennai,Active
+MER000749,INS000002,Sachdeva-Kaur Store,Grocery,Mysuru,Active
+MER000750,INS000004,Bava LLC Store,Shopping,Indore,Active
+MER000751,INS000003,Memon-Mann Store,Travel,Thane,Active
+MER000752,INS000001,Sabharwal Group Store,Shopping,Surat,Active
+MER000753,INS000004,Prakash PLC Store,Electronics,Mumbai,Active
+MER000754,INS000005,"Kumer, Chokshi and Nath Store",Travel,Kolkata,Active
+MER000755,INS000002,"Ahluwalia, Bumb and Raval Store",Shopping,Lucknow,Active
+MER000756,INS000001,"Tella, Bhatnagar and Minhas Store",Electronics,Lucknow,Active
+MER000757,INS000005,Gole Ltd Store,Grocery,Bengaluru,Active
+MER000758,INS000002,Bala-Bhatnagar Store,Restaurant,Chandigarh,Active
+MER000759,INS000001,"Samra, Baral and Balay Store",Shopping,Ahmedabad,Active
+MER000760,INS000004,"Trivedi, Mital and Bahri Store",Restaurant,Thane,Active
+MER000761,INS000001,Dayal Ltd Store,Restaurant,Patna,Active
+MER000762,INS000005,"Sem, Sen and Mistry Store",Travel,Hyderabad,Active
+MER000763,INS000003,Khalsa-Mohanty Store,Travel,Surat,Active
+MER000764,INS000002,Mane-Mistry Store,Grocery,Indore,Active
+MER000765,INS000005,"Pandya, Balakrishnan and Raj Store",Fuel,Bhubaneswar,Active
+MER000766,INS000004,Gokhale and Sons Store,Healthcare,Bhopal,Active
+MER000767,INS000003,"Purohit, Gopal and Mallick Store",Restaurant,Pune,Active
+MER000768,INS000001,"Chandran, Gara and Maharaj Store",Fuel,Chennai,Active
+MER000769,INS000002,Palla-Krishnamurthy Store,Shopping,Lucknow,Active
+MER000770,INS000003,Sarma and Sons Store,Shopping,Kolkata,Active
+MER000771,INS000004,Hari Inc Store,Restaurant,Kochi,Active
+MER000772,INS000004,"Khare, Menon and Prakash Store",Healthcare,Bengaluru,Active
+MER000773,INS000001,Mannan-Lata Store,Restaurant,Chandigarh,Active
+MER000774,INS000004,Dora PLC Store,Fuel,Kochi,Inactive
+MER000775,INS000001,"Kohli, Gopal and Banerjee Store",Entertainment,Lucknow,Active
+MER000776,INS000001,Sekhon Inc Store,Restaurant,Surat,Active
+MER000777,INS000005,Rajagopal PLC Store,Grocery,Bengaluru,Active
+MER000778,INS000004,Naidu-Sekhon Store,Healthcare,Kochi,Active
+MER000779,INS000001,Bhasin PLC Store,Fuel,Mysuru,Active
+MER000780,INS000005,Yogi-Bansal Store,Healthcare,Hyderabad,Active
+MER000781,INS000005,Behl and Sons Store,Fuel,Surat,Active
+MER000782,INS000001,"Biswas, Chada and Singh Store",Fuel,Bengaluru,Active
+MER000783,INS000002,"Dara, Dora and Tailor Store",Healthcare,Surat,Active
+MER000784,INS000005,Raju-Goel Store,Grocery,Ahmedabad,Active
+MER000785,INS000001,Bahl LLC Store,Restaurant,Jaipur,Active
+MER000786,INS000001,"Natt, Thaman and Nath Store",Shopping,Chandigarh,Active
+MER000787,INS000003,Edwin-Varty Store,Grocery,Bengaluru,Active
+MER000788,INS000002,"Pant, Garde and Saran Store",Fuel,Indore,Active
+MER000789,INS000003,Kaur-Lall Store,Fuel,Mumbai,Active
+MER000790,INS000005,Mangal-Dewan Store,Healthcare,Surat,Active
+MER000791,INS000003,Ahuja-Johal Store,Entertainment,Bhopal,Active
+MER000792,INS000005,"Sibal, Barad and Loke Store",Shopping,Mumbai,Active
+MER000793,INS000002,Chaudhuri Ltd Store,Restaurant,Hyderabad,Active
+MER000794,INS000003,"Bahri, Amble and Buch Store",Fuel,Jaipur,Active
+MER000795,INS000002,"Bhatnagar, Brahmbhatt and Mander Store",Fuel,Indore,Active
+MER000796,INS000004,De PLC Store,Fuel,Surat,Active
+MER000797,INS000001,"Dave, Rajagopal and Som Store",Entertainment,Indore,Active
+MER000798,INS000005,Madan-Patil Store,Shopping,Bhopal,Active
+MER000799,INS000003,Sharaf-Agarwal Store,Electronics,Lucknow,Active
+MER000800,INS000003,Bahri-Mistry Store,Healthcare,Chennai,Active
+MER000801,INS000005,Lala LLC Store,Electronics,Bhopal,Inactive
+MER000802,INS000001,"Radhakrishnan, Sankaran and Bir Store",Restaurant,Bhubaneswar,Active
+MER000803,INS000005,Bhattacharyya-Dey Store,Electronics,Thane,Active
+MER000804,INS000001,Minhas-Bora Store,Electronics,Lucknow,Active
+MER000805,INS000005,"Bora, Apte and Gola Store",Fuel,Bengaluru,Active
+MER000806,INS000004,Raja LLC Store,Shopping,Thane,Active
+MER000807,INS000003,Mahajan LLC Store,Entertainment,Chennai,Active
+MER000808,INS000004,Samra-Sethi Store,Grocery,Mumbai,Active
+MER000809,INS000005,Sama LLC Store,Shopping,Kolkata,Active
+MER000810,INS000004,Peri-Mitter Store,Entertainment,Bhubaneswar,Active
+MER000811,INS000003,Dewan-Borra Store,Shopping,Bengaluru,Active
+MER000812,INS000001,"Pant, Thakkar and Manda Store",Healthcare,Thane,Active
+MER000813,INS000001,"Bhatia, Pradhan and Datta Store",Healthcare,Bhubaneswar,Active
+MER000814,INS000003,Pradhan-Jani Store,Healthcare,Jaipur,Inactive
+MER000815,INS000005,Bains-Verma Store,Healthcare,Patna,Active
+MER000816,INS000001,Dutt Inc Store,Electronics,Nagpur,Active
+MER000817,INS000001,"Nadig, Ramaswamy and Mall Store",Healthcare,Delhi,Active
+MER000818,INS000005,Soman-Sahota Store,Electronics,Pune,Active
+MER000819,INS000003,Minhas-Oza Store,Fuel,Bengaluru,Active
+MER000820,INS000001,More-Mander Store,Fuel,Nagpur,Active
+MER000821,INS000005,Raghavan-Sahni Store,Entertainment,Mumbai,Active
+MER000822,INS000001,"Johal, Sem and Kashyap Store",Entertainment,Mumbai,Active
+MER000823,INS000002,"Dube, Som and Arora Store",Electronics,Bhubaneswar,Active
+MER000824,INS000002,"Tank, Magar and Pradhan Store",Fuel,Kolkata,Inactive
+MER000825,INS000004,Sane Group Store,Grocery,Thane,Active
+MER000826,INS000001,"Choudhry, Lad and Sule Store",Fuel,Bhubaneswar,Active
+MER000827,INS000004,Soman-Mohanty Store,Shopping,Mysuru,Active
+MER000828,INS000004,Dube LLC Store,Electronics,Pune,Active
+MER000829,INS000004,Sridhar LLC Store,Electronics,Thane,Active
+MER000830,INS000001,Gara-Dhar Store,Travel,Patna,Active
+MER000831,INS000004,Swaminathan Group Store,Grocery,Thane,Inactive
+MER000832,INS000004,Sagar Group Store,Shopping,Hyderabad,Active
+MER000833,INS000001,Subramaniam LLC Store,Restaurant,Ahmedabad,Active
+MER000834,INS000003,"Sha, Kapoor and Randhawa Store",Travel,Hyderabad,Active
+MER000835,INS000003,Korpal PLC Store,Restaurant,Chennai,Active
+MER000836,INS000004,Kala-Dave Store,Electronics,Hyderabad,Active
+MER000837,INS000002,Mukherjee-Khatri Store,Healthcare,Chandigarh,Active
+MER000838,INS000004,Chaudry PLC Store,Restaurant,Lucknow,Active
+MER000839,INS000003,"Kakar, Master and Sami Store",Shopping,Mysuru,Inactive
+MER000840,INS000003,Bera PLC Store,Restaurant,Kolkata,Active
+MER000841,INS000003,Dhar-Saini Store,Shopping,Chennai,Active
+MER000842,INS000002,Shetty-Badal Store,Electronics,Indore,Active
+MER000843,INS000005,Jha-Ranganathan Store,Healthcare,Jaipur,Active
+MER000844,INS000001,Loke Inc Store,Entertainment,Chennai,Active
+MER000845,INS000003,Saran-Bajwa Store,Restaurant,Chennai,Active
+MER000846,INS000001,Keer-Pillai Store,Healthcare,Lucknow,Active
+MER000847,INS000003,Modi Inc Store,Fuel,Mumbai,Inactive
+MER000848,INS000001,"Boase, Gulati and Lanka Store",Healthcare,Bengaluru,Active
+MER000849,INS000002,Saraf Ltd Store,Electronics,Delhi,Active
+MER000850,INS000002,Rastogi-Gaba Store,Healthcare,Lucknow,Active
+MER000851,INS000003,"Mann, Ben and Merchant Store",Electronics,Jaipur,Active
+MER000852,INS000005,Toor and Sons Store,Restaurant,Patna,Active
+MER000853,INS000004,"Dhingra, Goswami and Bakshi Store",Shopping,Nagpur,Active
+MER000854,INS000004,Lata Inc Store,Healthcare,Nagpur,Active
+MER000855,INS000005,"Sandal, Goyal and Savant Store",Fuel,Kolkata,Active
+MER000856,INS000001,Sundaram Inc Store,Entertainment,Patna,Active
+MER000857,INS000002,Bhasin Inc Store,Healthcare,Chennai,Active
+MER000858,INS000002,Pandya PLC Store,Electronics,Thane,Active
+MER000859,INS000005,Kulkarni Group Store,Entertainment,Bhopal,Active
+MER000860,INS000003,"Chakraborty, Char and Narayan Store",Grocery,Bhubaneswar,Active
+MER000861,INS000001,Bandi-D’Alia Store,Restaurant,Jaipur,Active
+MER000862,INS000002,"Gala, Chowdhury and Loke Store",Shopping,Surat,Active
+MER000863,INS000004,"Raval, Mohanty and Shetty Store",Shopping,Bengaluru,Active
+MER000864,INS000005,"Bhattacharyya, Goel and Tata Store",Grocery,Chandigarh,Active
+MER000865,INS000002,Bora-Mohanty Store,Electronics,Hyderabad,Active
+MER000866,INS000002,Manda LLC Store,Electronics,Thane,Active
+MER000867,INS000002,"Rai, Sunder and Das Store",Fuel,Patna,Active
+MER000868,INS000005,"Goyal, Krish and Banerjee Store",Entertainment,Patna,Active
+MER000869,INS000002,"Manda, Raman and Upadhyay Store",Fuel,Lucknow,Active
+MER000870,INS000002,Rajan-Doctor Store,Healthcare,Bhubaneswar,Active
+MER000871,INS000002,"Dugar, Mahajan and Khurana Store",Electronics,Kolkata,Active
+MER000872,INS000002,"Sarma, Chopra and Dayal Store",Shopping,Pune,Inactive
+MER000873,INS000004,"Arora, Wadhwa and Dutta Store",Healthcare,Chennai,Active
+MER000874,INS000005,Dugar Ltd Store,Healthcare,Surat,Active
+MER000875,INS000005,Sachar Ltd Store,Healthcare,Delhi,Active
+MER000876,INS000001,Loke Group Store,Fuel,Nagpur,Active
+MER000877,INS000005,"Bassi, Sridhar and More Store",Travel,Jaipur,Active
+MER000878,INS000003,"Chandra, Deol and Kaur Store",Healthcare,Thane,Active
+MER000879,INS000004,Oza Group Store,Travel,Chandigarh,Active
+MER000880,INS000001,"Thaman, Gulati and Date Store",Entertainment,Delhi,Active
+MER000881,INS000005,Rai-Sengupta Store,Healthcare,Thane,Active
+MER000882,INS000005,"Nigam, Grover and Bhardwaj Store",Shopping,Patna,Active
+MER000883,INS000002,Dewan Group Store,Grocery,Kochi,Active
+MER000884,INS000002,Natarajan and Sons Store,Healthcare,Pune,Active
+MER000885,INS000002,Andra-Pall Store,Travel,Kolkata,Active
+MER000886,INS000002,"Pant, Varty and Sibal Store",Entertainment,Delhi,Active
+MER000887,INS000004,"Menon, Gandhi and Parmar Store",Restaurant,Bengaluru,Active
+MER000888,INS000003,Yohannan Group Store,Restaurant,Lucknow,Active
+MER000889,INS000002,Dixit LLC Store,Travel,Jaipur,Active
+MER000890,INS000003,Raman-Muni Store,Travel,Mumbai,Active
+MER000891,INS000005,"Basu, Kapur and Aurora Store",Entertainment,Delhi,Active
+MER000892,INS000004,"Bains, Randhawa and Varkey Store",Entertainment,Kochi,Active
+MER000893,INS000001,Mander Ltd Store,Grocery,Ahmedabad,Active
+MER000894,INS000001,"Pingle, Buch and Biswas Store",Shopping,Lucknow,Active
+MER000895,INS000004,"Vaidya, Narain and Kashyap Store",Fuel,Mysuru,Active
+MER000896,INS000001,Bose Group Store,Entertainment,Chennai,Active
+MER000897,INS000002,Pandey Inc Store,Shopping,Jaipur,Active
+MER000898,INS000002,Sheth-Pathak Store,Grocery,Thane,Active
+MER000899,INS000005,"Mand, Dhingra and Ray Store",Fuel,Chandigarh,Active
+MER000900,INS000003,Bir-Bhatia Store,Fuel,Hyderabad,Active
+MER000901,INS000005,Om Group Store,Fuel,Mysuru,Active
+MER000902,INS000001,Chand-Virk Store,Grocery,Ahmedabad,Active
+MER000903,INS000002,Keer-Mitter Store,Entertainment,Kochi,Active
+MER000904,INS000002,"Parikh, Joshi and Sane Store",Healthcare,Bengaluru,Active
+MER000905,INS000001,"Jhaveri, Sawhney and Yadav Store",Grocery,Ahmedabad,Active
+MER000906,INS000002,Bumb-Saini Store,Healthcare,Hyderabad,Active
+MER000907,INS000004,"Nair, Nagi and Chadha Store",Healthcare,Bhubaneswar,Active
+MER000908,INS000004,Ahuja LLC Store,Travel,Chennai,Active
+MER000909,INS000005,Garde and Sons Store,Restaurant,Bhubaneswar,Active
+MER000910,INS000001,"Deo, Sarma and Shere Store",Restaurant,Kochi,Active
+MER000911,INS000001,Varma PLC Store,Restaurant,Mysuru,Active
+MER000912,INS000001,Kulkarni PLC Store,Electronics,Lucknow,Active
+MER000913,INS000001,"Ram, Toor and Mani Store",Healthcare,Bhubaneswar,Active
+MER000914,INS000004,Swaminathan-Kalita Store,Travel,Kochi,Active
+MER000915,INS000004,Saini-Prakash Store,Fuel,Bhubaneswar,Active
+MER000916,INS000003,Nath and Sons Store,Restaurant,Thane,Inactive
+MER000917,INS000003,"Krishnamurthy, Seshadri and Dixit Store",Fuel,Kolkata,Active
+MER000918,INS000005,Guha Inc Store,Restaurant,Jaipur,Active
+MER000919,INS000005,Sur-Balakrishnan Store,Fuel,Lucknow,Active
+MER000920,INS000002,Sundaram-Chandra Store,Electronics,Delhi,Active
+MER000921,INS000003,"Ram, Contractor and Kaur Store",Travel,Nagpur,Active
+MER000922,INS000004,"Bhavsar, Kothari and Krish Store",Healthcare,Nagpur,Active
+MER000923,INS000004,Zachariah PLC Store,Travel,Mysuru,Active
+MER000924,INS000004,Chanda-Singh Store,Fuel,Bhubaneswar,Active
+MER000925,INS000002,Dhawan Inc Store,Healthcare,Kolkata,Active
+MER000926,INS000001,Venkataraman PLC Store,Healthcare,Indore,Active
+MER000927,INS000003,Bains LLC Store,Electronics,Ahmedabad,Active
+MER000928,INS000003,Patil-Vyas Store,Healthcare,Delhi,Active
+MER000929,INS000003,Narula-Ganesan Store,Travel,Bhopal,Active
+MER000930,INS000004,Muni-Lalla Store,Electronics,Lucknow,Active
+MER000931,INS000004,Pant LLC Store,Fuel,Bhubaneswar,Active
+MER000932,INS000004,Chadha Inc Store,Restaurant,Ahmedabad,Active
+MER000933,INS000002,"Kumer, Kunda and Seth Store",Electronics,Chandigarh,Active
+MER000934,INS000005,Dubey-Naidu Store,Healthcare,Mysuru,Active
+MER000935,INS000004,Nair-Chawla Store,Travel,Hyderabad,Active
+MER000936,INS000003,Saha-Mahajan Store,Grocery,Mysuru,Active
+MER000937,INS000002,More Ltd Store,Restaurant,Chennai,Active
+MER000938,INS000004,"Pandey, Reddy and Rao Store",Electronics,Surat,Active
+MER000939,INS000003,Sidhu-Gaba Store,Grocery,Mysuru,Active
+MER000940,INS000005,"Nayak, Ratta and Choudhary Store",Fuel,Pune,Active
+MER000941,INS000004,Divan LLC Store,Shopping,Indore,Active
+MER000942,INS000003,Pradhan-Iyer Store,Healthcare,Nagpur,Active
+MER000943,INS000002,Deol PLC Store,Electronics,Hyderabad,Active
+MER000944,INS000004,Sundaram-Mishra Store,Healthcare,Pune,Active
+MER000945,INS000003,Kumer PLC Store,Grocery,Thane,Active
+MER000946,INS000003,"Patla, Chowdhury and Kanda Store",Entertainment,Mumbai,Active
+MER000947,INS000003,"Srinivasan, Master and Magar Store",Shopping,Hyderabad,Active
+MER000948,INS000002,Sanghvi-Khurana Store,Grocery,Ahmedabad,Active
+MER000949,INS000005,Lalla LLC Store,Restaurant,Chennai,Active
+MER000950,INS000005,"Chandra, Palan and Salvi Store",Grocery,Lucknow,Active
+MER000951,INS000004,Arora and Sons Store,Restaurant,Jaipur,Active
+MER000952,INS000004,"Dayal, Pillay and Dutta Store",Fuel,Surat,Active
+MER000953,INS000005,Balakrishnan-Bath Store,Healthcare,Mysuru,Active
+MER000954,INS000003,Badal PLC Store,Travel,Delhi,Active
+MER000955,INS000003,Bahl LLC Store,Grocery,Patna,Active
+MER000956,INS000002,Lad-Sridhar Store,Electronics,Nagpur,Active
+MER000957,INS000002,Kamdar-Bakshi Store,Travel,Jaipur,Active
+MER000958,INS000001,Badami-Hegde Store,Travel,Thane,Active
+MER000959,INS000003,Radhakrishnan-Srinivasan Store,Grocery,Pune,Active
+MER000960,INS000001,Purohit-Garde Store,Electronics,Lucknow,Active
+MER000961,INS000004,Solanki-Johal Store,Fuel,Jaipur,Active
+MER000962,INS000001,Dixit LLC Store,Shopping,Bhopal,Active
+MER000963,INS000005,"Kaul, Narayan and Ghosh Store",Electronics,Ahmedabad,Active
+MER000964,INS000001,"Setty, Andra and Solanki Store",Restaurant,Kochi,Active
+MER000965,INS000005,"Gandhi, Kaur and Shah Store",Shopping,Pune,Active
+MER000966,INS000002,Raj Group Store,Entertainment,Bengaluru,Active
+MER000967,INS000004,"Nagar, Mistry and Oak Store",Entertainment,Lucknow,Active
+MER000968,INS000003,Ganesh-Chatterjee Store,Travel,Surat,Active
+MER000969,INS000001,"Luthra, Balakrishnan and Sabharwal Store",Electronics,Chandigarh,Active
+MER000970,INS000004,Dora-Mannan Store,Electronics,Jaipur,Active
+MER000971,INS000003,"Boase, Arya and Parmar Store",Grocery,Lucknow,Active
+MER000972,INS000001,Suresh LLC Store,Travel,Chennai,Active
+MER000973,INS000004,Lalla-Kurian Store,Healthcare,Surat,Active
+MER000974,INS000001,Kata and Sons Store,Restaurant,Patna,Active
+MER000975,INS000003,Palla and Sons Store,Restaurant,Chennai,Active
+MER000976,INS000004,"Balan, Bath and Virk Store",Entertainment,Surat,Active
+MER000977,INS000002,"Venkataraman, Bora and Kurian Store",Shopping,Lucknow,Active
+MER000978,INS000005,"Joshi, Lanka and Khalsa Store",Electronics,Bengaluru,Active
+MER000979,INS000002,"Bahri, Ranganathan and Nagarajan Store",Grocery,Nagpur,Active
+MER000980,INS000002,"Ghosh, Mane and Bobal Store",Fuel,Mysuru,Active
+MER000981,INS000005,"Tank, Taneja and Acharya Store",Travel,Delhi,Active
+MER000982,INS000003,"Nair, Sanghvi and Chander Store",Healthcare,Nagpur,Active
+MER000983,INS000005,"Tripathi, Suresh and Pillai Store",Travel,Kochi,Active
+MER000984,INS000004,"Aggarwal, Mittal and Tripathi Store",Healthcare,Kolkata,Active
+MER000985,INS000001,"Lanka, Dyal and Hari Store",Restaurant,Kochi,Active
+MER000986,INS000004,Gole PLC Store,Electronics,Bengaluru,Active
+MER000987,INS000002,"Pant, Kakar and Dasgupta Store",Electronics,Bhubaneswar,Active
+MER000988,INS000001,Mitra LLC Store,Fuel,Pune,Active
+MER000989,INS000003,Gade-Bhakta Store,Travel,Mumbai,Active
+MER000990,INS000002,Sha Ltd Store,Fuel,Kochi,Active
+MER000991,INS000001,Gara LLC Store,Electronics,Bengaluru,Active
+MER000992,INS000004,Palla-Gandhi Store,Healthcare,Mumbai,Active
+MER000993,INS000001,Sood PLC Store,Grocery,Delhi,Active
+MER000994,INS000005,Jani LLC Store,Grocery,Mumbai,Active
+MER000995,INS000005,Hegde and Sons Store,Restaurant,Mumbai,Active
+MER000996,INS000001,Wason-Dhingra Store,Entertainment,Mysuru,Active
+MER000997,INS000005,Bhatnagar-Mangat Store,Travel,Patna,Active
+MER000998,INS000004,"Shankar, Gara and Sarma Store",Grocery,Chennai,Active
+MER000999,INS000002,Kohli Ltd Store,Shopping,Kolkata,Active
+MER001000,INS000004,Toor Ltd Store,Grocery,Delhi,Active
+MER001001,INS000005,Kapur-Bhalla Store,Healthcare,Chandigarh,Active
+MER001002,INS000002,"Ganguly, Oommen and Chacko Store",Shopping,Nagpur,Active
+MER001003,INS000002,"Munshi, Jani and Raghavan Store",Healthcare,Patna,Active
+MER001004,INS000003,"Sen, Pant and Madan Store",Fuel,Mumbai,Active
+MER001005,INS000002,Sampath Group Store,Healthcare,Patna,Active
+MER001006,INS000004,"Sem, Pau and Bhatia Store",Entertainment,Chennai,Active
+MER001007,INS000003,Krishna Ltd Store,Grocery,Chennai,Active
+MER001008,INS000003,Amble-Nath Store,Travel,Kolkata,Active
+MER001009,INS000003,Korpal Inc Store,Entertainment,Lucknow,Inactive
+MER001010,INS000004,"Sama, Trivedi and Bajaj Store",Shopping,Hyderabad,Active
+MER001011,INS000002,"Naik, Sandhu and Khatri Store",Shopping,Chennai,Active
+MER001012,INS000005,"Parekh, Gara and Yadav Store",Fuel,Mumbai,Active
+MER001013,INS000002,Gaba and Sons Store,Electronics,Mysuru,Active
+MER001014,INS000005,Ghosh-Bali Store,Entertainment,Pune,Active
+MER001015,INS000001,"Mutti, Chaudhry and Kannan Store",Grocery,Lucknow,Active
+MER001016,INS000003,Bumb Ltd Store,Restaurant,Bengaluru,Active
+MER001017,INS000002,Setty-Bumb Store,Entertainment,Bhopal,Active
+MER001018,INS000001,"Biswas, Viswanathan and Bala Store",Grocery,Ahmedabad,Active
+MER001019,INS000001,Raja-Sankaran Store,Restaurant,Pune,Active
+MER001020,INS000004,"Batra, Balay and Shukla Store",Fuel,Patna,Active
+MER001021,INS000002,"Sawhney, Golla and Parikh Store",Fuel,Ahmedabad,Active
+MER001022,INS000004,Narain-Taneja Store,Restaurant,Pune,Active
+MER001023,INS000003,Mody-Parmer Store,Entertainment,Jaipur,Active
+MER001024,INS000002,Bhattacharyya-Chawla Store,Restaurant,Mumbai,Active
+MER001025,INS000004,Chaudhari Group Store,Healthcare,Surat,Inactive
+MER001026,INS000005,Patel-Nadig Store,Electronics,Nagpur,Active
+MER001027,INS000002,Basu PLC Store,Entertainment,Bengaluru,Active
+MER001028,INS000005,Pandya-Sathe Store,Travel,Bhopal,Active
+MER001029,INS000004,Jayaraman-Nigam Store,Healthcare,Patna,Active
+MER001030,INS000002,Srinivas Group Store,Entertainment,Chennai,Active
+MER001031,INS000003,"Mohanty, Pandit and Chhabra Store",Shopping,Chandigarh,Active
+MER001032,INS000002,Sachdev Inc Store,Fuel,Kolkata,Inactive
+MER001033,INS000004,Divan Inc Store,Shopping,Patna,Active
+MER001034,INS000005,"Goyal, Desai and Soman Store",Shopping,Chennai,Active
+MER001035,INS000003,"Bala, Ranganathan and Palan Store",Shopping,Lucknow,Active
+MER001036,INS000003,"Salvi, Sunder and Bakshi Store",Healthcare,Bengaluru,Active
+MER001037,INS000001,"Kata, Bhatia and Rattan Store",Restaurant,Chennai,Active
+MER001038,INS000001,Kumer Group Store,Fuel,Surat,Active
+MER001039,INS000002,"Sarin, Sundaram and Modi Store",Grocery,Ahmedabad,Active
+MER001040,INS000003,"Kashyap, Luthra and Master Store",Healthcare,Bengaluru,Active
+MER001041,INS000002,Parmar-Pau Store,Shopping,Pune,Active
+MER001042,INS000005,Bal LLC Store,Fuel,Surat,Active
+MER001043,INS000002,"Bhakta, Lad and Bahri Store",Restaurant,Ahmedabad,Active
+MER001044,INS000003,Setty-Mital Store,Restaurant,Patna,Active
+MER001045,INS000004,Savant Ltd Store,Healthcare,Jaipur,Active
+MER001046,INS000005,Sem-Kakar Store,Travel,Thane,Active
+MER001047,INS000005,"Bobal, Ram and Ganguly Store",Grocery,Nagpur,Active
+MER001048,INS000004,Mahal-Din Store,Fuel,Bhopal,Active
+MER001049,INS000005,Kanda-Krishnan Store,Grocery,Bhopal,Active
+MER001050,INS000002,Raju-Halder Store,Shopping,Indore,Active
+MER001051,INS000005,Bir-Lall Store,Restaurant,Jaipur,Active
+MER001052,INS000002,Nori-Dara Store,Electronics,Ahmedabad,Active
+MER001053,INS000001,"Chakrabarti, Ratti and Ramakrishnan Store",Grocery,Mumbai,Active
+MER001054,INS000002,"Mistry, Savant and Thakkar Store",Entertainment,Bhopal,Active
+MER001055,INS000005,Sinha LLC Store,Healthcare,Pune,Active
+MER001056,INS000004,Sekhon-Deshpande Store,Grocery,Bhopal,Active
+MER001057,INS000005,"Kanda, Krish and Sarma Store",Shopping,Bengaluru,Active
+MER001058,INS000003,"Kadakia, Peri and Arora Store",Fuel,Chennai,Active
+MER001059,INS000001,Mangal-Kadakia Store,Grocery,Mumbai,Active
+MER001060,INS000005,"Narayan, Morar and Chahal Store",Entertainment,Hyderabad,Inactive
+MER001061,INS000005,Chand and Sons Store,Entertainment,Chandigarh,Active
+MER001062,INS000001,Dugar LLC Store,Electronics,Ahmedabad,Active
+MER001063,INS000004,Sidhu-Morar Store,Electronics,Surat,Active
+MER001064,INS000002,"Pau, De and Choudhry Store",Travel,Bengaluru,Active
+MER001065,INS000001,"Tata, Rout and Pai Store",Shopping,Bhubaneswar,Active
+MER001066,INS000001,Banik Group Store,Travel,Jaipur,Active
+MER001067,INS000005,"Das, Majumdar and Sane Store",Entertainment,Lucknow,Active
+MER001068,INS000003,Vig-Aggarwal Store,Grocery,Kochi,Active
+MER001069,INS000003,"Doshi, Lad and Sengupta Store",Electronics,Surat,Active
+MER001070,INS000002,Saran and Sons Store,Grocery,Kolkata,Active
+MER001071,INS000003,Kalita and Sons Store,Travel,Indore,Active
+MER001072,INS000002,Gaba-Ramanathan Store,Entertainment,Ahmedabad,Active
+MER001073,INS000002,Gara and Sons Store,Entertainment,Thane,Active
+MER001074,INS000002,"Dayal, Bhardwaj and Narayan Store",Travel,Jaipur,Inactive
+MER001075,INS000001,Tiwari-Kannan Store,Travel,Bhubaneswar,Active
+MER001076,INS000005,"Nagy, Narayan and Mital Store",Fuel,Mumbai,Active
+MER001077,INS000004,Kant Inc Store,Grocery,Ahmedabad,Active
+MER001078,INS000003,Chaudhry-Pandya Store,Electronics,Surat,Active
+MER001079,INS000002,Ahuja and Sons Store,Shopping,Bhubaneswar,Active
+MER001080,INS000001,Wagle-Bajaj Store,Shopping,Chandigarh,Active
+MER001081,INS000003,"Bhattacharyya, Mittal and Kapur Store",Electronics,Hyderabad,Active
+MER001082,INS000001,Bahl-Sibal Store,Shopping,Mysuru,Inactive
+MER001083,INS000001,Lall LLC Store,Travel,Ahmedabad,Active
+MER001084,INS000001,"Wason, Om and Chakrabarti Store",Travel,Lucknow,Active
+MER001085,INS000003,Tak Ltd Store,Travel,Ahmedabad,Active
+MER001086,INS000003,Date-Pandit Store,Shopping,Kolkata,Active
+MER001087,INS000001,Gandhi-Verma Store,Shopping,Nagpur,Active
+MER001088,INS000001,Pal Ltd Store,Shopping,Mysuru,Inactive
+MER001089,INS000002,Doshi-Varghese Store,Grocery,Mysuru,Inactive
+MER001090,INS000001,Manne Group Store,Healthcare,Mysuru,Active
+MER001091,INS000004,Mand-Bobal Store,Shopping,Chandigarh,Active
+MER001092,INS000001,Zacharia Group Store,Travel,Jaipur,Active
+MER001093,INS000004,"Srivastava, Chand and Hayer Store",Entertainment,Thane,Active
+MER001094,INS000002,"Barad, Sood and Bose Store",Electronics,Patna,Inactive
+MER001095,INS000002,Kapur-Khosla Store,Entertainment,Bhubaneswar,Active
+MER001096,INS000005,Borde LLC Store,Grocery,Hyderabad,Active
+MER001097,INS000001,"Padmanabhan, Patla and Batra Store",Restaurant,Thane,Active
+MER001098,INS000001,Doshi-Dhingra Store,Shopping,Bengaluru,Active
+MER001099,INS000003,Nayak Group Store,Shopping,Jaipur,Active
+MER001100,INS000004,Sethi PLC Store,Electronics,Bengaluru,Active
+MER001101,INS000003,"Nanda, Doshi and Pal Store",Shopping,Pune,Active
+MER001102,INS000002,Ganesh Group Store,Entertainment,Lucknow,Active
+MER001103,INS000001,"Randhawa, Nagarajan and Kanda Store",Entertainment,Mysuru,Active
+MER001104,INS000003,Dhar PLC Store,Travel,Kolkata,Active
+MER001105,INS000002,"Dube, Char and Suri Store",Restaurant,Nagpur,Active
+MER001106,INS000003,Sane-Mohanty Store,Grocery,Ahmedabad,Active
+MER001107,INS000003,Chandra Inc Store,Restaurant,Pune,Active
+MER001108,INS000004,"Sarkar, Narayan and Mahal Store",Restaurant,Ahmedabad,Active
+MER001109,INS000001,"Mall, Manda and Borde Store",Electronics,Bhubaneswar,Active
+MER001110,INS000005,"Nigam, Sawhney and Mannan Store",Electronics,Mysuru,Active
+MER001111,INS000005,"Seth, Bora and Reddy Store",Fuel,Mysuru,Active
+MER001112,INS000004,"Nagar, Reddy and Chacko Store",Electronics,Bhopal,Active
+MER001113,INS000001,"Sahni, Basu and Ramanathan Store",Shopping,Bhubaneswar,Active
+MER001114,INS000001,Madan-Setty Store,Grocery,Bengaluru,Active
+MER001115,INS000002,"Shukla, Mangat and Wable Store",Shopping,Mysuru,Inactive
+MER001116,INS000001,Mander-Grover Store,Healthcare,Bengaluru,Active
+MER001117,INS000002,"Prakash, Ratti and Panchal Store",Fuel,Mysuru,Active
+MER001118,INS000001,Chad-Sabharwal Store,Restaurant,Bengaluru,Active
+MER001119,INS000002,Kuruvilla and Sons Store,Shopping,Kochi,Active
+MER001120,INS000003,Bal-Comar Store,Shopping,Surat,Active
+MER001121,INS000004,Choudhary-Basak Store,Entertainment,Nagpur,Active
+MER001122,INS000003,Nadkarni-Sinha Store,Electronics,Bhopal,Active
+MER001123,INS000002,Goyal-Patla Store,Healthcare,Ahmedabad,Active
+MER001124,INS000003,Mukhopadhyay Group Store,Restaurant,Bengaluru,Active
+MER001125,INS000001,Guha and Sons Store,Entertainment,Pune,Active
+MER001126,INS000002,"Bandi, Wali and Seshadri Store",Electronics,Bhopal,Active
+MER001127,INS000005,Aggarwal-Sama Store,Entertainment,Pune,Active
+MER001128,INS000005,"Om, Purohit and Kari Store",Electronics,Indore,Active
+MER001129,INS000002,"Tank, Chand and Savant Store",Shopping,Chandigarh,Active
+MER001130,INS000003,Dass-Walia Store,Travel,Mumbai,Active
+MER001131,INS000001,Dubey Group Store,Electronics,Chandigarh,Active
+MER001132,INS000004,Raju Group Store,Fuel,Ahmedabad,Active
+MER001133,INS000001,Dhar PLC Store,Healthcare,Lucknow,Active
+MER001134,INS000002,Chadha and Sons Store,Grocery,Nagpur,Active
+MER001135,INS000004,"Panchal, Sagar and Shetty Store",Restaurant,Surat,Active
+MER001136,INS000001,Kannan-Chandra Store,Fuel,Mysuru,Active
+MER001137,INS000004,Yadav LLC Store,Entertainment,Thane,Active
+MER001138,INS000003,"Mahajan, Bhattacharyya and Sodhi Store",Electronics,Chandigarh,Active
+MER001139,INS000003,Seth and Sons Store,Fuel,Pune,Active
+MER001140,INS000004,"Bhakta, Acharya and Chandran Store",Electronics,Chandigarh,Inactive
+MER001141,INS000003,"Bala, Gopal and Sampath Store",Restaurant,Delhi,Active
+MER001142,INS000003,Dass Ltd Store,Electronics,Chennai,Active
+MER001143,INS000001,Nazareth-Bobal Store,Electronics,Thane,Active
+MER001144,INS000004,Date-Bose Store,Entertainment,Bhubaneswar,Active
+MER001145,INS000001,Ghosh LLC Store,Healthcare,Bhubaneswar,Active
+MER001146,INS000002,Radhakrishnan LLC Store,Fuel,Bengaluru,Active
+MER001147,INS000003,Mitra-Iyengar Store,Restaurant,Bhopal,Active
+MER001148,INS000004,Koshy LLC Store,Travel,Lucknow,Active
+MER001149,INS000002,"Varty, Issac and Gopal Store",Fuel,Thane,Active
+MER001150,INS000005,Kari Group Store,Grocery,Bengaluru,Active
+MER001151,INS000001,Kapadia PLC Store,Restaurant,Bhopal,Active
+MER001152,INS000003,Ben-Rastogi Store,Electronics,Bhopal,Active
+MER001153,INS000003,Mani-Nayak Store,Healthcare,Chennai,Inactive
+MER001154,INS000005,"Johal, Anne and Prakash Store",Electronics,Bhopal,Active
+MER001155,INS000001,Chada Group Store,Entertainment,Kochi,Active
+MER001156,INS000002,"Sawhney, Rajagopal and Munshi Store",Restaurant,Delhi,Active
+MER001157,INS000002,Gupta Inc Store,Entertainment,Kochi,Active
+MER001158,INS000005,Iyer Inc Store,Electronics,Pune,Active
+MER001159,INS000003,Puri-Sankaran Store,Grocery,Thane,Active
+MER001160,INS000002,Khosla Ltd Store,Fuel,Mysuru,Active
+MER001161,INS000005,Mittal LLC Store,Grocery,Ahmedabad,Active
+MER001162,INS000003,"Sharaf, Nagi and Wason Store",Grocery,Surat,Active
+MER001163,INS000004,Venkataraman Ltd Store,Fuel,Nagpur,Active
+MER001164,INS000004,"Palla, Issac and Bala Store",Healthcare,Kochi,Active
+MER001165,INS000005,Balasubramanian-Kakar Store,Shopping,Pune,Active
+MER001166,INS000001,"Bahri, Shroff and Dube Store",Fuel,Hyderabad,Active
+MER001167,INS000003,Dass LLC Store,Shopping,Pune,Active
+MER001168,INS000004,Sama PLC Store,Entertainment,Bengaluru,Active
+MER001169,INS000003,Mahal Inc Store,Electronics,Pune,Active
+MER001170,INS000001,"Bal, Rama and Chhabra Store",Electronics,Bengaluru,Active
+MER001171,INS000002,Jain-Sodhi Store,Shopping,Bhubaneswar,Active
+MER001172,INS000003,Anand-Naik Store,Restaurant,Lucknow,Active
+MER001173,INS000001,"Vaidya, Tella and Dugar Store",Healthcare,Bhubaneswar,Active
+MER001174,INS000002,"Dada, Pillay and Kar Store",Grocery,Hyderabad,Active
+MER001175,INS000002,Sawhney-Doshi Store,Travel,Patna,Active
+MER001176,INS000003,Choudhary-Narayanan Store,Entertainment,Chennai,Active
+MER001177,INS000003,Ray-Sarkar Store,Fuel,Patna,Active
+MER001178,INS000003,Raval-Sura Store,Grocery,Bhopal,Active
+MER001179,INS000003,Gour and Sons Store,Entertainment,Chandigarh,Active
+MER001180,INS000004,Kakar and Sons Store,Healthcare,Delhi,Active
+MER001181,INS000002,"Pandit, Dutt and Apte Store",Healthcare,Ahmedabad,Active
+MER001182,INS000003,"Rout, Majumdar and Kumer Store",Fuel,Delhi,Active
+MER001183,INS000003,Sarma-Rattan Store,Entertainment,Ahmedabad,Active
+MER001184,INS000005,"Parikh, Agarwal and Sankaran Store",Entertainment,Pune,Active
+MER001185,INS000003,"Venkataraman, Oommen and Nayar Store",Travel,Indore,Active
+MER001186,INS000005,"Garg, Sahota and Kunda Store",Entertainment,Bengaluru,Active
+MER001187,INS000004,Dua-Nanda Store,Entertainment,Lucknow,Active
+MER001188,INS000001,Lanka-Dugar Store,Restaurant,Mumbai,Active
+MER001189,INS000005,Nadkarni PLC Store,Healthcare,Bhubaneswar,Active
+MER001190,INS000004,Narayanan PLC Store,Shopping,Patna,Active
+MER001191,INS000005,Kala Inc Store,Shopping,Lucknow,Active
+MER001192,INS000002,"Bhakta, Palla and Srinivas Store",Travel,Surat,Active
+MER001193,INS000002,Dugal-Cherian Store,Healthcare,Patna,Active
+MER001194,INS000005,Contractor PLC Store,Healthcare,Bhubaneswar,Active
+MER001195,INS000002,D’Alia Inc Store,Grocery,Patna,Active
+MER001196,INS000001,"Nazareth, Chawla and Radhakrishnan Store",Healthcare,Indore,Active
+MER001197,INS000001,Ray LLC Store,Travel,Ahmedabad,Active
+MER001198,INS000004,Borde and Sons Store,Travel,Indore,Active
+MER001199,INS000003,Balan-Lall Store,Restaurant,Nagpur,Active
+MER001200,INS000001,"Setty, Bava and Majumdar Store",Electronics,Kolkata,Active
+MER001201,INS000005,Singh and Sons Store,Entertainment,Jaipur,Active
+MER001202,INS000001,"Sen, Singh and Wadhwa Store",Electronics,Surat,Active
+MER001203,INS000002,"Soni, Sane and Vaidya Store",Shopping,Bengaluru,Active
+MER001204,INS000002,Sheth-Garde Store,Grocery,Patna,Active
+MER001205,INS000001,"Deep, Deol and Madan Store",Entertainment,Ahmedabad,Active
+MER001206,INS000005,Rastogi Ltd Store,Travel,Lucknow,Active
+MER001207,INS000004,Roy-Dutta Store,Shopping,Jaipur,Active
+MER001208,INS000001,"Dixit, Kakar and Narayanan Store",Entertainment,Pune,Active
+MER001209,INS000003,Dugar PLC Store,Shopping,Mysuru,Active
+MER001210,INS000001,Pingle Inc Store,Entertainment,Mysuru,Active
+MER001211,INS000003,Golla-Oak Store,Travel,Chandigarh,Active
+MER001212,INS000002,Sandhu-Devan Store,Shopping,Pune,Active
+MER001213,INS000001,Reddy-Bhakta Store,Travel,Nagpur,Active
+MER001214,INS000005,Datta-Vala Store,Shopping,Bengaluru,Active
+MER001215,INS000001,"Chokshi, Sodhi and Kata Store",Electronics,Indore,Active
+MER001216,INS000005,Nori-Singh Store,Restaurant,Lucknow,Active
+MER001217,INS000002,"Roy, Murty and Mital Store",Healthcare,Indore,Active
+MER001218,INS000001,"Raval, Kata and Apte Store",Grocery,Thane,Active
+MER001219,INS000001,Devan PLC Store,Electronics,Thane,Active
+MER001220,INS000004,Hora PLC Store,Shopping,Surat,Active
+MER001221,INS000005,Sahni LLC Store,Healthcare,Mysuru,Active
+MER001222,INS000001,Ratti Ltd Store,Healthcare,Lucknow,Active
+MER001223,INS000002,"Radhakrishnan, Bahl and Chacko Store",Grocery,Nagpur,Active
+MER001224,INS000003,Hegde-Dhar Store,Grocery,Hyderabad,Active
+MER001225,INS000004,"Kapadia, Bhattacharyya and Magar Store",Healthcare,Mysuru,Active
+MER001226,INS000004,Naidu and Sons Store,Shopping,Jaipur,Active
+MER001227,INS000003,Sangha Ltd Store,Restaurant,Patna,Active
+MER001228,INS000005,Loke and Sons Store,Fuel,Jaipur,Active
+MER001229,INS000004,Ahuja and Sons Store,Entertainment,Jaipur,Inactive
+MER001230,INS000001,Dave-Arya Store,Grocery,Delhi,Active
+MER001231,INS000002,"Natarajan, Jha and Nagi Store",Travel,Kochi,Active
+MER001232,INS000004,Sathe and Sons Store,Fuel,Chandigarh,Active
+MER001233,INS000003,Taneja PLC Store,Fuel,Bhopal,Active
+MER001234,INS000002,"Mann, Hari and Ganguly Store",Electronics,Hyderabad,Active
+MER001235,INS000001,"Char, Bains and Mohan Store",Shopping,Bhubaneswar,Active
+MER001236,INS000003,Taneja-Dayal Store,Fuel,Patna,Active
+MER001237,INS000001,"Padmanabhan, Kashyap and Dhingra Store",Electronics,Hyderabad,Active
+MER001238,INS000003,"Kannan, Bhatnagar and Bera Store",Travel,Chandigarh,Active
+MER001239,INS000003,"Parmar, Seshadri and Sastry Store",Electronics,Lucknow,Active
+MER001240,INS000005,Contractor-Tak Store,Electronics,Jaipur,Active
+MER001241,INS000002,Bhargava Group Store,Electronics,Surat,Active
+MER001242,INS000001,Contractor LLC Store,Shopping,Mysuru,Active
+MER001243,INS000001,Sood Group Store,Grocery,Bhubaneswar,Active
+MER001244,INS000002,Prabhu-Varty Store,Healthcare,Pune,Active
+MER001245,INS000002,"Vala, Sundaram and Joshi Store",Healthcare,Ahmedabad,Active
+MER001246,INS000001,Manda-Ghose Store,Travel,Patna,Active
+MER001247,INS000002,Bose-Bhasin Store,Grocery,Delhi,Active
+MER001248,INS000001,"Chaudry, Mital and Bera Store",Healthcare,Indore,Active
+MER001249,INS000003,"Bhat, Balasubramanian and Mane Store",Grocery,Nagpur,Active
+MER001250,INS000005,"Borah, Sankar and Grewal Store",Grocery,Mysuru,Active
+MER001251,INS000003,"Bala, Vasa and Ganguly Store",Electronics,Jaipur,Active
+MER001252,INS000004,"Johal, Mohanty and Deshpande Store",Fuel,Bengaluru,Active
+MER001253,INS000002,"Patla, Sandhu and Brar Store",Fuel,Chennai,Active
+MER001254,INS000004,"Palla, Jaggi and Nagy Store",Electronics,Ahmedabad,Active
+MER001255,INS000002,Issac Inc Store,Healthcare,Lucknow,Active
+MER001256,INS000002,"Issac, Bhandari and Rau Store",Travel,Patna,Active
+MER001257,INS000005,"Oak, Date and Natarajan Store",Fuel,Chandigarh,Active
+MER001258,INS000004,Grover Ltd Store,Shopping,Kolkata,Active
+MER001259,INS000003,Narain LLC Store,Electronics,Pune,Active
+MER001260,INS000002,"Sandal, Kumar and Dutta Store",Travel,Chennai,Active
+MER001261,INS000005,"Kumer, Venkataraman and Oommen Store",Travel,Bhubaneswar,Active
+MER001262,INS000001,Walla-Thaker Store,Restaurant,Thane,Active
+MER001263,INS000005,Rama Group Store,Travel,Indore,Active
+MER001264,INS000004,Mani LLC Store,Electronics,Indore,Active
+MER001265,INS000001,Gola PLC Store,Grocery,Nagpur,Active
+MER001266,INS000004,Tandon-Rastogi Store,Fuel,Patna,Active
+MER001267,INS000004,Prabhakar Ltd Store,Electronics,Chandigarh,Active
+MER001268,INS000001,"Khanna, Mitra and Bhattacharyya Store",Grocery,Mysuru,Active
+MER001269,INS000003,Raman PLC Store,Restaurant,Delhi,Active
+MER001270,INS000001,Krishnan-Goda Store,Travel,Mumbai,Active
+MER001271,INS000001,"Sule, Goswami and Vasa Store",Shopping,Bengaluru,Active
+MER001272,INS000001,"Gopal, Srivastava and Sur Store",Travel,Pune,Active
+MER001273,INS000004,"Deep, Palla and Bajwa Store",Grocery,Hyderabad,Active
+MER001274,INS000001,Hari Inc Store,Healthcare,Bhubaneswar,Active
+MER001275,INS000003,Pillai and Sons Store,Travel,Mumbai,Active
+MER001276,INS000004,"Patla, Grover and Handa Store",Electronics,Bhopal,Active
+MER001277,INS000004,"Krish, Tata and Muni Store",Shopping,Indore,Active
+MER001278,INS000001,Edwin-Bali Store,Grocery,Chennai,Active
+MER001279,INS000005,Chad-Gupta Store,Electronics,Ahmedabad,Inactive
+MER001280,INS000003,Bhagat-Panchal Store,Entertainment,Thane,Active
+MER001281,INS000001,Dixit-Modi Store,Entertainment,Ahmedabad,Active
+MER001282,INS000002,Kurian and Sons Store,Grocery,Kochi,Active
+MER001283,INS000004,"D’Alia, Luthra and Dube Store",Travel,Mumbai,Active
+MER001284,INS000005,Thaman-Mital Store,Travel,Chennai,Active
+MER001285,INS000004,Devi-Rajagopal Store,Restaurant,Indore,Active
+MER001286,INS000004,"Balakrishnan, Wadhwa and Dewan Store",Healthcare,Thane,Active
+MER001287,INS000001,Narain-Shere Store,Grocery,Delhi,Active
+MER001288,INS000003,Luthra-Prabhu Store,Restaurant,Delhi,Active
+MER001289,INS000003,"Raja, Ram and Garg Store",Restaurant,Lucknow,Active
+MER001290,INS000003,Sarraf-Pau Store,Grocery,Mumbai,Active
+MER001291,INS000003,Kota-Aurora Store,Entertainment,Ahmedabad,Active
+MER001292,INS000005,"Singh, Munshi and Pal Store",Restaurant,Jaipur,Active
+MER001293,INS000004,"Minhas, Chakraborty and Natarajan Store",Grocery,Delhi,Inactive
+MER001294,INS000005,"Ramachandran, Goyal and Bumb Store",Entertainment,Jaipur,Active
+MER001295,INS000003,Ganesan Ltd Store,Shopping,Hyderabad,Active
+MER001296,INS000002,Sha PLC Store,Travel,Surat,Active
+MER001297,INS000005,Desai-Nazareth Store,Travel,Bengaluru,Active
+MER001298,INS000005,"Pall, Bora and Prakash Store",Grocery,Lucknow,Active
+MER001299,INS000005,Keer-Sanghvi Store,Electronics,Mumbai,Active
+MER001300,INS000004,Raval Ltd Store,Entertainment,Indore,Active
+MER001301,INS000002,"Maharaj, Golla and Agarwal Store",Electronics,Pune,Active
+MER001302,INS000003,"Raman, Sabharwal and Chopra Store",Travel,Jaipur,Inactive
+MER001303,INS000002,"Edwin, Sarna and Prakash Store",Healthcare,Nagpur,Active
+MER001304,INS000001,Deshpande-Manne Store,Grocery,Pune,Active
+MER001305,INS000005,Seth LLC Store,Restaurant,Thane,Active
+MER001306,INS000003,Nazareth and Sons Store,Restaurant,Chandigarh,Active
+MER001307,INS000002,Pingle PLC Store,Travel,Chennai,Active
+MER001308,INS000001,Parmer-Devan Store,Electronics,Nagpur,Active
+MER001309,INS000005,"Sastry, Karan and Dyal Store",Fuel,Bhopal,Inactive
+MER001310,INS000001,Swamy and Sons Store,Electronics,Bengaluru,Active
+MER001311,INS000005,Bora-Jaggi Store,Restaurant,Delhi,Active
+MER001312,INS000004,"Bhatt, Hora and Bava Store",Shopping,Surat,Active
+MER001313,INS000004,More LLC Store,Grocery,Jaipur,Active
+MER001314,INS000002,Bath Ltd Store,Travel,Thane,Active
+MER001315,INS000004,Bhakta Ltd Store,Travel,Ahmedabad,Active
+MER001316,INS000003,Chopra-Dugar Store,Entertainment,Bhubaneswar,Active
+MER001317,INS000003,Cheema-Mistry Store,Restaurant,Bengaluru,Active
+MER001318,INS000001,Sachdev LLC Store,Shopping,Lucknow,Active
+MER001319,INS000004,"Ramanathan, Subramaniam and Ram Store",Entertainment,Jaipur,Inactive
+MER001320,INS000002,Ganesan-Sankaran Store,Travel,Nagpur,Active
+MER001321,INS000004,"Balakrishnan, Bahl and Comar Store",Travel,Lucknow,Active
+MER001322,INS000005,Pau PLC Store,Grocery,Hyderabad,Active
+MER001323,INS000001,"Dhar, Ahuja and Morar Store",Fuel,Thane,Active
+MER001324,INS000004,Sangha-Manne Store,Restaurant,Hyderabad,Active
+MER001325,INS000001,Sandhu LLC Store,Entertainment,Kolkata,Active
+MER001326,INS000004,"Randhawa, Pandit and Sant Store",Travel,Nagpur,Active
+MER001327,INS000002,"Singhal, Nayar and Bakshi Store",Fuel,Mumbai,Active
+MER001328,INS000005,"Malhotra, Kara and Dhillon Store",Shopping,Bengaluru,Active
+MER001329,INS000004,"Bhatti, Chatterjee and Mani Store",Restaurant,Surat,Active
+MER001330,INS000002,Shankar-Kapoor Store,Shopping,Thane,Active
+MER001331,INS000003,Sane Inc Store,Grocery,Nagpur,Active
+MER001332,INS000002,"Bansal, Lal and Purohit Store",Electronics,Lucknow,Active
+MER001333,INS000004,Sekhon-Sastry Store,Grocery,Mumbai,Active
+MER001334,INS000001,"Chand, Thaman and Thaman Store",Electronics,Ahmedabad,Active
+MER001335,INS000003,Taneja LLC Store,Restaurant,Kolkata,Active
+MER001336,INS000001,"Merchant, Dalal and Jayaraman Store",Restaurant,Mumbai,Active
+MER001337,INS000003,"Lal, Kala and Randhawa Store",Shopping,Delhi,Active
+MER001338,INS000003,Rajagopal Ltd Store,Electronics,Pune,Active
+MER001339,INS000003,Muni Ltd Store,Fuel,Mumbai,Active
+MER001340,INS000004,"Nazareth, Rama and Wable Store",Travel,Bengaluru,Active
+MER001341,INS000002,"Sankar, Kale and Kaul Store",Healthcare,Kolkata,Inactive
+MER001342,INS000001,Lad Inc Store,Fuel,Pune,Active
+MER001343,INS000003,Nagy Ltd Store,Fuel,Chandigarh,Inactive
+MER001344,INS000004,"D’Alia, Naidu and Yadav Store",Grocery,Hyderabad,Active
+MER001345,INS000005,Manne-Seth Store,Grocery,Bhopal,Active
+MER001346,INS000001,"Chawla, Rai and Datta Store",Electronics,Ahmedabad,Active
+MER001347,INS000002,"Johal, Parmar and Suri Store",Restaurant,Mumbai,Active
+MER001348,INS000004,D’Alia PLC Store,Electronics,Chennai,Active
+MER001349,INS000005,Mandal PLC Store,Healthcare,Pune,Active
+MER001350,INS000002,"Merchant, Khurana and Bhalla Store",Shopping,Lucknow,Inactive
+MER001351,INS000002,Mammen Group Store,Entertainment,Surat,Active
+MER001352,INS000001,Sunder Ltd Store,Entertainment,Mysuru,Active
+MER001353,INS000004,Nazareth and Sons Store,Shopping,Pune,Active
+MER001354,INS000001,Om-Bhalla Store,Restaurant,Delhi,Active
+MER001355,INS000004,Deo PLC Store,Healthcare,Kolkata,Active
+MER001356,INS000001,Madan-Radhakrishnan Store,Travel,Bhubaneswar,Active
+MER001357,INS000002,"Ravel, Bajwa and Pillai Store",Entertainment,Hyderabad,Active
+MER001358,INS000002,"Loyal, Saha and Lal Store",Grocery,Thane,Active
+MER001359,INS000003,Kota-Parsa Store,Restaurant,Indore,Active
+MER001360,INS000004,Mannan-Mody Store,Entertainment,Chennai,Active
+MER001361,INS000005,Brar-Chaudhuri Store,Fuel,Delhi,Active
+MER001362,INS000003,Dave-Tiwari Store,Entertainment,Pune,Active
+MER001363,INS000003,"Apte, Narang and Keer Store",Shopping,Lucknow,Active
+MER001364,INS000004,Kalita-Zachariah Store,Shopping,Pune,Active
+MER001365,INS000001,Randhawa PLC Store,Shopping,Bengaluru,Active
+MER001366,INS000002,Randhawa-Sharma Store,Healthcare,Pune,Active
+MER001367,INS000002,Contractor-Ravel Store,Electronics,Kochi,Active
+MER001368,INS000001,"Buch, Dua and Yohannan Store",Fuel,Kochi,Active
+MER001369,INS000004,Sridhar-Choudhury Store,Entertainment,Bhubaneswar,Active
+MER001370,INS000001,Wagle Inc Store,Entertainment,Surat,Active
+MER001371,INS000003,"Lala, Lanka and Dua Store",Healthcare,Kolkata,Active
+MER001372,INS000003,Solanki and Sons Store,Shopping,Kochi,Active
+MER001373,INS000002,Buch Group Store,Grocery,Lucknow,Active
+MER001374,INS000002,Nadig PLC Store,Fuel,Lucknow,Active
+MER001375,INS000003,Mangal-Brahmbhatt Store,Grocery,Mysuru,Active
+MER001376,INS000002,"Mangal, Murty and Narain Store",Healthcare,Thane,Active
+MER001377,INS000002,Char-Wali Store,Travel,Bengaluru,Active
+MER001378,INS000003,"Sodhi, Jaggi and Kapur Store",Fuel,Nagpur,Active
+MER001379,INS000005,Kurian Group Store,Healthcare,Bhopal,Inactive
+MER001380,INS000001,Muni Inc Store,Fuel,Jaipur,Active
+MER001381,INS000003,"Shere, Bajaj and Srinivas Store",Grocery,Ahmedabad,Active
+MER001382,INS000004,Narang-Buch Store,Entertainment,Surat,Active
+MER001383,INS000005,Biswas-Pradhan Store,Shopping,Lucknow,Active
+MER001384,INS000003,"Chana, Kanda and Thaman Store",Fuel,Chennai,Active
+MER001385,INS000002,Barad-Merchant Store,Entertainment,Chennai,Active
+MER001386,INS000004,Wali-Vaidya Store,Electronics,Delhi,Active
+MER001387,INS000005,Ganguly Ltd Store,Grocery,Kochi,Active
+MER001388,INS000005,Chana LLC Store,Entertainment,Chennai,Active
+MER001389,INS000003,"Krishna, Madan and Chandran Store",Healthcare,Lucknow,Active
+MER001390,INS000002,"Chakrabarti, Walla and Batra Store",Shopping,Mumbai,Active
+MER001391,INS000004,Mallick-Iyengar Store,Fuel,Bengaluru,Active
+MER001392,INS000001,Randhawa and Sons Store,Fuel,Delhi,Active
+MER001393,INS000001,Samra-Das Store,Restaurant,Lucknow,Active
+MER001394,INS000001,Ravel PLC Store,Restaurant,Mumbai,Active
+MER001395,INS000003,De Group Store,Electronics,Bhubaneswar,Active
+MER001396,INS000002,Kadakia LLC Store,Fuel,Ahmedabad,Inactive
+MER001397,INS000002,Deshpande-Venkataraman Store,Electronics,Mysuru,Active
+MER001398,INS000005,Bala PLC Store,Fuel,Mysuru,Active
+MER001399,INS000004,Brahmbhatt LLC Store,Healthcare,Bengaluru,Active
+MER001400,INS000002,Rastogi-Kaur Store,Grocery,Indore,Active
+MER001401,INS000001,"Sidhu, Kadakia and Sama Store",Shopping,Mysuru,Active
+MER001402,INS000004,Loyal-Karan Store,Restaurant,Chennai,Active
+MER001403,INS000002,Varma PLC Store,Shopping,Kochi,Active
+MER001404,INS000001,Gade LLC Store,Fuel,Chennai,Active
+MER001405,INS000004,"Swaminathan, Datta and Banerjee Store",Travel,Kolkata,Active
+MER001406,INS000001,"Patla, Pandya and Sarkar Store",Healthcare,Kolkata,Active
+MER001407,INS000003,Barad PLC Store,Electronics,Ahmedabad,Active
+MER001408,INS000001,Chokshi PLC Store,Shopping,Bengaluru,Active
+MER001409,INS000003,Soman-Kala Store,Entertainment,Bhubaneswar,Active
+MER001410,INS000001,Srinivas-Sodhi Store,Healthcare,Nagpur,Active
+MER001411,INS000003,Dhar-Doctor Store,Electronics,Bhopal,Active
+MER001412,INS000003,Behl-Wali Store,Fuel,Chandigarh,Active
+MER001413,INS000002,Goyal-Walla Store,Grocery,Kochi,Active
+MER001414,INS000005,Tandon-Mishra Store,Grocery,Ahmedabad,Active
+MER001415,INS000004,Palan-Bhargava Store,Entertainment,Delhi,Active
+MER001416,INS000001,Nagarajan-Nayar Store,Fuel,Kolkata,Active
+MER001417,INS000004,"Khanna, Zachariah and Golla Store",Entertainment,Pune,Active
+MER001418,INS000001,"De, Ganesan and Dhingra Store",Travel,Chennai,Active
+MER001419,INS000001,Sridhar-Doshi Store,Restaurant,Hyderabad,Active
+MER001420,INS000005,Aggarwal Group Store,Restaurant,Mumbai,Active
+MER001421,INS000004,Hora-Kapur Store,Healthcare,Thane,Active
+MER001422,INS000005,Patla Ltd Store,Grocery,Ahmedabad,Active
+MER001423,INS000003,"Shan, Dara and Setty Store",Travel,Thane,Active
+MER001424,INS000002,"Bail, Patla and Sachdev Store",Shopping,Lucknow,Active
+MER001425,INS000001,Merchant-Barman Store,Entertainment,Indore,Active
+MER001426,INS000001,Dayal-Vyas Store,Healthcare,Kochi,Inactive
+MER001427,INS000003,"Singhal, Bath and Patla Store",Shopping,Kochi,Inactive
+MER001428,INS000003,Subramanian Ltd Store,Electronics,Indore,Inactive
+MER001429,INS000002,Chakraborty PLC Store,Electronics,Kolkata,Active
+MER001430,INS000005,"Pal, Sarna and Sarraf Store",Travel,Mumbai,Active
+MER001431,INS000001,Wali-Chada Store,Electronics,Ahmedabad,Inactive
+MER001432,INS000003,Devi Ltd Store,Restaurant,Bhubaneswar,Active
+MER001433,INS000005,Mutti Group Store,Travel,Mumbai,Active
+MER001434,INS000004,Vyas-Mahal Store,Travel,Thane,Active
+MER001435,INS000002,"Pillai, Mangal and Agate Store",Healthcare,Patna,Active
+MER001436,INS000001,Minhas Ltd Store,Grocery,Chennai,Active
+MER001437,INS000002,"Koshy, Goel and Singh Store",Restaurant,Lucknow,Active
+MER001438,INS000005,"Mani, Chatterjee and Murthy Store",Healthcare,Lucknow,Active
+MER001439,INS000004,"Bhatt, Bhasin and Pall Store",Fuel,Surat,Active
+MER001440,INS000001,Devi Ltd Store,Restaurant,Hyderabad,Active
+MER001441,INS000002,Dey Ltd Store,Fuel,Thane,Active
+MER001442,INS000002,Nayar PLC Store,Restaurant,Hyderabad,Active
+MER001443,INS000003,Parmer Group Store,Restaurant,Lucknow,Active
+MER001444,INS000001,"Sood, Bhatt and Bhatia Store",Restaurant,Mumbai,Active
+MER001445,INS000001,"Rout, Taneja and Bhakta Store",Grocery,Mumbai,Active
+MER001446,INS000002,Sampath-Grover Store,Electronics,Mumbai,Active
+MER001447,INS000002,"Bail, Ganguly and Ghose Store",Healthcare,Lucknow,Active
+MER001448,INS000003,Bahl Inc Store,Electronics,Chennai,Active
+MER001449,INS000005,Batta Group Store,Restaurant,Kochi,Active
+MER001450,INS000002,Mohanty-Shankar Store,Healthcare,Delhi,Active
+MER001451,INS000005,Mander-Munshi Store,Fuel,Mumbai,Active
+MER001452,INS000002,Jhaveri Group Store,Restaurant,Ahmedabad,Active
+MER001453,INS000005,"Hora, Bajaj and Swamy Store",Entertainment,Bengaluru,Active
+MER001454,INS000004,"Hans, Oommen and Trivedi Store",Entertainment,Jaipur,Active
+MER001455,INS000002,Ramakrishnan-Natarajan Store,Electronics,Thane,Active
+MER001456,INS000003,"Lanka, Sridhar and Varkey Store",Shopping,Bhubaneswar,Active
+MER001457,INS000004,"Kohli, Pathak and Kapoor Store",Grocery,Pune,Active
+MER001458,INS000003,"Kumer, Mammen and Varty Store",Electronics,Kolkata,Active
+MER001459,INS000005,Hayer PLC Store,Travel,Kochi,Active
+MER001460,INS000001,Modi PLC Store,Fuel,Surat,Active
+MER001461,INS000002,Mann-Dugal Store,Shopping,Bhubaneswar,Active
+MER001462,INS000002,"Misra, Pandya and Doshi Store",Fuel,Hyderabad,Inactive
+MER001463,INS000002,"Uppal, Loke and Agarwal Store",Entertainment,Bengaluru,Active
+MER001464,INS000001,Tank Ltd Store,Restaurant,Chennai,Active
+MER001465,INS000002,"Rastogi, Pradhan and Mander Store",Restaurant,Hyderabad,Active
+MER001466,INS000001,Mody Ltd Store,Entertainment,Lucknow,Active
+MER001467,INS000001,Sant PLC Store,Healthcare,Chennai,Active
+MER001468,INS000002,Madan Ltd Store,Grocery,Patna,Active
+MER001469,INS000004,"Chawla, Sehgal and Borra Store",Healthcare,Ahmedabad,Active
+MER001470,INS000001,"Keer, Kapur and Tank Store",Entertainment,Chennai,Active
+MER001471,INS000002,Sidhu and Sons Store,Entertainment,Kochi,Active
+MER001472,INS000005,Madan Ltd Store,Fuel,Mysuru,Active
+MER001473,INS000001,Kala Ltd Store,Grocery,Pune,Active
+MER001474,INS000001,Bains LLC Store,Restaurant,Chandigarh,Active
+MER001475,INS000003,Loyal PLC Store,Travel,Patna,Active
+MER001476,INS000002,Ahluwalia and Sons Store,Electronics,Delhi,Active
+MER001477,INS000003,Oza LLC Store,Electronics,Patna,Active
+MER001478,INS000001,"Banik, Raju and Ramanathan Store",Healthcare,Lucknow,Active
+MER001479,INS000002,Rajan and Sons Store,Grocery,Jaipur,Active
+MER001480,INS000001,Thakur PLC Store,Shopping,Ahmedabad,Active
+MER001481,INS000005,"Agarwal, Modi and Chand Store",Restaurant,Bengaluru,Active
+MER001482,INS000001,Khare LLC Store,Entertainment,Bengaluru,Active
+MER001483,INS000003,Zacharia and Sons Store,Travel,Pune,Active
+MER001484,INS000001,Kumer-Merchant Store,Healthcare,Kolkata,Active
+MER001485,INS000004,Ramaswamy-Mahajan Store,Travel,Pune,Active
+MER001486,INS000001,Hayer-Bora Store,Fuel,Kolkata,Inactive
+MER001487,INS000004,Balasubramanian and Sons Store,Fuel,Kolkata,Active
+MER001488,INS000005,Sani Ltd Store,Shopping,Chennai,Active
+MER001489,INS000003,Kohli-Chaudhuri Store,Entertainment,Chandigarh,Active
+MER001490,INS000001,Gandhi-Johal Store,Entertainment,Chennai,Active
+MER001491,INS000005,"De, Chandran and Pathak Store",Fuel,Delhi,Active
+MER001492,INS000002,"Parsa, Sane and Modi Store",Shopping,Pune,Active
+MER001493,INS000001,Bansal-Hegde Store,Restaurant,Bhopal,Active
+MER001494,INS000002,"Murthy, Chacko and Chauhan Store",Restaurant,Bhopal,Active
+MER001495,INS000002,"Madan, Sampath and Seshadri Store",Shopping,Mysuru,Active
+MER001496,INS000001,Ram Group Store,Healthcare,Pune,Active
+MER001497,INS000004,"Kapadia, Behl and Upadhyay Store",Healthcare,Ahmedabad,Inactive
+MER001498,INS000001,Bajaj-Datta Store,Entertainment,Kochi,Active
+MER001499,INS000002,Sachdeva LLC Store,Fuel,Chandigarh,Active
+MER001500,INS000002,"Kapoor, Sha and Mistry Store",Travel,Indore,Active
+MER001501,INS000001,Barman PLC Store,Shopping,Surat,Active
+MER001502,INS000001,Basak PLC Store,Shopping,Indore,Active
+MER001503,INS000005,"Ram, Wable and Sankar Store",Travel,Indore,Active
+MER001504,INS000005,"Behl, Bala and Padmanabhan Store",Grocery,Kochi,Active
+MER001505,INS000004,"Yadav, Kale and Zachariah Store",Grocery,Delhi,Active
+MER001506,INS000001,Setty Inc Store,Entertainment,Ahmedabad,Active
+MER001507,INS000005,Ghosh-Barad Store,Electronics,Bhubaneswar,Active
+MER001508,INS000005,Narasimhan and Sons Store,Entertainment,Nagpur,Active
+MER001509,INS000003,"Thakkar, Issac and Vora Store",Shopping,Mysuru,Active
+MER001510,INS000005,Goswami Ltd Store,Travel,Hyderabad,Active
+MER001511,INS000004,Sundaram-Thakkar Store,Travel,Bhopal,Active
+MER001512,INS000004,Chada-Bahl Store,Restaurant,Delhi,Active
+MER001513,INS000002,"Kakar, Sagar and Chadha Store",Fuel,Jaipur,Active
+MER001514,INS000003,Zacharia-Butala Store,Entertainment,Indore,Active
+MER001515,INS000002,Ravel LLC Store,Restaurant,Bhopal,Active
+MER001516,INS000001,Sunder-Kashyap Store,Fuel,Thane,Active
+MER001517,INS000003,"Thakkar, Desai and Radhakrishnan Store",Restaurant,Bhubaneswar,Active
+MER001518,INS000005,Desai Inc Store,Travel,Kolkata,Active
+MER001519,INS000003,Batta and Sons Store,Fuel,Delhi,Active
+MER001520,INS000003,Bhasin PLC Store,Shopping,Kochi,Active
+MER001521,INS000001,Prasad-Dani Store,Travel,Thane,Active
+MER001522,INS000003,"Chandra, Anand and Bhat Store",Fuel,Mysuru,Active
+MER001523,INS000001,"Mittal, Sani and Agarwal Store",Travel,Kolkata,Active
+MER001524,INS000002,Morar-Chatterjee Store,Travel,Pune,Active
+MER001525,INS000004,"Subramanian, Choudhry and Sinha Store",Travel,Pune,Active
+MER001526,INS000004,Chauhan Ltd Store,Travel,Chennai,Active
+MER001527,INS000003,"Dhawan, Handa and More Store",Travel,Bhubaneswar,Active
+MER001528,INS000002,Choudhury-Lal Store,Travel,Chandigarh,Active
+MER001529,INS000005,"Sandhu, Prakash and Sangha Store",Grocery,Pune,Active
+MER001530,INS000003,Nagar-Bahri Store,Travel,Bengaluru,Active
+MER001531,INS000003,Tara PLC Store,Electronics,Ahmedabad,Active
+MER001532,INS000001,Varghese-Sama Store,Healthcare,Jaipur,Active
+MER001533,INS000001,Deo and Sons Store,Entertainment,Lucknow,Active
+MER001534,INS000004,Mani-Shroff Store,Travel,Patna,Active
+MER001535,INS000004,Khalsa Group Store,Electronics,Nagpur,Active
+MER001536,INS000004,Kohli PLC Store,Grocery,Lucknow,Active
+MER001537,INS000005,Hayer Group Store,Fuel,Nagpur,Active
+MER001538,INS000002,"Narayan, Agarwal and Saha Store",Electronics,Thane,Active
+MER001539,INS000005,"Minhas, Muni and Patil Store",Fuel,Bengaluru,Active
+MER001540,INS000003,"Suri, Karan and Kothari Store",Healthcare,Kolkata,Inactive
+MER001541,INS000004,Mutti-Nagi Store,Travel,Patna,Active
+MER001542,INS000003,Bera Ltd Store,Travel,Chennai,Active
+MER001543,INS000004,"Natt, Shroff and Guha Store",Shopping,Chennai,Inactive
+MER001544,INS000005,Singhal and Sons Store,Electronics,Kolkata,Active
+MER001545,INS000003,"Sani, Sathe and Goel Store",Restaurant,Kolkata,Active
+MER001546,INS000002,Buch-Rastogi Store,Grocery,Ahmedabad,Active
+MER001547,INS000002,Lanka PLC Store,Electronics,Thane,Active
+MER001548,INS000001,Bora Group Store,Entertainment,Lucknow,Active
+MER001549,INS000003,Bansal-Bal Store,Grocery,Ahmedabad,Active
+MER001550,INS000002,Madan LLC Store,Restaurant,Mumbai,Active
+MER001551,INS000002,Nagy Inc Store,Grocery,Nagpur,Active
+MER001552,INS000004,"Ratta, Lall and Aurora Store",Travel,Kolkata,Active
+MER001553,INS000004,Edwin-Soman Store,Entertainment,Jaipur,Active
+MER001554,INS000001,Bal-Kalita Store,Shopping,Ahmedabad,Active
+MER001555,INS000001,Sawhney-Dara Store,Grocery,Indore,Active
+MER001556,INS000001,"Sinha, Bajaj and Dhawan Store",Healthcare,Chennai,Active
+MER001557,INS000002,Sahota and Sons Store,Electronics,Mysuru,Inactive
+MER001558,INS000003,Sachar-Sami Store,Entertainment,Patna,Active
+MER001559,INS000001,Hora-Hans Store,Entertainment,Lucknow,Active
+MER001560,INS000003,Bajaj Inc Store,Healthcare,Chennai,Active
+MER001561,INS000002,Cheema Ltd Store,Shopping,Patna,Active
+MER001562,INS000003,Kalita Inc Store,Healthcare,Indore,Active
+MER001563,INS000003,Raval and Sons Store,Entertainment,Ahmedabad,Active
+MER001564,INS000004,Bhatt-Behl Store,Grocery,Thane,Active
+MER001565,INS000005,Tak Ltd Store,Fuel,Lucknow,Active
+MER001566,INS000004,Borde Group Store,Fuel,Chennai,Active
+MER001567,INS000004,"Kumer, Jain and Sachar Store",Fuel,Mysuru,Active
+MER001568,INS000005,"Sandhu, Mangal and Subramaniam Store",Electronics,Pune,Active
+MER001569,INS000005,"Bawa, Viswanathan and Palla Store",Restaurant,Hyderabad,Active
+MER001570,INS000004,"Sharaf, Madan and Palan Store",Electronics,Hyderabad,Active
+MER001571,INS000005,Ben LLC Store,Grocery,Hyderabad,Active
+MER001572,INS000002,"Lall, Lal and Kibe Store",Grocery,Delhi,Active
+MER001573,INS000004,Modi Ltd Store,Travel,Lucknow,Active
+MER001574,INS000004,Issac-Yadav Store,Healthcare,Mumbai,Active
+MER001575,INS000003,"Vig, Oza and Dugar Store",Restaurant,Bengaluru,Active
+MER001576,INS000005,"Munshi, Sami and Kashyap Store",Restaurant,Bengaluru,Active
+MER001577,INS000004,"Sachdeva, Balasubramanian and Nadig Store",Travel,Patna,Active
+MER001578,INS000001,Mahajan-Madan Store,Entertainment,Indore,Active
+MER001579,INS000001,Varty-Parmar Store,Grocery,Mumbai,Active
+MER001580,INS000002,"Dutt, Dhawan and Mukherjee Store",Electronics,Kochi,Active
+MER001581,INS000002,Reddy Inc Store,Electronics,Mumbai,Active
+MER001582,INS000003,Pandya PLC Store,Electronics,Bhubaneswar,Active
+MER001583,INS000003,"Basu, More and Kulkarni Store",Healthcare,Bhopal,Active
+MER001584,INS000004,"Tank, Balay and Tella Store",Fuel,Bhopal,Active
+MER001585,INS000003,Dua-Sarkar Store,Entertainment,Mumbai,Active
+MER001586,INS000002,"Ganesan, Pall and Kade Store",Restaurant,Mysuru,Active
+MER001587,INS000001,Comar-Bir Store,Entertainment,Jaipur,Active
+MER001588,INS000001,Bhakta LLC Store,Healthcare,Delhi,Active
+MER001589,INS000003,Pradhan-Pal Store,Grocery,Lucknow,Active
+MER001590,INS000002,"Barman, Bhargava and Zacharia Store",Healthcare,Patna,Active
+MER001591,INS000002,"Radhakrishnan, Jain and Patla Store",Travel,Kochi,Active
+MER001592,INS000004,Mannan-Sule Store,Entertainment,Chandigarh,Active
+MER001593,INS000001,De LLC Store,Entertainment,Mumbai,Active
+MER001594,INS000001,Kapadia and Sons Store,Travel,Mysuru,Active
+MER001595,INS000002,Bhatt-Chaudhary Store,Healthcare,Delhi,Active
+MER001596,INS000005,Sangha-Varkey Store,Travel,Bhopal,Active
+MER001597,INS000002,"Date, Narula and Sankar Store",Grocery,Hyderabad,Active
+MER001598,INS000002,Puri-Handa Store,Travel,Indore,Active
+MER001599,INS000002,Bedi-Badal Store,Fuel,Kolkata,Active
+MER001600,INS000004,Koshy Inc Store,Travel,Delhi,Active
+MER001601,INS000003,Date PLC Store,Fuel,Kolkata,Active
+MER001602,INS000003,Srinivasan Group Store,Shopping,Mysuru,Active
+MER001603,INS000002,"Sagar, Batta and Balakrishnan Store",Grocery,Indore,Active
+MER001604,INS000004,Saraf-Kata Store,Healthcare,Kochi,Active
+MER001605,INS000001,Balan PLC Store,Shopping,Kolkata,Active
+MER001606,INS000002,Sha PLC Store,Electronics,Pune,Active
+MER001607,INS000004,Barad-Bora Store,Shopping,Indore,Active
+MER001608,INS000002,Deep PLC Store,Grocery,Indore,Inactive
+MER001609,INS000003,Chawla-Dara Store,Travel,Indore,Active
+MER001610,INS000003,Sachar and Sons Store,Restaurant,Chandigarh,Active
+MER001611,INS000003,"Suresh, Sangha and Baria Store",Shopping,Jaipur,Active
+MER001612,INS000001,"Varma, Mand and Ahuja Store",Travel,Mysuru,Active
+MER001613,INS000001,Taneja-Malhotra Store,Electronics,Chennai,Active
+MER001614,INS000005,"Palan, Dhingra and Lal Store",Electronics,Ahmedabad,Active
+MER001615,INS000001,"Kakar, Naidu and Johal Store",Travel,Hyderabad,Active
+MER001616,INS000003,"Batta, Lal and Oak Store",Restaurant,Surat,Active
+MER001617,INS000005,"Vala, Shan and Badami Store",Entertainment,Jaipur,Active
+MER001618,INS000004,Narasimhan-Mishra Store,Restaurant,Patna,Inactive
+MER001619,INS000005,"Chahal, Sankaran and Rai Store",Fuel,Chennai,Active
+MER001620,INS000001,Purohit Inc Store,Healthcare,Kochi,Active
+MER001621,INS000005,Pau PLC Store,Fuel,Thane,Active
+MER001622,INS000002,Bassi Inc Store,Fuel,Thane,Inactive
+MER001623,INS000005,Palla PLC Store,Restaurant,Ahmedabad,Active
+MER001624,INS000001,Handa-Ramanathan Store,Shopping,Pune,Active
+MER001625,INS000003,Sampath-Narain Store,Grocery,Mumbai,Active
+MER001626,INS000002,Bath Ltd Store,Fuel,Lucknow,Active
+MER001627,INS000001,Bajaj Ltd Store,Fuel,Chandigarh,Inactive
+MER001628,INS000003,Mammen Ltd Store,Electronics,Thane,Active
+MER001629,INS000002,Srinivasan Ltd Store,Restaurant,Thane,Active
+MER001630,INS000002,Mand Group Store,Restaurant,Surat,Active
+MER001631,INS000005,"Parsa, Basu and Mitter Store",Fuel,Surat,Active
+MER001632,INS000005,"Tiwari, Ravi and Roy Store",Travel,Mumbai,Active
+MER001633,INS000005,Divan-Badami Store,Restaurant,Patna,Active
+MER001634,INS000004,Merchant-Dhingra Store,Travel,Indore,Active
+MER001635,INS000001,Sekhon Ltd Store,Fuel,Jaipur,Active
+MER001636,INS000001,Kota and Sons Store,Fuel,Kolkata,Active
+MER001637,INS000001,Magar-Gopal Store,Shopping,Indore,Active
+MER001638,INS000004,Dass-Kumar Store,Travel,Mysuru,Active
+MER001639,INS000002,"Dugar, Dalal and Chatterjee Store",Healthcare,Hyderabad,Active
+MER001640,INS000001,"Sinha, Bora and Balasubramanian Store",Electronics,Bhopal,Active
+MER001641,INS000003,Chacko Ltd Store,Travel,Patna,Active
+MER001642,INS000004,"Murthy, Nagy and Sathe Store",Entertainment,Jaipur,Active
+MER001643,INS000004,Sehgal Ltd Store,Healthcare,Mysuru,Active
+MER001644,INS000003,"Bala, Mukhopadhyay and Sarma Store",Entertainment,Kochi,Active
+MER001645,INS000005,"Devan, Wadhwa and Munshi Store",Restaurant,Kolkata,Active
+MER001646,INS000004,"Mahal, Devan and Chana Store",Travel,Delhi,Active
+MER001647,INS000004,Mishra-Gera Store,Electronics,Delhi,Active
+MER001648,INS000004,"Kibe, D’Alia and Bhat Store",Electronics,Mumbai,Active
+MER001649,INS000003,Lall Group Store,Restaurant,Thane,Active
+MER001650,INS000003,Sengupta-Padmanabhan Store,Electronics,Chennai,Active
+MER001651,INS000003,Gill-Balasubramanian Store,Healthcare,Kochi,Active
+MER001652,INS000001,"Devan, Badal and Balay Store",Healthcare,Mumbai,Active
+MER001653,INS000003,Ravi-Sahota Store,Healthcare,Kolkata,Active
+MER001654,INS000001,Goel Group Store,Fuel,Mumbai,Active
+MER001655,INS000001,"Bal, Mittal and Barman Store",Travel,Hyderabad,Active
+MER001656,INS000002,Deep-Tella Store,Healthcare,Kolkata,Active
+MER001657,INS000005,Manne-Chaudhary Store,Shopping,Surat,Inactive
+MER001658,INS000002,Shan LLC Store,Entertainment,Patna,Active
+MER001659,INS000001,"Ganesh, Gola and Baral Store",Electronics,Patna,Active
+MER001660,INS000004,Panchal-Bhatnagar Store,Travel,Delhi,Active
+MER001661,INS000002,"Kade, Dugar and Lanka Store",Grocery,Delhi,Active
+MER001662,INS000004,Sathe-Chaudry Store,Entertainment,Lucknow,Active
+MER001663,INS000002,"Rana, Parikh and Dua Store",Fuel,Delhi,Active
+MER001664,INS000003,Bahri PLC Store,Shopping,Jaipur,Active
+MER001665,INS000005,Yogi-Sharaf Store,Healthcare,Jaipur,Active
+MER001666,INS000002,Mukherjee and Sons Store,Grocery,Indore,Inactive
+MER001667,INS000003,Saha Group Store,Shopping,Bengaluru,Active
+MER001668,INS000003,Lanka PLC Store,Shopping,Ahmedabad,Active
+MER001669,INS000002,Garg Ltd Store,Restaurant,Jaipur,Active
+MER001670,INS000001,"Gill, Chaudhary and Gaba Store",Travel,Indore,Active
+MER001671,INS000005,Sahni Group Store,Entertainment,Hyderabad,Active
+MER001672,INS000003,Sodhi LLC Store,Restaurant,Bhopal,Active
+MER001673,INS000002,Ram Group Store,Shopping,Pune,Active
+MER001674,INS000003,"Comar, Thakur and Chaudry Store",Shopping,Patna,Active
+MER001675,INS000001,Chaudhry Inc Store,Grocery,Bhubaneswar,Active
+MER001676,INS000004,Prakash Group Store,Travel,Chandigarh,Active
+MER001677,INS000005,Chaudhuri and Sons Store,Shopping,Patna,Active
+MER001678,INS000004,"Vasa, Bedi and Chhabra Store",Healthcare,Delhi,Active
+MER001679,INS000005,"Deshpande, Patil and Chacko Store",Entertainment,Chandigarh,Active
+MER001680,INS000001,Swaminathan Ltd Store,Restaurant,Mumbai,Active
+MER001681,INS000002,Agate PLC Store,Healthcare,Ahmedabad,Active
+MER001682,INS000001,Hari-Mutti Store,Entertainment,Delhi,Active
+MER001683,INS000005,Kurian Ltd Store,Fuel,Mumbai,Active
+MER001684,INS000004,Keer Ltd Store,Entertainment,Delhi,Inactive
+MER001685,INS000004,"Banik, Chakraborty and Bal Store",Electronics,Chennai,Active
+MER001686,INS000005,Sandhu PLC Store,Electronics,Thane,Active
+MER001687,INS000002,Salvi-Bawa Store,Travel,Jaipur,Active
+MER001688,INS000004,Patel LLC Store,Restaurant,Chandigarh,Active
+MER001689,INS000002,Saran PLC Store,Restaurant,Hyderabad,Active
+MER001690,INS000001,"Pillay, Devan and Chakrabarti Store",Healthcare,Chandigarh,Active
+MER001691,INS000005,"Thakkar, Kala and Jhaveri Store",Restaurant,Chandigarh,Active
+MER001692,INS000004,Parmer Ltd Store,Grocery,Ahmedabad,Active
+MER001693,INS000004,Bose-Kara Store,Shopping,Delhi,Active
+MER001694,INS000001,Bora-Bahri Store,Shopping,Kochi,Active
+MER001695,INS000001,Mane-Sankar Store,Fuel,Mumbai,Active
+MER001696,INS000004,Prakash and Sons Store,Electronics,Surat,Active
+MER001697,INS000004,"Ahluwalia, Gola and Pall Store",Shopping,Nagpur,Active
+MER001698,INS000002,"Sekhon, Rana and Halder Store",Entertainment,Patna,Inactive
+MER001699,INS000004,"Zacharia, Sandhu and Sampath Store",Grocery,Mumbai,Active
+MER001700,INS000005,Kumar Ltd Store,Grocery,Ahmedabad,Active
+MER001701,INS000005,Dalal-Roy Store,Healthcare,Mumbai,Active
+MER001702,INS000002,Bains LLC Store,Grocery,Bhubaneswar,Active
+MER001703,INS000002,"Swaminathan, Rai and Uppal Store",Electronics,Jaipur,Active
+MER001704,INS000001,Soni-Cherian Store,Healthcare,Lucknow,Active
+MER001705,INS000001,"Murty, Lanka and Saraf Store",Shopping,Patna,Active
+MER001706,INS000005,Minhas-D’Alia Store,Travel,Chandigarh,Active
+MER001707,INS000005,Saini and Sons Store,Electronics,Mysuru,Active
+MER001708,INS000001,Wable-Jain Store,Entertainment,Chennai,Active
+MER001709,INS000002,Upadhyay LLC Store,Entertainment,Nagpur,Active
+MER001710,INS000004,Doctor LLC Store,Shopping,Chandigarh,Active
+MER001711,INS000003,"Khare, Sur and Divan Store",Grocery,Lucknow,Active
+MER001712,INS000003,Aggarwal-Pradhan Store,Travel,Nagpur,Active
+MER001713,INS000005,Kumer-Patla Store,Entertainment,Nagpur,Active
+MER001714,INS000003,"Shenoy, Thaker and Varughese Store",Travel,Nagpur,Active
+MER001715,INS000003,"Pandit, Zachariah and Manne Store",Healthcare,Lucknow,Active
+MER001716,INS000002,Bakshi-Nath Store,Shopping,Mysuru,Active
+MER001717,INS000003,Krishnamurthy-Sarna Store,Shopping,Mumbai,Active
+MER001718,INS000005,"Oommen, Wali and Bhatia Store",Travel,Patna,Active
+MER001719,INS000002,Johal LLC Store,Shopping,Kolkata,Inactive
+MER001720,INS000002,"Bhavsar, Bandi and Wadhwa Store",Healthcare,Kolkata,Active
+MER001721,INS000003,Rout-Dube Store,Restaurant,Chennai,Active
+MER001722,INS000004,"Amble, Naik and Krishna Store",Grocery,Thane,Active
+MER001723,INS000002,Kale-Kumar Store,Healthcare,Surat,Active
+MER001724,INS000001,Rege-Merchant Store,Electronics,Delhi,Active
+MER001725,INS000004,Sawhney PLC Store,Fuel,Kolkata,Active
+MER001726,INS000005,"Trivedi, Nanda and Lad Store",Restaurant,Pune,Active
+MER001727,INS000005,Gola Ltd Store,Fuel,Nagpur,Active
+MER001728,INS000002,Gulati Inc Store,Grocery,Ahmedabad,Active
+MER001729,INS000004,Sem Inc Store,Grocery,Kochi,Active
+MER001730,INS000004,Gokhale-Palan Store,Fuel,Delhi,Active
+MER001731,INS000002,"Kala, Jaggi and Bal Store",Healthcare,Pune,Active
+MER001732,INS000005,Kaul and Sons Store,Healthcare,Indore,Active
+MER001733,INS000001,Patla-Ghosh Store,Grocery,Chandigarh,Active
+MER001734,INS000004,"Nadig, Parekh and Cheema Store",Restaurant,Kolkata,Active
+MER001735,INS000004,"Kar, Sunder and Borah Store",Grocery,Nagpur,Active
+MER001736,INS000005,Shankar-Ray Store,Healthcare,Bhopal,Active
+MER001737,INS000002,Nadig Ltd Store,Fuel,Ahmedabad,Active
+MER001738,INS000003,"Rai, Guha and Sheth Store",Shopping,Jaipur,Active
+MER001739,INS000004,Sastry-Agarwal Store,Fuel,Indore,Active
+MER001740,INS000003,"Tata, Bassi and Singhal Store",Restaurant,Ahmedabad,Active
+MER001741,INS000002,Dave Group Store,Entertainment,Kolkata,Active
+MER001742,INS000002,Kumar Ltd Store,Healthcare,Hyderabad,Active
+MER001743,INS000002,Dewan Inc Store,Travel,Indore,Active
+MER001744,INS000005,Master LLC Store,Shopping,Chandigarh,Active
+MER001745,INS000004,Palan Ltd Store,Restaurant,Bengaluru,Active
+MER001746,INS000004,"Thakur, Parsa and Khatri Store",Healthcare,Mysuru,Active
+MER001747,INS000004,"Sahni, Loyal and Sangha Store",Entertainment,Pune,Active
+MER001748,INS000004,"Prabhu, Ghosh and Hayer Store",Grocery,Mumbai,Inactive
+MER001749,INS000003,"Ghosh, Wali and Krishna Store",Entertainment,Bhopal,Active
+MER001750,INS000001,"Chana, Tandon and Edwin Store",Shopping,Bhopal,Active
+MER001751,INS000004,Koshy-Saxena Store,Entertainment,Patna,Active
+MER001752,INS000001,Gour-Sawhney Store,Shopping,Indore,Active
+MER001753,INS000004,Sinha-Rau Store,Travel,Bhopal,Active
+MER001754,INS000003,"Khurana, Prakash and Ben Store",Grocery,Bengaluru,Active
+MER001755,INS000004,"Shankar, Sem and Pant Store",Travel,Mumbai,Active
+MER001756,INS000005,Sarin-Zacharia Store,Fuel,Thane,Active
+MER001757,INS000005,Menon-Sami Store,Shopping,Mysuru,Active
+MER001758,INS000002,"Ranganathan, De and Lal Store",Electronics,Delhi,Active
+MER001759,INS000005,Sharaf-Raj Store,Restaurant,Bhubaneswar,Active
+MER001760,INS000002,Dash-Lalla Store,Travel,Bhubaneswar,Active
+MER001761,INS000001,Wable-Subramanian Store,Grocery,Lucknow,Active
+MER001762,INS000003,Soman-Patla Store,Grocery,Chennai,Active
+MER001763,INS000004,Badal-Vala Store,Healthcare,Nagpur,Active
+MER001764,INS000005,Kanda-Nigam Store,Electronics,Mysuru,Active
+MER001765,INS000005,Srivastava Group Store,Restaurant,Bhopal,Active
+MER001766,INS000001,Devi PLC Store,Healthcare,Bhopal,Active
+MER001767,INS000001,"Chand, Tata and Buch Store",Healthcare,Mumbai,Active
+MER001768,INS000005,"Pillai, Bedi and Amble Store",Shopping,Jaipur,Active
+MER001769,INS000003,Balakrishnan Ltd Store,Shopping,Pune,Inactive
+MER001770,INS000005,"Kumer, Bedi and Natarajan Store",Travel,Chennai,Active
+MER001771,INS000004,Bhasin Group Store,Electronics,Indore,Active
+MER001772,INS000005,"Prashad, Sathe and Korpal Store",Healthcare,Bhubaneswar,Inactive
+MER001773,INS000003,"Nayak, Bala and Kari Store",Healthcare,Bhubaneswar,Active
+MER001774,INS000002,Sekhon-Venkataraman Store,Travel,Thane,Active
+MER001775,INS000005,"Bansal, Luthra and Sachdeva Store",Travel,Kolkata,Active
+MER001776,INS000002,Khosla and Sons Store,Fuel,Surat,Active
+MER001777,INS000003,"Bansal, Tiwari and Maharaj Store",Grocery,Ahmedabad,Active
+MER001778,INS000001,"Prabhakar, Kata and Misra Store",Healthcare,Ahmedabad,Active
+MER001779,INS000003,Tata Group Store,Healthcare,Nagpur,Active
+MER001780,INS000002,Wadhwa and Sons Store,Fuel,Chennai,Active
+MER001781,INS000003,Dass-Nayak Store,Restaurant,Kolkata,Active
+MER001782,INS000003,"Sachdev, Bath and Mahajan Store",Grocery,Bhopal,Active
+MER001783,INS000001,Parikh-Rege Store,Restaurant,Mumbai,Active
+MER001784,INS000001,"Chana, Subramaniam and Sankar Store",Travel,Hyderabad,Active
+MER001785,INS000005,Devi Inc Store,Entertainment,Ahmedabad,Active
+MER001786,INS000002,Kapur LLC Store,Fuel,Pune,Active
+MER001787,INS000005,Dani-Bir Store,Grocery,Nagpur,Active
+MER001788,INS000003,Ganesan PLC Store,Healthcare,Indore,Active
+MER001789,INS000001,Rau Group Store,Travel,Pune,Active
+MER001790,INS000002,Deo and Sons Store,Fuel,Delhi,Active
+MER001791,INS000005,Narula-Pai Store,Shopping,Kolkata,Active
+MER001792,INS000002,"Bains, Sarma and Kumer Store",Travel,Surat,Active
+MER001793,INS000005,Varma-Natarajan Store,Healthcare,Bhopal,Active
+MER001794,INS000005,Kar PLC Store,Healthcare,Bhopal,Inactive
+MER001795,INS000003,"Raja, Sinha and Kaul Store",Grocery,Indore,Active
+MER001796,INS000003,"Deol, Ram and Hari Store",Grocery,Jaipur,Active
+MER001797,INS000003,"Grewal, Pal and Trivedi Store",Travel,Lucknow,Active
+MER001798,INS000004,Balay-Reddy Store,Restaurant,Mysuru,Active
+MER001799,INS000001,Khalsa LLC Store,Electronics,Ahmedabad,Active
+MER001800,INS000004,Contractor-Chawla Store,Travel,Ahmedabad,Active
+MER001801,INS000004,Sibal Group Store,Shopping,Chandigarh,Active
+MER001802,INS000005,Nanda Group Store,Fuel,Jaipur,Active
+MER001803,INS000003,Amble-Yogi Store,Travel,Chennai,Active
+MER001804,INS000003,Prabhakar LLC Store,Fuel,Delhi,Active
+MER001805,INS000004,"Kuruvilla, Bail and Toor Store",Entertainment,Chandigarh,Active
+MER001806,INS000003,"Kari, Divan and Narayan Store",Travel,Nagpur,Active
+MER001807,INS000003,Mallick-Gaba Store,Entertainment,Delhi,Active
+MER001808,INS000002,"Suresh, Handa and Morar Store",Shopping,Jaipur,Active
+MER001809,INS000004,"Gour, Tata and Chakraborty Store",Healthcare,Bhubaneswar,Active
+MER001810,INS000005,"Ramanathan, Rajagopalan and Sachdev Store",Entertainment,Pune,Active
+MER001811,INS000001,Ratti Inc Store,Grocery,Bhubaneswar,Active
+MER001812,INS000002,Sahota LLC Store,Electronics,Kolkata,Active
+MER001813,INS000002,Pal Group Store,Electronics,Ahmedabad,Active
+MER001814,INS000005,Seshadri-Bakshi Store,Shopping,Hyderabad,Inactive
+MER001815,INS000004,Dutt-Bath Store,Grocery,Nagpur,Active
+MER001816,INS000004,Agate-Ahuja Store,Electronics,Mumbai,Active
+MER001817,INS000002,"Chand, Pai and Ganesan Store",Entertainment,Lucknow,Inactive
+MER001818,INS000004,Dhar Inc Store,Grocery,Kolkata,Active
+MER001819,INS000004,"Venkataraman, Deol and Mistry Store",Fuel,Mumbai,Inactive
+MER001820,INS000002,Gupta-Manda Store,Shopping,Surat,Active
+MER001821,INS000001,Grover Group Store,Entertainment,Kolkata,Active
+MER001822,INS000004,Chakrabarti and Sons Store,Restaurant,Patna,Active
+MER001823,INS000003,Deo Inc Store,Restaurant,Chandigarh,Active
+MER001824,INS000004,"Batra, Tiwari and Mital Store",Electronics,Hyderabad,Active
+MER001825,INS000004,Tripathi LLC Store,Fuel,Thane,Active
+MER001826,INS000005,Roy Group Store,Entertainment,Hyderabad,Active
+MER001827,INS000005,Ravel LLC Store,Electronics,Kochi,Active
+MER001828,INS000001,Rastogi LLC Store,Travel,Indore,Active
+MER001829,INS000002,Borah LLC Store,Entertainment,Lucknow,Active
+MER001830,INS000001,Barad Inc Store,Travel,Chennai,Active
+MER001831,INS000004,Keer Ltd Store,Grocery,Mumbai,Active
+MER001832,INS000002,Dey PLC Store,Fuel,Pune,Active
+MER001833,INS000002,Puri and Sons Store,Electronics,Chennai,Active
+MER001834,INS000004,"Arya, Sachdev and Bhalla Store",Travel,Kolkata,Active
+MER001835,INS000001,Jayaraman LLC Store,Entertainment,Chandigarh,Active
+MER001836,INS000001,Palan-Rama Store,Fuel,Bhopal,Inactive
+MER001837,INS000001,Yohannan-Pathak Store,Healthcare,Surat,Active
+MER001838,INS000003,Bose Group Store,Shopping,Bengaluru,Active
+MER001839,INS000001,Raju Inc Store,Restaurant,Nagpur,Active
+MER001840,INS000002,Bansal-Kala Store,Travel,Indore,Active
+MER001841,INS000003,Chaudhuri and Sons Store,Restaurant,Kochi,Active
+MER001842,INS000001,Loke-Patel Store,Healthcare,Patna,Active
+MER001843,INS000005,Vyas PLC Store,Restaurant,Chennai,Active
+MER001844,INS000002,Wali and Sons Store,Grocery,Chandigarh,Active
+MER001845,INS000002,"Khosla, Mann and Nair Store",Healthcare,Thane,Active
+MER001846,INS000004,"Singhal, Bhatti and Pall Store",Fuel,Bhubaneswar,Active
+MER001847,INS000002,Peri-Dixit Store,Shopping,Patna,Active
+MER001848,INS000002,Dube-Shankar Store,Travel,Indore,Active
+MER001849,INS000005,Mallick and Sons Store,Healthcare,Lucknow,Active
+MER001850,INS000003,Thakkar-Vohra Store,Grocery,Bhubaneswar,Active
+MER001851,INS000004,"Dara, Ravel and Chacko Store",Restaurant,Kolkata,Active
+MER001852,INS000002,Bal Group Store,Grocery,Indore,Active
+MER001853,INS000001,Som-Wable Store,Entertainment,Mumbai,Active
+MER001854,INS000002,Chatterjee-Upadhyay Store,Shopping,Indore,Active
+MER001855,INS000001,Choudhary-Gokhale Store,Electronics,Bhubaneswar,Active
+MER001856,INS000001,"Mohan, Hari and Issac Store",Travel,Delhi,Active
+MER001857,INS000002,Seth-Bahl Store,Entertainment,Hyderabad,Active
+MER001858,INS000003,"Agrawal, Bhat and Mane Store",Entertainment,Pune,Active
+MER001859,INS000001,Pathak Ltd Store,Shopping,Bhubaneswar,Active
+MER001860,INS000005,Lall LLC Store,Healthcare,Patna,Active
+MER001861,INS000005,"Toor, Mannan and Prabhakar Store",Restaurant,Patna,Active
+MER001862,INS000004,Patel-Mahal Store,Fuel,Chennai,Active
+MER001863,INS000003,Kalla-Kale Store,Electronics,Bhopal,Active
+MER001864,INS000004,Dara-Datta Store,Grocery,Mysuru,Active
+MER001865,INS000003,Vala and Sons Store,Grocery,Kolkata,Active
+MER001866,INS000002,Rattan PLC Store,Healthcare,Nagpur,Active
+MER001867,INS000001,Bassi LLC Store,Healthcare,Bhopal,Active
+MER001868,INS000005,Misra Inc Store,Grocery,Mysuru,Active
+MER001869,INS000002,Shere-Barad Store,Fuel,Lucknow,Active
+MER001870,INS000002,Garg Inc Store,Fuel,Mysuru,Active
+MER001871,INS000003,Nath-Murty Store,Shopping,Mumbai,Active
+MER001872,INS000005,Kar PLC Store,Grocery,Bhopal,Active
+MER001873,INS000003,Kala and Sons Store,Fuel,Chandigarh,Active
+MER001874,INS000001,Chandran-Dutta Store,Grocery,Indore,Active
+MER001875,INS000003,Mand Inc Store,Grocery,Delhi,Active
+MER001876,INS000002,Chada PLC Store,Grocery,Thane,Active
+MER001877,INS000004,"Vig, Bhat and Master Store",Electronics,Jaipur,Active
+MER001878,INS000004,Anand Group Store,Shopping,Bengaluru,Active
+MER001879,INS000002,"Buch, Upadhyay and Sabharwal Store",Grocery,Mysuru,Active
+MER001880,INS000002,Jayaraman PLC Store,Fuel,Lucknow,Active
+MER001881,INS000003,Datta PLC Store,Travel,Patna,Active
+MER001882,INS000003,Suri-Master Store,Fuel,Hyderabad,Active
+MER001883,INS000001,"Rajagopalan, Mander and Bhalla Store",Travel,Hyderabad,Active
+MER001884,INS000001,Sankaran and Sons Store,Electronics,Jaipur,Active
+MER001885,INS000002,"Karan, Murty and Gopal Store",Entertainment,Bhubaneswar,Active
+MER001886,INS000005,Sachdev Ltd Store,Fuel,Indore,Active
+MER001887,INS000003,Chada Inc Store,Grocery,Mysuru,Active
+MER001888,INS000001,Patel LLC Store,Grocery,Hyderabad,Active
+MER001889,INS000002,Natt Ltd Store,Travel,Bhubaneswar,Active
+MER001890,INS000002,Pandey-Bansal Store,Shopping,Kochi,Active
+MER001891,INS000004,Khalsa LLC Store,Electronics,Mumbai,Active
+MER001892,INS000002,"Pant, Jaggi and Kant Store",Electronics,Ahmedabad,Active
+MER001893,INS000004,"Minhas, Kari and Sunder Store",Grocery,Bengaluru,Active
+MER001894,INS000003,Bahri Group Store,Fuel,Delhi,Inactive
+MER001895,INS000001,Karnik-Samra Store,Grocery,Ahmedabad,Active
+MER001896,INS000001,"Andra, Varma and Bumb Store",Fuel,Thane,Active
+MER001897,INS000002,Chahal-Badal Store,Fuel,Pune,Active
+MER001898,INS000002,Varkey LLC Store,Entertainment,Chandigarh,Active
+MER001899,INS000005,Sane-Sathe Store,Electronics,Patna,Active
+MER001900,INS000004,Arya Inc Store,Restaurant,Chandigarh,Active
+MER001901,INS000002,Roy-Saran Store,Healthcare,Mysuru,Active
+MER001902,INS000001,"Kakar, Balasubramanian and Srinivasan Store",Electronics,Delhi,Active
+MER001903,INS000003,Kala LLC Store,Entertainment,Nagpur,Active
+MER001904,INS000005,"Bassi, Mallick and Samra Store",Grocery,Kolkata,Active
+MER001905,INS000003,"Malhotra, Vasa and Mukhopadhyay Store",Grocery,Delhi,Active
+MER001906,INS000002,Goda-Bail Store,Travel,Chandigarh,Active
+MER001907,INS000004,Raman-Sood Store,Healthcare,Surat,Active
+MER001908,INS000005,Sagar-Borde Store,Restaurant,Pune,Active
+MER001909,INS000003,"Lad, Minhas and Keer Store",Shopping,Ahmedabad,Active
+MER001910,INS000003,"Ganesh, Chakrabarti and Saini Store",Grocery,Mumbai,Active
+MER001911,INS000002,"Vala, Chaudhari and Bora Store",Entertainment,Jaipur,Active
+MER001912,INS000004,Pandey-Dora Store,Healthcare,Bhopal,Active
+MER001913,INS000003,Gour-Walla Store,Restaurant,Nagpur,Active
+MER001914,INS000005,Dey-Kaul Store,Electronics,Chennai,Inactive
+MER001915,INS000001,Shanker Inc Store,Restaurant,Kolkata,Active
+MER001916,INS000001,"Halder, Jain and Dada Store",Entertainment,Indore,Active
+MER001917,INS000004,"Manda, Shan and Devan Store",Healthcare,Pune,Inactive
+MER001918,INS000002,Agrawal-Dyal Store,Travel,Kolkata,Active
+MER001919,INS000003,"Loyal, Mody and Chatterjee Store",Shopping,Chandigarh,Active
+MER001920,INS000004,Kadakia Inc Store,Restaurant,Bhopal,Active
+MER001921,INS000001,Vala-Devi Store,Grocery,Hyderabad,Active
+MER001922,INS000003,Dixit Inc Store,Entertainment,Chandigarh,Active
+MER001923,INS000004,Buch-Golla Store,Shopping,Nagpur,Active
+MER001924,INS000005,"Master, More and Minhas Store",Electronics,Indore,Active
+MER001925,INS000004,Kothari-Deol Store,Electronics,Jaipur,Active
+MER001926,INS000003,"Tata, Ahluwalia and Bali Store",Travel,Delhi,Active
+MER001927,INS000002,"Bail, Deep and Bhandari Store",Fuel,Mysuru,Active
+MER001928,INS000001,Kara PLC Store,Fuel,Chennai,Active
+MER001929,INS000003,Sahni Inc Store,Grocery,Bhubaneswar,Active
+MER001930,INS000004,Bhakta PLC Store,Entertainment,Bhubaneswar,Active
+MER001931,INS000003,Walla PLC Store,Restaurant,Indore,Active
+MER001932,INS000004,Bahl-Mukhopadhyay Store,Entertainment,Bhubaneswar,Inactive
+MER001933,INS000001,Verma-Kapadia Store,Shopping,Hyderabad,Active
+MER001934,INS000002,Dhaliwal-Bhakta Store,Entertainment,Bhubaneswar,Active
+MER001935,INS000002,Saraf-Sha Store,Shopping,Indore,Active
+MER001936,INS000004,Nagarajan-Jayaraman Store,Healthcare,Nagpur,Active
+MER001937,INS000002,"Kalita, Parmer and Kamdar Store",Electronics,Mumbai,Active
+MER001938,INS000003,Vasa Group Store,Restaurant,Mumbai,Active
+MER001939,INS000001,Verma-Sura Store,Entertainment,Hyderabad,Active
+MER001940,INS000002,Sandal-Chahal Store,Shopping,Mumbai,Active
+MER001941,INS000002,Chahal Ltd Store,Shopping,Bhopal,Active
+MER001942,INS000003,"Chacko, Purohit and Nazareth Store",Grocery,Pune,Active
+MER001943,INS000004,Bandi and Sons Store,Grocery,Kolkata,Active
+MER001944,INS000002,"Radhakrishnan, Hegde and Kulkarni Store",Fuel,Kolkata,Active
+MER001945,INS000005,"Sampath, Mammen and Amble Store",Electronics,Pune,Active
+MER001946,INS000004,Murty Group Store,Grocery,Lucknow,Active
+MER001947,INS000005,"Ravel, Mukherjee and Chad Store",Healthcare,Ahmedabad,Active
+MER001948,INS000002,"Jaggi, Srinivas and Srinivasan Store",Grocery,Bengaluru,Active
+MER001949,INS000001,Vohra Group Store,Fuel,Thane,Active
+MER001950,INS000004,Nadkarni LLC Store,Restaurant,Nagpur,Active
+MER001951,INS000005,"Din, Grover and Tiwari Store",Entertainment,Kochi,Active
+MER001952,INS000004,Handa Ltd Store,Grocery,Mumbai,Active
+MER001953,INS000002,Sastry-Murty Store,Fuel,Mumbai,Active
+MER001954,INS000003,Mall Group Store,Entertainment,Hyderabad,Active
+MER001955,INS000005,Chandran-Dube Store,Restaurant,Patna,Active
+MER001956,INS000005,Chad Group Store,Shopping,Mumbai,Active
+MER001957,INS000001,Bhasin Inc Store,Grocery,Chennai,Active
+MER001958,INS000005,Mukhopadhyay Ltd Store,Electronics,Pune,Active
+MER001959,INS000005,"Sethi, Bera and Parmer Store",Restaurant,Lucknow,Active
+MER001960,INS000005,Kamdar PLC Store,Healthcare,Mumbai,Active
+MER001961,INS000002,Parmar and Sons Store,Restaurant,Hyderabad,Active
+MER001962,INS000004,Ganesh Group Store,Healthcare,Thane,Active
+MER001963,INS000001,Aggarwal-Parikh Store,Grocery,Kochi,Active
+MER001964,INS000002,Jhaveri-Dave Store,Grocery,Surat,Active
+MER001965,INS000005,"Viswanathan, Ben and Bahri Store",Grocery,Chandigarh,Active
+MER001966,INS000003,Guha Ltd Store,Entertainment,Jaipur,Active
+MER001967,INS000005,"Nigam, Oak and Kulkarni Store",Restaurant,Chennai,Active
+MER001968,INS000004,"Cheema, Sarraf and Dass Store",Shopping,Chennai,Active
+MER001969,INS000003,Deol PLC Store,Shopping,Delhi,Active
+MER001970,INS000002,Om-Mammen Store,Grocery,Surat,Active
+MER001971,INS000001,Verma-Sundaram Store,Grocery,Bhubaneswar,Active
+MER001972,INS000003,Murty Inc Store,Fuel,Jaipur,Active
+MER001973,INS000002,Chahal-Guha Store,Entertainment,Mumbai,Active
+MER001974,INS000001,Samra Group Store,Shopping,Chandigarh,Active
+MER001975,INS000005,Butala PLC Store,Electronics,Chennai,Active
+MER001976,INS000005,"Gaba, Tiwari and Natarajan Store",Healthcare,Bhopal,Active
+MER001977,INS000003,Dara-Lall Store,Electronics,Chennai,Active
+MER001978,INS000003,Bhagat-Palla Store,Entertainment,Mysuru,Active
+MER001979,INS000002,"Ratta, Mann and Sagar Store",Travel,Surat,Inactive
+MER001980,INS000002,"Varughese, Rastogi and Sur Store",Restaurant,Pune,Active
+MER001981,INS000004,"Shanker, Ganguly and Karpe Store",Electronics,Indore,Active
+MER001982,INS000003,"Shanker, Agarwal and Sarna Store",Fuel,Kolkata,Active
+MER001983,INS000004,Mahajan-Singh Store,Healthcare,Jaipur,Active
+MER001984,INS000002,Bhat PLC Store,Travel,Jaipur,Active
+MER001985,INS000004,"Banik, Raj and Balasubramanian Store",Entertainment,Indore,Active
+MER001986,INS000005,Dara-Tata Store,Entertainment,Surat,Active
+MER001987,INS000002,Ganguly-Bala Store,Restaurant,Indore,Active
+MER001988,INS000004,Kamdar and Sons Store,Electronics,Jaipur,Active
+MER001989,INS000003,Maharaj-Arya Store,Healthcare,Nagpur,Active
+MER001990,INS000003,Dara PLC Store,Healthcare,Mumbai,Active
+MER001991,INS000001,"Chopra, Kumer and Munshi Store",Electronics,Chennai,Active
+MER001992,INS000004,Kala and Sons Store,Electronics,Jaipur,Active
+MER001993,INS000004,"Sarin, Patil and Oak Store",Shopping,Patna,Active
+MER001994,INS000005,"Chatterjee, Johal and Warrior Store",Restaurant,Jaipur,Active
+MER001995,INS000003,"Mallick, Minhas and Butala Store",Entertainment,Lucknow,Active
+MER001996,INS000005,Ahluwalia-Thaker Store,Grocery,Kolkata,Active
+MER001997,INS000001,"Tata, Suresh and Seshadri Store",Travel,Delhi,Active
+MER001998,INS000003,Walla PLC Store,Restaurant,Kochi,Active
+MER001999,INS000001,Gill Group Store,Grocery,Kolkata,Inactive
+MER002000,INS000002,"Parmer, Bhattacharyya and Memon Store",Restaurant,Kolkata,Active

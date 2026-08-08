@@ -1,0 +1,6 @@
+institution_id,institution_name,institution_type,country,status
+INS000001,Apex Bank,Bank,India,Active
+INS000002,Nova Financial,Bank,India,Active
+INS000003,Prime Credit Union,Credit Union,India,Active
+INS000004,Urban Finance,NBFC,India,Active
+INS000005,Vertex Payments,Fintech,India,Active

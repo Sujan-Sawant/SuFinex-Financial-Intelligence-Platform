@@ -1,0 +1,7 @@
+payment_method_id,payment_method_name,status
+PM000001,UPI,Active
+PM000002,Debit Card,Active
+PM000003,Credit Card,Active
+PM000004,Net Banking,Active
+PM000005,Wallet,Active
+PM000006,Bank Transfer,Active

@@ -1,0 +1,501 @@
+location_id,city,state,country
+LOC000001,Kolkata,West Bengal,India
+LOC000002,Surat,Gujarat,India
+LOC000003,Mumbai,Maharashtra,India
+LOC000004,Mysuru,Karnataka,India
+LOC000005,Pune,Maharashtra,India
+LOC000006,Bhubaneswar,Odisha,India
+LOC000007,Ahmedabad,Gujarat,India
+LOC000008,Kolkata,West Bengal,India
+LOC000009,Hyderabad,Telangana,India
+LOC000010,Chennai,Tamil Nadu,India
+LOC000011,Thane,Maharashtra,India
+LOC000012,Hyderabad,Telangana,India
+LOC000013,Mumbai,Maharashtra,India
+LOC000014,Bengaluru,Karnataka,India
+LOC000015,Delhi,Delhi,India
+LOC000016,Chandigarh,Chandigarh,India
+LOC000017,Chandigarh,Chandigarh,India
+LOC000018,Hyderabad,Telangana,India
+LOC000019,Jaipur,Rajasthan,India
+LOC000020,Kolkata,West Bengal,India
+LOC000021,Pune,Maharashtra,India
+LOC000022,Bengaluru,Karnataka,India
+LOC000023,Chandigarh,Chandigarh,India
+LOC000024,Thane,Maharashtra,India
+LOC000025,Ahmedabad,Gujarat,India
+LOC000026,Chandigarh,Chandigarh,India
+LOC000027,Ahmedabad,Gujarat,India
+LOC000028,Bhubaneswar,Odisha,India
+LOC000029,Pune,Maharashtra,India
+LOC000030,Mumbai,Maharashtra,India
+LOC000031,Bhopal,Madhya Pradesh,India
+LOC000032,Mysuru,Karnataka,India
+LOC000033,Nagpur,Maharashtra,India
+LOC000034,Kochi,Kerala,India
+LOC000035,Lucknow,Uttar Pradesh,India
+LOC000036,Delhi,Delhi,India
+LOC000037,Nagpur,Maharashtra,India
+LOC000038,Bhopal,Madhya Pradesh,India
+LOC000039,Bhubaneswar,Odisha,India
+LOC000040,Jaipur,Rajasthan,India
+LOC000041,Kolkata,West Bengal,India
+LOC000042,Chennai,Tamil Nadu,India
+LOC000043,Patna,Bihar,India
+LOC000044,Chennai,Tamil Nadu,India
+LOC000045,Patna,Bihar,India
+LOC000046,Mumbai,Maharashtra,India
+LOC000047,Delhi,Delhi,India
+LOC000048,Nagpur,Maharashtra,India
+LOC000049,Lucknow,Uttar Pradesh,India
+LOC000050,Indore,Madhya Pradesh,India
+LOC000051,Ahmedabad,Gujarat,India
+LOC000052,Chennai,Tamil Nadu,India
+LOC000053,Patna,Bihar,India
+LOC000054,Bengaluru,Karnataka,India
+LOC000055,Patna,Bihar,India
+LOC000056,Jaipur,Rajasthan,India
+LOC000057,Indore,Madhya Pradesh,India
+LOC000058,Indore,Madhya Pradesh,India
+LOC000059,Pune,Maharashtra,India
+LOC000060,Pune,Maharashtra,India
+LOC000061,Pune,Maharashtra,India
+LOC000062,Lucknow,Uttar Pradesh,India
+LOC000063,Surat,Gujarat,India
+LOC000064,Surat,Gujarat,India
+LOC000065,Mumbai,Maharashtra,India
+LOC000066,Ahmedabad,Gujarat,India
+LOC000067,Patna,Bihar,India
+LOC000068,Thane,Maharashtra,India
+LOC000069,Surat,Gujarat,India
+LOC000070,Indore,Madhya Pradesh,India
+LOC000071,Ahmedabad,Gujarat,India
+LOC000072,Lucknow,Uttar Pradesh,India
+LOC000073,Surat,Gujarat,India
+LOC000074,Indore,Madhya Pradesh,India
+LOC000075,Mumbai,Maharashtra,India
+LOC000076,Surat,Gujarat,India
+LOC000077,Hyderabad,Telangana,India
+LOC000078,Ahmedabad,Gujarat,India
+LOC000079,Bhopal,Madhya Pradesh,India
+LOC000080,Jaipur,Rajasthan,India
+LOC000081,Indore,Madhya Pradesh,India
+LOC000082,Kochi,Kerala,India
+LOC000083,Kochi,Kerala,India
+LOC000084,Jaipur,Rajasthan,India
+LOC000085,Patna,Bihar,India
+LOC000086,Surat,Gujarat,India
+LOC000087,Bengaluru,Karnataka,India
+LOC000088,Kolkata,West Bengal,India
+LOC000089,Bhopal,Madhya Pradesh,India
+LOC000090,Chandigarh,Chandigarh,India
+LOC000091,Thane,Maharashtra,India
+LOC000092,Ahmedabad,Gujarat,India
+LOC000093,Bhopal,Madhya Pradesh,India
+LOC000094,Chennai,Tamil Nadu,India
+LOC000095,Pune,Maharashtra,India
+LOC000096,Bhubaneswar,Odisha,India
+LOC000097,Bhubaneswar,Odisha,India
+LOC000098,Mumbai,Maharashtra,India
+LOC000099,Kochi,Kerala,India
+LOC000100,Kolkata,West Bengal,India
+LOC000101,Lucknow,Uttar Pradesh,India
+LOC000102,Chennai,Tamil Nadu,India
+LOC000103,Kolkata,West Bengal,India
+LOC000104,Chennai,Tamil Nadu,India
+LOC000105,Chennai,Tamil Nadu,India
+LOC000106,Pune,Maharashtra,India
+LOC000107,Delhi,Delhi,India
+LOC000108,Chennai,Tamil Nadu,India
+LOC000109,Surat,Gujarat,India
+LOC000110,Chennai,Tamil Nadu,India
+LOC000111,Jaipur,Rajasthan,India
+LOC000112,Bhubaneswar,Odisha,India
+LOC000113,Nagpur,Maharashtra,India
+LOC000114,Thane,Maharashtra,India
+LOC000115,Pune,Maharashtra,India
+LOC000116,Lucknow,Uttar Pradesh,India
+LOC000117,Mumbai,Maharashtra,India
+LOC000118,Kolkata,West Bengal,India
+LOC000119,Mumbai,Maharashtra,India
+LOC000120,Bhubaneswar,Odisha,India
+LOC000121,Mumbai,Maharashtra,India
+LOC000122,Bhubaneswar,Odisha,India
+LOC000123,Pune,Maharashtra,India
+LOC000124,Mumbai,Maharashtra,India
+LOC000125,Bhubaneswar,Odisha,India
+LOC000126,Kolkata,West Bengal,India
+LOC000127,Surat,Gujarat,India
+LOC000128,Bhubaneswar,Odisha,India
+LOC000129,Hyderabad,Telangana,India
+LOC000130,Chennai,Tamil Nadu,India
+LOC000131,Mumbai,Maharashtra,India
+LOC000132,Pune,Maharashtra,India
+LOC000133,Lucknow,Uttar Pradesh,India
+LOC000134,Mumbai,Maharashtra,India
+LOC000135,Bhubaneswar,Odisha,India
+LOC000136,Kochi,Kerala,India
+LOC000137,Chandigarh,Chandigarh,India
+LOC000138,Indore,Madhya Pradesh,India
+LOC000139,Hyderabad,Telangana,India
+LOC000140,Chennai,Tamil Nadu,India
+LOC000141,Surat,Gujarat,India
+LOC000142,Kochi,Kerala,India
+LOC000143,Pune,Maharashtra,India
+LOC000144,Patna,Bihar,India
+LOC000145,Surat,Gujarat,India
+LOC000146,Delhi,Delhi,India
+LOC000147,Bhubaneswar,Odisha,India
+LOC000148,Hyderabad,Telangana,India
+LOC000149,Patna,Bihar,India
+LOC000150,Kochi,Kerala,India
+LOC000151,Kolkata,West Bengal,India
+LOC000152,Bhopal,Madhya Pradesh,India
+LOC000153,Jaipur,Rajasthan,India
+LOC000154,Pune,Maharashtra,India
+LOC000155,Mysuru,Karnataka,India
+LOC000156,Surat,Gujarat,India
+LOC000157,Kochi,Kerala,India
+LOC000158,Indore,Madhya Pradesh,India
+LOC000159,Patna,Bihar,India
+LOC000160,Lucknow,Uttar Pradesh,India
+LOC000161,Jaipur,Rajasthan,India
+LOC000162,Mumbai,Maharashtra,India
+LOC000163,Chennai,Tamil Nadu,India
+LOC000164,Mysuru,Karnataka,India
+LOC000165,Mysuru,Karnataka,India
+LOC000166,Patna,Bihar,India
+LOC000167,Kolkata,West Bengal,India
+LOC000168,Kolkata,West Bengal,India
+LOC000169,Ahmedabad,Gujarat,India
+LOC000170,Lucknow,Uttar Pradesh,India
+LOC000171,Jaipur,Rajasthan,India
+LOC000172,Kolkata,West Bengal,India
+LOC000173,Chandigarh,Chandigarh,India
+LOC000174,Nagpur,Maharashtra,India
+LOC000175,Kochi,Kerala,India
+LOC000176,Surat,Gujarat,India
+LOC000177,Surat,Gujarat,India
+LOC000178,Bengaluru,Karnataka,India
+LOC000179,Bhubaneswar,Odisha,India
+LOC000180,Mysuru,Karnataka,India
+LOC000181,Delhi,Delhi,India
+LOC000182,Bhubaneswar,Odisha,India
+LOC000183,Indore,Madhya Pradesh,India
+LOC000184,Hyderabad,Telangana,India
+LOC000185,Pune,Maharashtra,India
+LOC000186,Bhubaneswar,Odisha,India
+LOC000187,Mysuru,Karnataka,India
+LOC000188,Nagpur,Maharashtra,India
+LOC000189,Thane,Maharashtra,India
+LOC000190,Delhi,Delhi,India
+LOC000191,Indore,Madhya Pradesh,India
+LOC000192,Hyderabad,Telangana,India
+LOC000193,Thane,Maharashtra,India
+LOC000194,Jaipur,Rajasthan,India
+LOC000195,Mysuru,Karnataka,India
+LOC000196,Surat,Gujarat,India
+LOC000197,Delhi,Delhi,India
+LOC000198,Chandigarh,Chandigarh,India
+LOC000199,Pune,Maharashtra,India
+LOC000200,Ahmedabad,Gujarat,India
+LOC000201,Mumbai,Maharashtra,India
+LOC000202,Surat,Gujarat,India
+LOC000203,Chennai,Tamil Nadu,India
+LOC000204,Chandigarh,Chandigarh,India
+LOC000205,Mumbai,Maharashtra,India
+LOC000206,Chandigarh,Chandigarh,India
+LOC000207,Delhi,Delhi,India
+LOC000208,Pune,Maharashtra,India
+LOC000209,Thane,Maharashtra,India
+LOC000210,Chandigarh,Chandigarh,India
+LOC000211,Bengaluru,Karnataka,India
+LOC000212,Lucknow,Uttar Pradesh,India
+LOC000213,Chandigarh,Chandigarh,India
+LOC000214,Chandigarh,Chandigarh,India
+LOC000215,Jaipur,Rajasthan,India
+LOC000216,Bhopal,Madhya Pradesh,India
+LOC000217,Kolkata,West Bengal,India
+LOC000218,Chennai,Tamil Nadu,India
+LOC000219,Thane,Maharashtra,India
+LOC000220,Thane,Maharashtra,India
+LOC000221,Lucknow,Uttar Pradesh,India
+LOC000222,Hyderabad,Telangana,India
+LOC000223,Bhubaneswar,Odisha,India
+LOC000224,Mumbai,Maharashtra,India
+LOC000225,Chandigarh,Chandigarh,India
+LOC000226,Kolkata,West Bengal,India
+LOC000227,Delhi,Delhi,India
+LOC000228,Thane,Maharashtra,India
+LOC000229,Mysuru,Karnataka,India
+LOC000230,Kolkata,West Bengal,India
+LOC000231,Indore,Madhya Pradesh,India
+LOC000232,Pune,Maharashtra,India
+LOC000233,Hyderabad,Telangana,India
+LOC000234,Kochi,Kerala,India
+LOC000235,Lucknow,Uttar Pradesh,India
+LOC000236,Bhopal,Madhya Pradesh,India
+LOC000237,Indore,Madhya Pradesh,India
+LOC000238,Kolkata,West Bengal,India
+LOC000239,Mumbai,Maharashtra,India
+LOC000240,Nagpur,Maharashtra,India
+LOC000241,Thane,Maharashtra,India
+LOC000242,Patna,Bihar,India
+LOC000243,Bengaluru,Karnataka,India
+LOC000244,Thane,Maharashtra,India
+LOC000245,Chandigarh,Chandigarh,India
+LOC000246,Bhubaneswar,Odisha,India
+LOC000247,Surat,Gujarat,India
+LOC000248,Chennai,Tamil Nadu,India
+LOC000249,Mumbai,Maharashtra,India
+LOC000250,Indore,Madhya Pradesh,India
+LOC000251,Pune,Maharashtra,India
+LOC000252,Kochi,Kerala,India
+LOC000253,Hyderabad,Telangana,India
+LOC000254,Jaipur,Rajasthan,India
+LOC000255,Delhi,Delhi,India
+LOC000256,Chennai,Tamil Nadu,India
+LOC000257,Jaipur,Rajasthan,India
+LOC000258,Jaipur,Rajasthan,India
+LOC000259,Surat,Gujarat,India
+LOC000260,Bhopal,Madhya Pradesh,India
+LOC000261,Kochi,Kerala,India
+LOC000262,Delhi,Delhi,India
+LOC000263,Nagpur,Maharashtra,India
+LOC000264,Bhopal,Madhya Pradesh,India
+LOC000265,Pune,Maharashtra,India
+LOC000266,Bhubaneswar,Odisha,India
+LOC000267,Chandigarh,Chandigarh,India
+LOC000268,Bengaluru,Karnataka,India
+LOC000269,Bhubaneswar,Odisha,India
+LOC000270,Delhi,Delhi,India
+LOC000271,Nagpur,Maharashtra,India
+LOC000272,Patna,Bihar,India
+LOC000273,Kochi,Kerala,India
+LOC000274,Kochi,Kerala,India
+LOC000275,Hyderabad,Telangana,India
+LOC000276,Chennai,Tamil Nadu,India
+LOC000277,Pune,Maharashtra,India
+LOC000278,Jaipur,Rajasthan,India
+LOC000279,Lucknow,Uttar Pradesh,India
+LOC000280,Thane,Maharashtra,India
+LOC000281,Chennai,Tamil Nadu,India
+LOC000282,Mysuru,Karnataka,India
+LOC000283,Thane,Maharashtra,India
+LOC000284,Lucknow,Uttar Pradesh,India
+LOC000285,Kochi,Kerala,India
+LOC000286,Thane,Maharashtra,India
+LOC000287,Mysuru,Karnataka,India
+LOC000288,Kochi,Kerala,India
+LOC000289,Surat,Gujarat,India
+LOC000290,Bhubaneswar,Odisha,India
+LOC000291,Bhopal,Madhya Pradesh,India
+LOC000292,Lucknow,Uttar Pradesh,India
+LOC000293,Thane,Maharashtra,India
+LOC000294,Chandigarh,Chandigarh,India
+LOC000295,Delhi,Delhi,India
+LOC000296,Surat,Gujarat,India
+LOC000297,Mumbai,Maharashtra,India
+LOC000298,Kochi,Kerala,India
+LOC000299,Delhi,Delhi,India
+LOC000300,Lucknow,Uttar Pradesh,India
+LOC000301,Thane,Maharashtra,India
+LOC000302,Thane,Maharashtra,India
+LOC000303,Pune,Maharashtra,India
+LOC000304,Mysuru,Karnataka,India
+LOC000305,Kolkata,West Bengal,India
+LOC000306,Kolkata,West Bengal,India
+LOC000307,Surat,Gujarat,India
+LOC000308,Lucknow,Uttar Pradesh,India
+LOC000309,Mumbai,Maharashtra,India
+LOC000310,Bhubaneswar,Odisha,India
+LOC000311,Bengaluru,Karnataka,India
+LOC000312,Patna,Bihar,India
+LOC000313,Bhubaneswar,Odisha,India
+LOC000314,Mysuru,Karnataka,India
+LOC000315,Hyderabad,Telangana,India
+LOC000316,Thane,Maharashtra,India
+LOC000317,Mumbai,Maharashtra,India
+LOC000318,Jaipur,Rajasthan,India
+LOC000319,Bengaluru,Karnataka,India
+LOC000320,Kochi,Kerala,India
+LOC000321,Mysuru,Karnataka,India
+LOC000322,Thane,Maharashtra,India
+LOC000323,Thane,Maharashtra,India
+LOC000324,Jaipur,Rajasthan,India
+LOC000325,Bhopal,Madhya Pradesh,India
+LOC000326,Delhi,Delhi,India
+LOC000327,Mysuru,Karnataka,India
+LOC000328,Mysuru,Karnataka,India
+LOC000329,Mysuru,Karnataka,India
+LOC000330,Kolkata,West Bengal,India
+LOC000331,Surat,Gujarat,India
+LOC000332,Indore,Madhya Pradesh,India
+LOC000333,Ahmedabad,Gujarat,India
+LOC000334,Delhi,Delhi,India
+LOC000335,Bhopal,Madhya Pradesh,India
+LOC000336,Jaipur,Rajasthan,India
+LOC000337,Surat,Gujarat,India
+LOC000338,Nagpur,Maharashtra,India
+LOC000339,Hyderabad,Telangana,India
+LOC000340,Delhi,Delhi,India
+LOC000341,Patna,Bihar,India
+LOC000342,Patna,Bihar,India
+LOC000343,Delhi,Delhi,India
+LOC000344,Mysuru,Karnataka,India
+LOC000345,Pune,Maharashtra,India
+LOC000346,Surat,Gujarat,India
+LOC000347,Kolkata,West Bengal,India
+LOC000348,Mumbai,Maharashtra,India
+LOC000349,Nagpur,Maharashtra,India
+LOC000350,Bhopal,Madhya Pradesh,India
+LOC000351,Kochi,Kerala,India
+LOC000352,Kolkata,West Bengal,India
+LOC000353,Surat,Gujarat,India
+LOC000354,Patna,Bihar,India
+LOC000355,Patna,Bihar,India
+LOC000356,Delhi,Delhi,India
+LOC000357,Bhubaneswar,Odisha,India
+LOC000358,Bhopal,Madhya Pradesh,India
+LOC000359,Ahmedabad,Gujarat,India
+LOC000360,Chennai,Tamil Nadu,India
+LOC000361,Bhubaneswar,Odisha,India
+LOC000362,Patna,Bihar,India
+LOC000363,Pune,Maharashtra,India
+LOC000364,Kolkata,West Bengal,India
+LOC000365,Surat,Gujarat,India
+LOC000366,Indore,Madhya Pradesh,India
+LOC000367,Nagpur,Maharashtra,India
+LOC000368,Hyderabad,Telangana,India
+LOC000369,Kolkata,West Bengal,India
+LOC000370,Jaipur,Rajasthan,India
+LOC000371,Chennai,Tamil Nadu,India
+LOC000372,Ahmedabad,Gujarat,India
+LOC000373,Indore,Madhya Pradesh,India
+LOC000374,Bengaluru,Karnataka,India
+LOC000375,Ahmedabad,Gujarat,India
+LOC000376,Mumbai,Maharashtra,India
+LOC000377,Mysuru,Karnataka,India
+LOC000378,Nagpur,Maharashtra,India
+LOC000379,Hyderabad,Telangana,India
+LOC000380,Mumbai,Maharashtra,India
+LOC000381,Ahmedabad,Gujarat,India
+LOC000382,Lucknow,Uttar Pradesh,India
+LOC000383,Nagpur,Maharashtra,India
+LOC000384,Chandigarh,Chandigarh,India
+LOC000385,Hyderabad,Telangana,India
+LOC000386,Ahmedabad,Gujarat,India
+LOC000387,Indore,Madhya Pradesh,India
+LOC000388,Hyderabad,Telangana,India
+LOC000389,Mysuru,Karnataka,India
+LOC000390,Kochi,Kerala,India
+LOC000391,Kolkata,West Bengal,India
+LOC000392,Nagpur,Maharashtra,India
+LOC000393,Lucknow,Uttar Pradesh,India
+LOC000394,Ahmedabad,Gujarat,India
+LOC000395,Bhopal,Madhya Pradesh,India
+LOC000396,Jaipur,Rajasthan,India
+LOC000397,Ahmedabad,Gujarat,India
+LOC000398,Hyderabad,Telangana,India
+LOC000399,Mysuru,Karnataka,India
+LOC000400,Hyderabad,Telangana,India
+LOC000401,Chennai,Tamil Nadu,India
+LOC000402,Bhopal,Madhya Pradesh,India
+LOC000403,Mysuru,Karnataka,India
+LOC000404,Pune,Maharashtra,India
+LOC000405,Jaipur,Rajasthan,India
+LOC000406,Hyderabad,Telangana,India
+LOC000407,Mysuru,Karnataka,India
+LOC000408,Surat,Gujarat,India
+LOC000409,Mumbai,Maharashtra,India
+LOC000410,Hyderabad,Telangana,India
+LOC000411,Jaipur,Rajasthan,India
+LOC000412,Nagpur,Maharashtra,India
+LOC000413,Bhubaneswar,Odisha,India
+LOC000414,Bengaluru,Karnataka,India
+LOC000415,Delhi,Delhi,India
+LOC000416,Kochi,Kerala,India
+LOC000417,Jaipur,Rajasthan,India
+LOC000418,Chandigarh,Chandigarh,India
+LOC000419,Pune,Maharashtra,India
+LOC000420,Chennai,Tamil Nadu,India
+LOC000421,Delhi,Delhi,India
+LOC000422,Mumbai,Maharashtra,India
+LOC000423,Surat,Gujarat,India
+LOC000424,Mysuru,Karnataka,India
+LOC000425,Chennai,Tamil Nadu,India
+LOC000426,Nagpur,Maharashtra,India
+LOC000427,Bhubaneswar,Odisha,India
+LOC000428,Lucknow,Uttar Pradesh,India
+LOC000429,Bhubaneswar,Odisha,India
+LOC000430,Delhi,Delhi,India
+LOC000431,Pune,Maharashtra,India
+LOC000432,Mysuru,Karnataka,India
+LOC000433,Hyderabad,Telangana,India
+LOC000434,Kolkata,West Bengal,India
+LOC000435,Hyderabad,Telangana,India
+LOC000436,Mysuru,Karnataka,India
+LOC000437,Ahmedabad,Gujarat,India
+LOC000438,Thane,Maharashtra,India
+LOC000439,Delhi,Delhi,India
+LOC000440,Thane,Maharashtra,India
+LOC000441,Chennai,Tamil Nadu,India
+LOC000442,Surat,Gujarat,India
+LOC000443,Ahmedabad,Gujarat,India
+LOC000444,Delhi,Delhi,India
+LOC000445,Thane,Maharashtra,India
+LOC000446,Surat,Gujarat,India
+LOC000447,Surat,Gujarat,India
+LOC000448,Bengaluru,Karnataka,India
+LOC000449,Bhubaneswar,Odisha,India
+LOC000450,Mumbai,Maharashtra,India
+LOC000451,Patna,Bihar,India
+LOC000452,Bengaluru,Karnataka,India
+LOC000453,Jaipur,Rajasthan,India
+LOC000454,Jaipur,Rajasthan,India
+LOC000455,Jaipur,Rajasthan,India
+LOC000456,Nagpur,Maharashtra,India
+LOC000457,Lucknow,Uttar Pradesh,India
+LOC000458,Jaipur,Rajasthan,India
+LOC000459,Delhi,Delhi,India
+LOC000460,Bengaluru,Karnataka,India
+LOC000461,Hyderabad,Telangana,India
+LOC000462,Bhopal,Madhya Pradesh,India
+LOC000463,Pune,Maharashtra,India
+LOC000464,Kochi,Kerala,India
+LOC000465,Mysuru,Karnataka,India
+LOC000466,Mumbai,Maharashtra,India
+LOC000467,Bhubaneswar,Odisha,India
+LOC000468,Bengaluru,Karnataka,India
+LOC000469,Kochi,Kerala,India
+LOC000470,Delhi,Delhi,India
+LOC000471,Kolkata,West Bengal,India
+LOC000472,Kochi,Kerala,India
+LOC000473,Chennai,Tamil Nadu,India
+LOC000474,Indore,Madhya Pradesh,India
+LOC000475,Thane,Maharashtra,India
+LOC000476,Nagpur,Maharashtra,India
+LOC000477,Kochi,Kerala,India
+LOC000478,Thane,Maharashtra,India
+LOC000479,Kolkata,West Bengal,India
+LOC000480,Delhi,Delhi,India
+LOC000481,Ahmedabad,Gujarat,India
+LOC000482,Lucknow,Uttar Pradesh,India
+LOC000483,Pune,Maharashtra,India
+LOC000484,Kochi,Kerala,India
+LOC000485,Kolkata,West Bengal,India
+LOC000486,Hyderabad,Telangana,India
+LOC000487,Kolkata,West Bengal,India
+LOC000488,Surat,Gujarat,India
+LOC000489,Bhopal,Madhya Pradesh,India
+LOC000490,Surat,Gujarat,India
+LOC000491,Kolkata,West Bengal,India
+LOC000492,Kolkata,West Bengal,India
+LOC000493,Surat,Gujarat,India
+LOC000494,Bengaluru,Karnataka,India
+LOC000495,Chennai,Tamil Nadu,India
+LOC000496,Bengaluru,Karnataka,India
+LOC000497,Lucknow,Uttar Pradesh,India
+LOC000498,Mysuru,Karnataka,India
+LOC000499,Indore,Madhya Pradesh,India
+LOC000500,Kochi,Kerala,India
