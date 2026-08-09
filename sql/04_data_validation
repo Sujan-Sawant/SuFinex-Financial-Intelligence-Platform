@@ -1,0 +1,234 @@
+-- ============================================================
+-- SuFinex Financial Intelligence Platform
+-- Data Validation Queries
+-- File: 04_data_validation.sql
+-- ============================================================
+
+
+-- ============================================================
+-- 1. ROW COUNT VALIDATION
+-- Verify that all major tables contain the expected records.
+-- ============================================================
+
+SELECT 'institutions' AS table_name, COUNT(*) AS row_count
+FROM institutions
+
+UNION ALL
+
+SELECT 'customers', COUNT(*)
+FROM customers
+
+UNION ALL
+
+SELECT 'accounts', COUNT(*)
+FROM accounts
+
+UNION ALL
+
+SELECT 'cards', COUNT(*)
+FROM cards
+
+UNION ALL
+
+SELECT 'credit_profiles', COUNT(*)
+FROM credit_profiles
+
+UNION ALL
+
+SELECT 'loans', COUNT(*)
+FROM loans
+
+UNION ALL
+
+SELECT 'merchants', COUNT(*)
+FROM merchants
+
+UNION ALL
+
+SELECT 'payment_methods', COUNT(*)
+FROM payment_methods
+
+UNION ALL
+
+SELECT 'devices', COUNT(*)
+FROM devices
+
+UNION ALL
+
+SELECT 'locations', COUNT(*)
+FROM locations
+
+UNION ALL
+
+SELECT 'support_tickets', COUNT(*)
+FROM support_tickets
+
+UNION ALL
+
+SELECT 'transactions', COUNT(*)
+FROM transactions
+
+UNION ALL
+
+SELECT 'fraud_predictions', COUNT(*)
+FROM fraud_predictions
+
+UNION ALL
+
+SELECT 'risk_scores', COUNT(*)
+FROM risk_scores
+
+UNION ALL
+
+SELECT 'churn_predictions', COUNT(*)
+FROM churn_predictions
+
+UNION ALL
+
+SELECT 'fraud_investigations', COUNT(*)
+FROM fraud_investigations;
+
+
+-- ============================================================
+-- 2. PRIMARY KEY DUPLICATE CHECK
+-- Check important entity IDs for duplicates.
+-- Expected result: 0 rows for every query.
+-- ============================================================
+
+SELECT customer_id, COUNT(*) AS duplicate_count
+FROM customers
+GROUP BY customer_id
+HAVING COUNT(*) > 1;
+
+SELECT account_id, COUNT(*) AS duplicate_count
+FROM accounts
+GROUP BY account_id
+HAVING COUNT(*) > 1;
+
+SELECT transaction_id, COUNT(*) AS duplicate_count
+FROM transactions
+GROUP BY transaction_id
+HAVING COUNT(*) > 1;
+
+
+-- ============================================================
+-- 3. NULL VALUE VALIDATION
+-- Check mandatory identifiers for missing values.
+-- Expected result: 0 for all counts.
+-- ============================================================
+
+SELECT
+    COUNT(*) FILTER (WHERE customer_id IS NULL) AS null_customer_ids,
+    COUNT(*) FILTER (WHERE institution_id IS NULL) AS null_institution_ids
+FROM customers;
+
+SELECT
+    COUNT(*) FILTER (WHERE transaction_id IS NULL) AS null_transaction_ids,
+    COUNT(*) FILTER (WHERE customer_id IS NULL) AS null_customer_ids,
+    COUNT(*) FILTER (WHERE account_id IS NULL) AS null_account_ids
+FROM transactions;
+
+
+-- ============================================================
+-- 4. TRANSACTION AMOUNT VALIDATION
+-- Check for invalid transaction amounts.
+-- Expected result: 0 rows.
+-- ============================================================
+
+SELECT COUNT(*) AS invalid_transaction_amounts
+FROM transactions
+WHERE transaction_amount <= 0;
+
+
+-- ============================================================
+-- 5. TRANSACTION STATUS DISTRIBUTION
+-- Validate the distribution of transaction statuses.
+-- ============================================================
+
+SELECT
+    transaction_status,
+    COUNT(*) AS transaction_count,
+    ROUND(
+        COUNT(*) * 100.0 /
+        SUM(COUNT(*)) OVER (),
+        2
+    ) AS percentage
+FROM transactions
+GROUP BY transaction_status
+ORDER BY transaction_count DESC;
+
+
+-- ============================================================
+-- 6. FRAUD PREDICTION VALIDATION
+-- Validate fraud vs legitimate predictions.
+-- ============================================================
+
+SELECT
+    fraud_prediction,
+    COUNT(*) AS prediction_count,
+    ROUND(
+        COUNT(*) * 100.0 /
+        SUM(COUNT(*)) OVER (),
+        2
+    ) AS percentage
+FROM fraud_prediction
+GROUP BY fraud_prediction
+ORDER BY prediction_count DESC;
+
+
+-- ============================================================
+-- 7. RISK SCORE VALIDATION
+-- Risk scores should always remain between 0 and 100.
+-- ============================================================
+
+SELECT
+    COUNT(*) AS invalid_risk_scores
+FROM risk_scores
+WHERE risk_score < 0
+   OR risk_score > 100;
+
+
+-- ============================================================
+-- 8. CHURN PREDICTION VALIDATION
+-- Check customer churn prediction distribution.
+-- ============================================================
+
+SELECT
+    churn_prediction,
+    COUNT(*) AS customer_count,
+    ROUND(
+        COUNT(*) * 100.0 /
+        SUM(COUNT(*)) OVER (),
+        2
+    ) AS percentage
+FROM churn_predictions
+GROUP BY churn_prediction
+ORDER BY customer_count DESC;
+
+
+-- ============================================================
+-- 9. TRANSACTION DATE RANGE VALIDATION
+-- Confirm transactions fall within the configured
+-- synthetic data period.
+-- ============================================================
+
+SELECT
+    MIN(transaction_timestamp) AS earliest_transaction,
+    MAX(transaction_timestamp) AS latest_transaction,
+    COUNT(*) AS total_transactions
+FROM transactions;
+
+
+-- ============================================================
+-- 10. TRANSACTION → MERCHANT RELATIONSHIP VALIDATION
+-- Every transaction should reference an existing merchant.
+-- Expected result: 0 rows.
+-- ============================================================
+
+SELECT
+    t.transaction_id,
+    t.merchant_id
+FROM transactions t
+LEFT JOIN merchants m
+    ON t.merchant_id = m.merchant_id
+WHERE m.merchant_id IS NULL;
