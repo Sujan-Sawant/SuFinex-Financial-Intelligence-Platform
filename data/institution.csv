@@ -1,0 +1,6 @@
+institution_id,institution_name,institution_type,registration_number,headquarters_city,headquarters_state,headquarters_country,contact_email,contact_phone,onboarding_date,subscription_plan,status
+INS000001,Apex Bank,Bank,REG00000001,Mumbai,Maharashtra,India,contact1@sufinex.com,+91-9000000001,2022-01-01,Basic,Active
+INS000002,Nova Financial,Bank,REG00000002,Pune,Maharashtra,India,contact2@sufinex.com,+91-9000000002,2022-06-30,Standard,Active
+INS000003,Prime Credit Union,Credit Union,REG00000003,Bengaluru,Karnataka,India,contact3@sufinex.com,+91-9000000003,2022-12-27,Premium,Active
+INS000004,Urban Finance,NBFC,REG00000004,Delhi,Delhi,India,contact4@sufinex.com,+91-9000000004,2023-06-25,Premium,Active
+INS000005,Vertex Payments,Fintech,REG00000005,Hyderabad,Telangana,India,contact5@sufinex.com,+91-9000000005,2023-12-22,Standard,Active
