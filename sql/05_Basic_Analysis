@@ -1,0 +1,129 @@
+-- ============================================================
+-- 1. TOTAL CUSTOMERS
+-- ============================================================
+
+SELECT
+    COUNT(*) AS total_customers
+FROM customers;
+
+
+-- ============================================================
+-- 2. TOTAL ACCOUNTS
+-- ============================================================
+
+SELECT
+    COUNT(*) AS total_accounts
+FROM accounts;
+
+
+-- ============================================================
+-- 3. TOTAL TRANSACTIONS
+-- ============================================================
+
+SELECT
+    COUNT(*) AS total_transactions
+FROM transactions;
+
+
+-- ============================================================
+-- 4. TOTAL TRANSACTION VALUE
+-- ============================================================
+
+SELECT
+    ROUND(SUM(amount), 2) AS total_transaction_value
+FROM transactions;
+
+
+-- ============================================================
+-- 5. AVERAGE TRANSACTION VALUE
+-- ============================================================
+
+SELECT
+    ROUND(AVG(amount), 2) AS average_transaction_value
+FROM transactions;
+
+
+-- ============================================================
+-- 6. TRANSACTION STATUS DISTRIBUTION
+-- ============================================================
+
+SELECT
+    transaction_status,
+    COUNT(*) AS transaction_count,
+    ROUND(
+        COUNT(*) * 100.0
+        / SUM(COUNT(*)) OVER (),
+        2
+    ) AS percentage
+FROM transactions
+GROUP BY transaction_status
+ORDER BY transaction_count DESC;
+
+
+-- ============================================================
+-- 7. TRANSACTION TYPE DISTRIBUTION
+-- ============================================================
+
+SELECT
+    transaction_type,
+    COUNT(*) AS transaction_count,
+    ROUND(
+        SUM(amount),
+        2
+    ) AS total_value
+FROM transactions
+GROUP BY transaction_type
+ORDER BY total_value DESC;
+
+
+-- ============================================================
+-- 8. CUSTOMERS BY INSTITUTION
+-- ============================================================
+
+SELECT
+    institution_name,
+    institution_type,
+    COUNT(c.customer_id) AS customer_count
+FROM institution i  JOIN customer c
+    ON i.institution_id = c.institution_id
+GROUP BY
+    i.institution_id,
+    i.institution_name,
+    i.institution_type
+ORDER BY customer_count DESC;
+
+
+-- ============================================================
+-- 9. CUSTOMER STATUS DISTRIBUTION
+-- ============================================================
+
+SELECT
+    customer_status,
+    COUNT(*) AS customer_count,
+    ROUND(
+        COUNT(*) * 100.0
+        / SUM(COUNT(*)) OVER (),
+        2
+    ) AS percentage
+FROM customer
+GROUP BY customer_status
+ORDER BY customer_count DESC;
+
+
+-- ============================================================
+-- 10. OVERALL DATASET SUMMARY
+-- ============================================================
+
+SELECT
+    (SELECT COUNT(*) FROM institution) AS institutions,
+    (SELECT COUNT(*) FROM customer) AS customers,
+    (SELECT COUNT(*) FROM account) AS accounts,
+    (SELECT COUNT(*) FROM card) AS cards,
+    (SELECT COUNT(*) FROM loan) AS loans,
+    (SELECT COUNT(*) FROM merchant) AS merchants,
+    (SELECT COUNT(*) FROM transactions) AS transactions,
+    (SELECT COUNT(*) FROM fraud_prediction) AS fraud_predictions,
+    (SELECT COUNT(*) FROM risk_score) AS risk_scores,
+    (SELECT COUNT(*) FROM churn_prediction) AS churn_predictions;
+
+-----------------------------------------------------------------
