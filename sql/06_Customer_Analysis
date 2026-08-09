@@ -191,8 +191,9 @@ GROUP BY
     c.customer_id,
     c.first_name,
     c.last_name,
-    i.institution_name
-ORDER BY lifetime_transaction_value DESC)
+    i.institution_name),
+
+ranked_customers as (
 
 SELECT
     institution_name,
@@ -201,8 +202,24 @@ SELECT
 	lifetime_transaction_value,
 	rank() over (partition by institution_name 
 	order by lifetime_transaction_value desc ) as institution_rank
-	from customer_value
-	order by institution_rank asc
+	    FROM customer_value
+)
+
+SELECT
+    institution_name,
+    first_name,
+    last_name,
+    lifetime_transaction_value,
+    institution_rank
+
+FROM ranked_customers
+
+WHERE institution_rank <= 3
+
+ORDER BY
+    institution_name,
+    institution_rank;
+
 
 
 -- ============================================================
