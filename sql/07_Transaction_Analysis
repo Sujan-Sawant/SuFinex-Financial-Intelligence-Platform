@@ -1,0 +1,438 @@
+-- ============================================================
+-- 01. Overall Transaction Summary
+-- ============================================================
+
+SELECT
+    COUNT(*) AS total_transactions,
+
+    COUNT(
+        CASE
+            WHEN transaction_status = 'Completed'
+            THEN 1
+        END
+    ) AS completed_transactions,
+
+    COUNT(
+        CASE
+            WHEN transaction_status = 'Failed'
+            THEN 1
+        END
+    ) AS failed_transactions,
+
+    COUNT(
+        CASE
+            WHEN transaction_status = 'Pending'
+            THEN 1
+        END
+    ) AS pending_transactions,
+
+    COUNT(
+        CASE
+            WHEN transaction_status = 'Reversed'
+            THEN 1
+        END
+    ) AS reversed_transactions,
+
+    ROUND(COALESCE(
+        SUM(
+            CASE
+                WHEN transaction_status = 'Completed'
+                THEN amount
+                ELSE 0
+            END
+        ),
+        0,2)
+    ) AS total_transaction_value,
+
+    ROUND(COALESCE(
+        AVG(
+            CASE
+                WHEN transaction_status = 'Completed'
+                THEN amount
+            END
+        ),
+        0,2)
+    ) AS average_transaction_value
+
+
+-- ============================================================
+-- 02. Transaction Analysis by Transaction Type
+-- ============================================================
+
+SELECT
+    transaction_type,
+
+    COUNT(*) AS transaction_count,
+
+    COUNT(
+        CASE
+            WHEN transaction_status = 'Completed'
+            THEN 1
+        END
+    ) AS completed_transactions,
+
+    COALESCE(
+        SUM(
+            CASE
+                WHEN transaction_status = 'Completed'
+                THEN amount
+                ELSE 0
+            END
+        ),
+        0
+    ) AS total_transaction_value,
+
+    COALESCE(
+        AVG(
+            CASE
+                WHEN transaction_status = 'Completed'
+                THEN amount
+            END
+        ),
+        0
+    ) AS average_transaction_value
+
+FROM transactions
+
+GROUP BY
+    transaction_type
+
+ORDER BY
+    total_transaction_value DESC;
+
+FROM transactions
+
+
+-- ============================================================
+-- 03. Average Transaction Amount by Payment Method
+-- ============================================================
+
+SELECT
+    m.payment_method,
+    COALESCE(
+        AVG(t.amount),
+        0
+    ) AS avg_amount
+
+FROM transactions AS t
+
+INNER JOIN payment_method AS m
+    ON t.payment_method_id = m.payment_method_id
+
+GROUP BY
+    m.payment_method
+
+ORDER BY
+    avg_amount DESC;
+
+
+-- ============================================================
+-- 04. Payment Method Ranking by Transaction Value
+-- ============================================================
+
+SELECT
+    payment_method,
+    total_transaction_value,
+    RANK() OVER (
+        ORDER BY total_transaction_value DESC
+    ) AS payment_method_rank
+
+FROM (
+    SELECT
+        m.payment_method,
+
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS total_transaction_value
+
+    FROM transactions AS t
+
+    INNER JOIN payment_method AS m
+        ON t.payment_method_id = m.payment_method_id
+
+    GROUP BY
+        m.payment_method
+) AS payment_summary
+
+ORDER BY
+    payment_method_rank;
+
+
+-- ============================================================
+-- 05. Monthly Transaction Trend
+-- ============================================================
+
+SELECT
+    EXTRACT MONTH FROM (t.transaction_timestamp) AS month,
+
+    COUNT(*) AS transaction_count,
+
+    SUM(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.amount
+            ELSE 0
+        END
+    ) AS total_transaction_value,
+
+    AVG(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.amount
+        END
+    ) AS avg_transaction_value
+
+FROM transactions AS t
+
+GROUP BY
+    DATE_TRUNC(
+        'month',
+        t.transaction_timestamp
+    )
+
+ORDER BY
+    month;
+
+
+-- ============================================================
+-- 06. Weekly Transaction Trend
+-- ============================================================
+
+SELECT
+    DATE_TRUNC('week', transaction_timestamp) AS week,
+
+    COUNT(*) AS transaction_count,
+
+    SUM(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.amount
+            ELSE 0
+        END
+    ) AS total_transaction_value,
+
+    AVG(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.amount
+        END
+    ) AS avg_transaction_value
+
+FROM transactions AS t
+
+GROUP BY
+    DATE_TRUNC('week', transaction_timestamp)
+
+ORDER BY
+    week;
+
+
+-- ============================================================
+-- 07. Payment Method Performance Analysis
+-- ============================================================
+
+SELECT
+    p.payment_method,
+
+    COUNT(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN 1
+        END
+    ) AS transaction_count,
+
+    SUM(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.amount
+            ELSE 0
+        END
+    ) AS total_transaction_value,
+
+    AVG(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.amount
+        END
+    ) AS average_transaction_value
+
+FROM transactions AS t
+
+INNER JOIN payment_method AS p
+    ON t.payment_method_id = p.payment_method_id
+
+GROUP BY
+    p.payment_method
+
+ORDER BY
+    total_transaction_value DESC;
+
+
+-- ============================================================
+-- 08. Top 10 Customers by Lifetime Transaction Value
+-- ============================================================
+
+SELECT
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    i.institution_name,
+
+    SUM(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.amount
+            ELSE 0
+        END
+    ) AS lifetime_transaction_value
+
+FROM institution AS i
+
+INNER JOIN customer AS c
+    ON i.institution_id = c.institution_id
+
+INNER JOIN transactions AS t
+    ON c.customer_id = t.customer_id
+
+GROUP BY
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    i.institution_name
+
+ORDER BY
+    lifetime_transaction_value DESC
+
+LIMIT 10;
+
+
+-- ============================================================
+-- 09. Top 3 Customers by Lifetime Transaction Value
+--    Within Each Institution
+-- ============================================================
+
+WITH customer_value AS (
+
+    SELECT
+        c.customer_id,
+        c.first_name,
+        c.last_name,
+        i.institution_name,
+
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS lifetime_transaction_value
+
+    FROM customer AS c
+
+    INNER JOIN institution AS i
+        ON c.institution_id = i.institution_id
+
+    INNER JOIN transactions AS t
+        ON c.customer_id = t.customer_id
+
+    GROUP BY
+        c.customer_id,
+        c.first_name,
+        c.last_name,
+        i.institution_name
+),
+
+ranked_customers AS (
+
+    SELECT
+        institution_name,
+        customer_id,
+        first_name,
+        last_name,
+        lifetime_transaction_value,
+
+        RANK() OVER (
+            PARTITION BY institution_name
+            ORDER BY lifetime_transaction_value DESC
+        ) AS institution_rank
+
+    FROM customer_value
+)
+
+SELECT
+    institution_name,
+    customer_id,
+    first_name,
+    last_name,
+    lifetime_transaction_value,
+    institution_rank
+
+FROM ranked_customers
+
+WHERE institution_rank <= 3
+
+ORDER BY
+    institution_name,
+    institution_rank;
+
+
+-- ============================================================
+-- 10. Customer Activity Segmentation
+-- ============================================================
+
+SELECT
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+
+    COUNT(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.transaction_id
+        END
+    ) AS completed_transaction_count,
+
+    CASE
+        WHEN COUNT(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.transaction_id
+            END
+        ) BETWEEN 0 AND 5
+            THEN 'Low Activity'
+
+        WHEN COUNT(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.transaction_id
+            END
+        ) BETWEEN 6 AND 15
+            THEN 'Medium Activity'
+
+        WHEN COUNT(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.transaction_id
+            END
+        ) BETWEEN 16 AND 30
+            THEN 'High Activity'
+
+        ELSE 'Very High Activity'
+    END AS activity_segment
+
+FROM customer AS c
+
+LEFT JOIN transactions AS t
+    ON c.customer_id = t.customer_id
+
+GROUP BY
+    c.customer_id,
+    c.first_name,
+    c.last_name
+
+ORDER BY
+    completed_transaction_count DESC;
