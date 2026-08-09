@@ -1,0 +1,299 @@
+-- ============================================================
+-- 01. Customer Distribution by Institution
+-- ============================================================
+
+SELECT
+    i.institution_name,
+    COUNT(c.customer_id) AS customer_count
+FROM customer c
+JOIN institution i
+    ON c.institution_id = i.institution_id
+GROUP BY i.institution_name
+ORDER BY customer_count DESC;
+
+
+-- ============================================================
+-- 02. Active vs Inactive Customers
+-- ============================================================
+
+SELECT
+    customer_status,
+    COUNT(*) AS customer_count
+FROM customer
+GROUP BY customer_status
+ORDER BY customer_count DESC;
+
+
+-- ============================================================
+-- 03. Customers by City
+-- ============================================================
+
+SELECT
+    city,
+    state,
+    COUNT(*) AS customer_count
+FROM location
+GROUP BY city, state
+ORDER BY customer_count DESC;
+
+
+-- ============================================================
+-- 04. Customer Age Segmentation
+-- ============================================================
+
+SELECT
+    CASE
+        WHEN ((CURRENT_DATE - date_of_birth)/360) <25  
+            THEN '18-24'
+        WHEN ((CURRENT_DATE - date_of_birth)/360) < 35
+            THEN '25-34'
+        WHEN ((CURRENT_DATE - date_of_birth)/360) < 45
+            THEN '35-44'
+        WHEN ((CURRENT_DATE - date_of_birth)/360) < 55
+            THEN '45-54'
+        ELSE '55+'
+    END AS age_group,
+    COUNT(*) AS customer_count
+FROM customer
+GROUP BY age_group
+ORDER BY age_group;
+
+
+-- ============================================================
+-- 05. Customer Transaction Activity
+-- ============================================================
+
+SELECT
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    COUNT(t.transaction_id) AS transaction_count,
+    ROUND(COALESCE(SUM(t.amount), 0),2) AS total_transaction_value,
+    ROUND(COALESCE(AVG(t.amount), 0),2) AS average_transaction_value
+FROM customer c
+JOIN transactions t
+    ON c.customer_id = t.customer_id
+GROUP BY
+    c.customer_id,
+    c.first_name,
+    c.last_name
+ORDER BY total_transaction_value DESC;
+
+
+-- ============================================================
+-- 06. Top 10 Customers by Transaction Value
+-- ============================================================
+
+SELECT
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    COUNT(t.transaction_id) AS transaction_count,
+    ROUND(COALESCE(SUM(t.amount), 0),2) AS total_transaction_value,
+    ROUND(COALESCE(AVG(t.amount), 0),2) AS average_transaction_value
+FROM customer c
+JOIN transactions t
+    ON c.customer_id = t.customer_id
+GROUP BY
+    c.customer_id,
+    c.first_name,
+    c.last_name
+ORDER BY total_transaction_value DESC
+LIMIT 10;
+
+
+-- ============================================================
+-- 07. Customer Transaction Value Segmentation
+-- ============================================================
+
+WITH customer_transaction_summary AS (
+    SELECT
+        customer_id,
+        SUM(amount) AS total_transaction_value
+    FROM transactions
+    GROUP BY customer_id
+)
+
+SELECT
+    CASE
+        WHEN total_transaction_value < 50000
+            THEN 'Low Value'
+        WHEN total_transaction_value < 150000
+            THEN 'Medium Value'
+        ELSE 'High Value'
+    END AS customer_segment,
+    COUNT(*) AS customer_count,
+    ROUND(
+        AVG(total_transaction_value),
+        2
+    ) AS average_customer_value
+FROM customer_transaction_summary
+GROUP BY customer_segment
+ORDER BY average_customer_value DESC;
+
+
+-- ============================================================
+-- 08. Customer Lifetime Value Proxy
+-- ============================================================
+
+SELECT
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    c.customer_since,
+    COALESCE(
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ),
+        0
+    ) AS lifetime_transaction_value
+FROM customer c
+JOIN transactions t
+    ON c.customer_id = t.customer_id
+GROUP BY
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    c.customer_since
+ORDER BY lifetime_transaction_value DESC;
+
+
+-- ============================================================
+-- 09. Customer Ranking Within Institution
+-- ============================================================
+
+with customer_value as 
+(SELECT
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    i.institution_name,
+    COALESCE(
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ),
+        0
+    ) AS lifetime_transaction_value
+FROM transactions t 
+JOIN customer c
+    ON  t.customer_id = c.customer_id 
+JOIN institution i 
+    ON c.institution_id = i.institution_id
+GROUP BY
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    i.institution_name
+ORDER BY lifetime_transaction_value DESC)
+
+SELECT
+    institution_name,
+    first_name,
+    last_name,
+	lifetime_transaction_value,
+	rank() over (partition by institution_name 
+	order by lifetime_transaction_value desc ) as institution_rank
+	from customer_value
+	order by institution_rank asc
+
+
+-- ============================================================
+-- 10. Customer 360 Analytical View
+-- ============================================================
+
+CREATE VIEW customer_360_view AS
+
+SELECT
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    c.gender,
+    c.customer_since,
+    c.customer_status,
+    i.institution_name,
+    i.institution_type,
+
+    COUNT(DISTINCT t.transaction_id) AS transaction_count,
+
+    COALESCE(
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ),
+        0
+    ) AS total_transaction_value,
+
+    ROUND(COALESCE(
+        AVG(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+            END
+        ),
+        0
+    ),2) AS average_transaction_value,
+
+    COUNT(DISTINCT a.account_id) AS account_count,
+
+    COUNT(DISTINCT s.ticket_id) AS support_ticket_count,
+
+    COUNT(DISTINCT l.location_id) AS transaction_location_count,
+
+    STRING_AGG(
+        DISTINCT l.city,
+        ', '
+    ) AS transaction_cities,
+
+    STRING_AGG(
+        DISTINCT l.state,
+        ', '
+    ) AS transaction_states
+
+FROM customer c
+
+JOIN institution i
+    ON c.institution_id = i.institution_id
+
+LEFT JOIN transactions t
+    ON c.customer_id = t.customer_id
+
+LEFT JOIN account a
+    ON c.customer_id = a.customer_id
+
+LEFT JOIN support_ticket s
+    ON c.customer_id = s.customer_id
+
+LEFT JOIN location l
+    ON t.location_id = l.location_id
+
+GROUP BY
+    c.customer_id,
+    c.first_name,
+    c.last_name,
+    c.gender,
+    c.customer_since,
+    c.customer_status,
+    i.institution_name,
+    i.institution_type;
+
+
+-- ============================================================
+-- Test Customer 360 View
+-- ============================================================
+
+SELECT *
+FROM customer_360_view
+LIMIT 20;
+
+
