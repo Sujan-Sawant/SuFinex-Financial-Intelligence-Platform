@@ -1,1 +1,321 @@
+--=============================================================
+--01: Payment Method Transaction Performance
+--=============================================================
 
+SELECT
+    p.payment_method,
+    COUNT(*) AS total_transactions,
+    SUM(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.amount
+        END
+    ) AS total_transaction_value
+FROM transactions AS t
+INNER JOIN payment_method AS p
+    ON t.payment_method_id = p.payment_method_id
+GROUP BY
+    p.payment_method
+ORDER BY
+    total_transaction_value DESC;
+
+--=================================================================
+-- 02: Payment Method Success Rate
+--=================================================================
+
+WITH payment_method_performance AS (
+    SELECT
+        p.payment_method,
+        COUNT(*) AS total_transactions,
+        COUNT(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN 1
+            END
+        ) AS completed_transactions
+    FROM transactions AS t
+    INNER JOIN payment_method AS p
+        ON t.payment_method_id = p.payment_method_id
+    GROUP BY
+        p.payment_method
+)
+
+SELECT
+    payment_method,
+    total_transactions,
+    completed_transactions,
+    ROUND(
+        completed_transactions * 100.0 / total_transactions,
+        2
+    ) AS success_rate
+FROM payment_method_performance
+ORDER BY
+    success_rate DESC;
+
+
+--=================================================================
+-- 03: Payment Method Failure Rate
+--=================================================================
+
+WITH payment_method_performance AS (
+    SELECT
+        p.payment_method,
+        COUNT(*) AS total_transactions,
+        COUNT(
+            CASE
+                WHEN t.transaction_status = 'Failed'
+                THEN 1
+            END
+        ) AS failed_transactions
+    FROM transactions AS t
+    INNER JOIN payment_method AS p
+        ON t.payment_method_id = p.payment_method_id
+    GROUP BY
+        p.payment_method
+)
+
+SELECT
+    payment_method,
+    total_transactions,
+    failed_transactions,
+    ROUND(
+        failed_transactions * 100.0 / total_transactions,
+        2
+    ) AS failure_rate
+FROM payment_method_performance
+ORDER BY
+    failure_rate DESC;
+
+--=================================================================
+-- 04: Payment Method Revenue Analysis
+--=================================================================
+
+SELECT
+    p.payment_method,
+    COUNT(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN 1
+        END
+    ) AS completed_transactions,
+    SUM(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.amount
+        END
+    ) AS total_transaction_value,
+    ROUND(
+        AVG(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+            END
+        ),
+        2
+    ) AS average_transaction_value
+FROM transactions AS t
+INNER JOIN payment_method AS p
+    ON t.payment_method_id = p.payment_method_id
+GROUP BY
+    p.payment_method
+ORDER BY
+    total_transaction_value DESC;
+
+
+--=================================================================
+-- 05: Fraud Analysis by Payment Method
+--=================================================================
+
+SELECT
+    p.payment_method,
+    COUNT(
+        CASE
+            WHEN f.fraud_prediction = 'Fraud' THEN 1
+        END
+    ) AS fraud_transactions,
+    SUM(
+        CASE
+            WHEN f.fraud_prediction = 'Fraud' THEN t.amount
+        END
+    ) AS fraud_transaction_value,
+    ROUND(
+        COUNT(
+            CASE
+                WHEN f.fraud_prediction = 'Fraud' THEN 1
+            END
+        ) * 100.0 / COUNT(*),
+        2
+    ) AS fraud_rate
+FROM transactions AS t
+INNER JOIN payment_method AS p
+    ON t.payment_method_id = p.payment_method_id
+INNER JOIN fraud_prediction AS f
+    ON t.transaction_id = f.transaction_id
+GROUP BY
+    p.payment_method
+ORDER BY
+    fraud_rate DESC;
+
+
+--=================================================================
+-- 06: Top 5 Payment Methods by Transaction Value
+--=================================================================
+
+SELECT
+    p.payment_method,
+    COUNT(
+        CASE
+            WHEN t.transaction_status = 'Completed' THEN 1
+        END
+    ) AS completed_transactions,
+    SUM(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.amount
+        END
+    ) AS total_transaction_value
+FROM transactions AS t
+INNER JOIN payment_method AS p
+    ON t.payment_method_id = p.payment_method_id
+GROUP BY
+    p.payment_method
+ORDER BY
+    total_transaction_value DESC
+LIMIT 5;
+
+
+--=================================================================
+-- 07: Transaction Status Distribution by Payment Method
+--=================================================================
+
+SELECT
+    p.payment_method,
+    COUNT(
+        CASE
+            WHEN t.transaction_status = 'Completed' THEN 1
+        END
+    ) AS completed_transactions,
+    COUNT(
+        CASE
+            WHEN t.transaction_status = 'Failed' THEN 1
+        END
+    ) AS failed_transactions,
+    COUNT(
+        CASE
+            WHEN t.transaction_status = 'Pending' THEN 1
+        END
+    ) AS pending_transactions
+FROM transactions AS t
+INNER JOIN payment_method AS p
+    ON t.payment_method_id = p.payment_method_id
+GROUP BY
+    p.payment_method
+ORDER BY
+    completed_transactions DESC;
+
+
+--=================================================================
+-- 08: Average Fraud Transaction Value by Payment Method
+--=================================================================
+
+SELECT
+    p.payment_method,
+    COUNT(
+        CASE
+            WHEN f.fraud_prediction = 'Fraud' THEN 1
+        END
+    ) AS fraud_transactions,
+    ROUND(
+        AVG(
+            CASE
+                WHEN f.fraud_prediction = 'Fraud'
+                THEN t.amount
+            END
+        ),
+        2
+    ) AS average_fraud_transaction_value
+FROM transactions AS t
+INNER JOIN payment_method AS p
+    ON t.payment_method_id = p.payment_method_id
+INNER JOIN fraud_prediction AS f
+    ON t.transaction_id = f.transaction_id
+GROUP BY
+    p.payment_method
+ORDER BY
+    average_fraud_transaction_value DESC;
+
+
+--=================================================================
+-- 09: Payment Method Fraud Risk Ranking
+--=================================================================
+
+WITH payment_method_risk AS (
+    SELECT
+        p.payment_method,
+        COUNT(*) AS total_transactions,
+        COUNT(
+            CASE
+                WHEN f.fraud_prediction = 'Fraud' THEN 1
+            END
+        ) AS fraud_transactions
+    FROM transactions AS t
+    INNER JOIN payment_method AS p
+        ON t.payment_method_id = p.payment_method_id
+    INNER JOIN fraud_prediction AS f
+        ON t.transaction_id = f.transaction_id
+    GROUP BY
+        p.payment_method
+)
+
+SELECT
+    payment_method,
+    total_transactions,
+    fraud_transactions,
+    ROUND(
+        fraud_transactions * 100.0 / total_transactions,
+        2
+    ) AS fraud_rate,
+    RANK() OVER (
+        ORDER BY
+            fraud_transactions * 100.0 / total_transactions DESC
+    ) AS risk_rank
+FROM payment_method_risk
+ORDER BY
+    risk_rank;
+
+
+--=================================================================
+-- 10: Top 10 Merchants by Transaction Value
+--=================================================================
+
+SELECT
+    m.merchant_name,
+    COUNT(*) AS total_transactions,
+    COUNT(
+        CASE
+            WHEN t.transaction_status = 'Completed' THEN 1
+        END
+    ) AS completed_transactions,
+    SUM(
+        CASE
+            WHEN t.transaction_status = 'Completed'
+            THEN t.amount
+        END
+    ) AS total_transaction_value,
+    ROUND(
+        AVG(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+            END
+        ),
+        2
+    ) AS average_transaction_value
+FROM transactions AS t
+INNER JOIN merchant AS m
+    ON t.merchant_id = m.merchant_id
+GROUP BY
+    m.merchant_name
+ORDER BY
+    total_transaction_value DESC
+LIMIT 10;
