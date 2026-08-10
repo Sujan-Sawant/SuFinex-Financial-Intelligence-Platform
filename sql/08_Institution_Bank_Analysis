@@ -1,1 +1,318 @@
+-- ============================================================
+-- 01. Customer Count by Institution
+-- ============================================================
 
+SELECT
+    i.institution_name,
+    COUNT(c.customer_id) AS total_customers
+FROM institution AS i
+INNER JOIN customer AS c
+    ON i.institution_id = c.institution_id
+GROUP BY
+    i.institution_name
+ORDER BY
+    total_customers DESC;
+
+--============================================================
+-- 02: Transaction Performance by Institution
+--============================================================
+
+SELECT
+    i.institution_name,
+    COUNT(
+        CASE
+            WHEN t.transaction_status = 'Completed' THEN 1
+        END
+    ) AS total_transactions,
+    SUM(
+        CASE
+            WHEN t.transaction_status = 'Completed' THEN t.amount
+        END
+    ) AS total_transaction_value
+FROM transactions AS t
+INNER JOIN customer AS c
+    ON t.customer_id = c.customer_id
+INNER JOIN institution AS i
+    ON c.institution_id = i.institution_id
+GROUP BY
+    i.institution_name
+ORDER BY
+    total_transaction_value DESC;
+
+
+--============================================================
+-- 03: Average Transaction Value by Institution
+--============================================================
+
+SELECT
+    i.institution_name,
+    ROUND(
+        AVG(
+            CASE
+                WHEN t.transaction_status = 'Completed' THEN t.amount
+            END
+        ),
+        2
+    ) AS average_transaction_value
+FROM transactions AS t
+INNER JOIN customer AS c
+    ON t.customer_id = c.customer_id
+INNER JOIN institution AS i
+    ON c.institution_id = i.institution_id
+GROUP BY
+    i.institution_name
+ORDER BY
+    average_transaction_value DESC;
+
+
+--============================================================
+-- 04: Transaction Success Rate by Institution
+--============================================================
+
+WITH institution_transactions AS (
+    SELECT
+        i.institution_name,
+        COUNT(*) AS total_transactions,
+        COUNT(
+            CASE
+                WHEN t.transaction_status = 'Completed' THEN 1
+            END
+        ) AS completed_transactions
+    FROM transactions AS t
+    INNER JOIN customer AS c
+        ON t.customer_id = c.customer_id
+    INNER JOIN institution AS i
+        ON c.institution_id = i.institution_id
+    GROUP BY
+        i.institution_name
+)
+
+SELECT
+    institution_name,
+    total_transactions,
+    completed_transactions,
+    ROUND(
+        completed_transactions * 100.0 / total_transactions,
+        2
+    ) AS transaction_success_rate
+FROM institution_transactions
+ORDER BY
+    transaction_success_rate DESC;
+
+
+--============================================================
+-- 05: Transaction Failure Rate by Institution
+--============================================================
+
+WITH institution_transactions AS (
+    SELECT
+        i.institution_name,
+        COUNT(*) AS total_transactions,
+        COUNT(
+            CASE
+                WHEN t.transaction_status = 'Failed' THEN 1
+            END
+        ) AS failed_transactions
+    FROM transactions AS t
+    INNER JOIN customer AS c
+        ON t.customer_id = c.customer_id
+    INNER JOIN institution AS i
+        ON c.institution_id = i.institution_id
+    GROUP BY
+        i.institution_name
+)
+
+SELECT
+    institution_name,
+    total_transactions,
+    failed_transactions,
+    ROUND(
+        failed_transactions * 100.0 / total_transactions,
+        2
+    ) AS transaction_failure_rate
+FROM institution_transactions
+ORDER BY
+    transaction_failure_rate DESC;
+
+
+--=================================================================
+-- 06: Top 3 Customers by Transaction Value within Each Institution
+--================================================================
+
+
+WITH customer_transaction_value AS (
+    SELECT
+        i.institution_name,
+        c.customer_id,
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+            END
+        ) AS total_transaction_value
+    FROM transactions AS t
+    INNER JOIN customer AS c
+        ON t.customer_id = c.customer_id
+    INNER JOIN institution AS i
+        ON c.institution_id = i.institution_id
+    GROUP BY
+        i.institution_name,
+        c.customer_id
+),
+
+ranked_customers AS (
+    SELECT
+        institution_name,
+        customer_id,
+        total_transaction_value,
+        RANK() OVER (
+            PARTITION BY institution_name
+            ORDER BY total_transaction_value DESC
+        ) AS rank
+    FROM customer_transaction_value
+)
+
+SELECT
+    institution_name,
+    customer_id,
+    total_transaction_value,
+    rank
+FROM ranked_customers
+WHERE rank <= 3
+ORDER BY
+    institution_name,
+    rank;
+
+
+--==================================================================
+-- Q7: Fraud Rate by Institution
+--==================================================================
+
+
+WITH institution_fraud AS (
+    SELECT
+        i.institution_name,
+        COUNT(*) AS total_transactions,
+        COUNT(
+            CASE
+                WHEN f.fraud_prediction = 'Fraud' THEN 1
+            END
+        ) AS fraud_transactions
+    FROM transactions AS t
+    INNER JOIN fraud_prediction AS f
+        ON f.transaction_id = t.transaction_id
+    INNER JOIN customer AS c
+        ON c.customer_id = t.customer_id
+    INNER JOIN institution AS i
+        ON i.institution_id = c.institution_id
+    GROUP BY
+        i.institution_name
+)
+
+SELECT
+    institution_name,
+    total_transactions,
+    fraud_transactions,
+    ROUND(
+        fraud_transactions * 100.0 / total_transactions,
+        2
+    ) AS fraud_rate
+FROM institution_fraud
+ORDER BY
+    fraud_rate DESC;
+
+
+--==================================================================
+-- 08: Fraud Transaction Value by Institution
+--==================================================================
+
+SELECT
+    i.institution_name,
+    COUNT(
+        CASE
+            WHEN f.fraud_prediction = 'Fraud' THEN 1
+        END
+    ) AS fraud_transactions,
+    SUM(
+        CASE
+            WHEN f.fraud_prediction = 'Fraud' THEN t.amount
+        END
+    ) AS fraud_transaction_value
+FROM transactions AS t
+INNER JOIN fraud_prediction AS f
+    ON f.transaction_id = t.transaction_id
+INNER JOIN customer AS c
+    ON c.customer_id = t.customer_id
+INNER JOIN institution AS i
+    ON i.institution_id = c.institution_id
+GROUP BY
+    i.institution_name
+ORDER BY
+    fraud_transaction_value DESC;
+
+
+--==================================================================
+-- 09: Fraud Exposure Rate by Institution
+--==================================================================
+
+WITH institution_fraud_exposure AS (
+    SELECT
+        i.institution_name,
+        SUM(t.amount) AS total_transaction_value,
+        SUM(
+            CASE
+                WHEN f.fraud_prediction = 'Fraud' THEN t.amount
+            END
+        ) AS fraud_transaction_value
+    FROM transactions AS t
+    INNER JOIN fraud_prediction AS f
+        ON f.transaction_id = t.transaction_id
+    INNER JOIN customer AS c
+        ON c.customer_id = t.customer_id
+    INNER JOIN institution AS i
+        ON i.institution_id = c.institution_id
+    GROUP BY
+        i.institution_name
+)
+
+SELECT
+    institution_name,
+    total_transaction_value,
+    fraud_transaction_value,
+    ROUND(
+        fraud_transaction_value * 100.0 / total_transaction_value,
+        3
+    ) AS fraud_exposure_rate
+FROM institution_fraud_exposure
+ORDER BY
+    fraud_exposure_rate DESC;
+
+
+--==================================================================
+-- 10: Top 5 Institutions by Fraud Transaction Value
+--==================================================================
+
+SELECT
+    i.institution_name,
+    COUNT(
+        CASE
+            WHEN f.fraud_prediction = 'Fraud' THEN 1
+        END
+    ) AS fraud_transactions,
+    SUM(
+        CASE
+            WHEN f.fraud_prediction = 'Fraud' THEN t.amount
+        END
+    ) AS fraud_transaction_value
+FROM transactions AS t
+INNER JOIN fraud_prediction AS f
+    ON f.transaction_id = t.transaction_id
+INNER JOIN customer AS c
+    ON c.customer_id = t.customer_id
+INNER JOIN institution AS i
+    ON i.institution_id = c.institution_id
+GROUP BY
+    i.institution_name
+ORDER BY
+    fraud_transaction_value DESC
+LIMIT 5;
