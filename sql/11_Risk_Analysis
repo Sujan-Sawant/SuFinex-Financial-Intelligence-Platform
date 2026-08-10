@@ -1,0 +1,37 @@
+--=============================================================
+--01: Risk Score Distribution
+--=============================================================
+
+SELECT
+    r.risk_category,
+    COUNT(t.transaction_id) AS total_transactions,
+    SUM(t.amount) AS total_transaction_value,
+    ROUND(
+        AVG(r.risk_score),
+        2
+    ) AS average_risk_score
+FROM risk_score AS r
+INNER JOIN transactions AS t
+    ON r.customer_id = t.customer_id
+GROUP BY
+    r.risk_category
+ORDER BY
+    average_risk_score DESC;
+
+
+--=============================================================
+--02: High-Risk Transaction Exposure
+--=============================================================
+
+SELECT
+    COUNT(*) AS high_risk_transactions,
+    SUM(t.amount) AS high_risk_transaction_value,
+    ROUND(
+        AVG(r.risk_score),
+        2
+    ) AS average_risk_score
+FROM risk_score AS r
+INNER JOIN transactions AS t
+    ON r.customer_id = t.customer_id
+WHERE
+    r.risk_category = 'high';
