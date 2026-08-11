@@ -35,3 +35,435 @@ INNER JOIN transactions AS t
     ON r.customer_id = t.customer_id
 WHERE
     r.risk_category = 'high';
+
+
+--=============================================================
+--03: Risk Exposure by Institution
+--=============================================================
+
+SELECT
+    i.institution_name,
+
+    COUNT(
+        CASE
+            WHEN r.risk_category = 'high'
+            THEN 1
+        END
+    ) AS high_risk_transactions,
+
+    SUM(
+        CASE
+            WHEN r.risk_category = 'high'
+            THEN t.amount
+        END
+    ) AS high_risk_transaction_value,
+
+    ROUND(
+        AVG(
+            CASE
+                WHEN r.risk_category = 'high'
+                THEN r.risk_score
+            END
+        ),
+        2
+    ) AS average_high_risk_score
+
+FROM institution AS i
+
+INNER JOIN customer AS c
+    ON i.institution_id = c.institution_id
+
+INNER JOIN risk_score AS r
+    ON c.customer_id = r.customer_id
+
+INNER JOIN transactions AS t
+    ON r.customer_id = t.customer_id
+
+GROUP BY
+    i.institution_name
+
+ORDER BY
+    high_risk_transaction_value DESC;
+
+
+--=============================================================
+--04: Risk Exposure by Transaction Type
+--=============================================================
+
+WITH transaction_risk AS (
+    SELECT
+        t.transaction_type,
+
+        COUNT(t.transaction_id) AS total_transactions,
+
+        COUNT(
+            CASE
+                WHEN r.risk_category = 'High'
+                THEN 1
+            END
+        ) AS high_risk_transactions,
+
+        SUM(
+            CASE
+                WHEN r.risk_category = 'High'
+                THEN t.amount
+            END
+        ) AS high_risk_transaction_value
+
+    FROM risk_score AS r
+
+    INNER JOIN transactions AS t
+        ON r.customer_id = t.customer_id
+
+    GROUP BY
+        t.transaction_type
+)
+
+SELECT
+    transaction_type,
+    total_transactions,
+    high_risk_transactions,
+    high_risk_transaction_value,
+
+    ROUND(
+        high_risk_transactions * 100.0
+        / NULLIF(total_transactions, 0),
+        2
+    ) AS high_risk_transaction_percentage
+
+FROM transaction_risk
+
+ORDER BY
+    high_risk_transaction_value DESC;
+
+
+--=============================================================
+--05: Risk Exposure by Payment Method
+--=============================================================
+
+SELECT
+    p.payment_method,
+
+    COUNT(t.transaction_id) AS total_transactions,
+
+    COUNT(
+        CASE
+            WHEN r.risk_category = 'High'
+            THEN 1
+        END
+    ) AS high_risk_transactions,
+
+    SUM(
+        CASE
+            WHEN r.risk_category = 'High'
+            THEN t.amount
+        END
+    ) AS high_risk_transaction_value,
+
+    ROUND(
+        COUNT(
+            CASE
+                WHEN r.risk_category = 'High'
+                THEN 1
+            END
+        ) * 100.0
+        / NULLIF(COUNT(t.transaction_id), 0),
+        2
+    ) AS high_risk_transaction_percentage,
+
+    ROUND(
+        AVG(r.risk_score),
+        2
+    ) AS average_risk_score
+
+FROM payment_method AS p
+
+INNER JOIN transactions AS t
+    ON p.payment_method_id = t.payment_method_id
+
+INNER JOIN risk_score AS r
+    ON t.customer_id = r.customer_id
+
+GROUP BY
+    p.payment_method
+
+ORDER BY
+    high_risk_transaction_value DESC;
+
+
+--=============================================================
+--06. High-Risk Customer Concentration
+--=============================================================
+
+SELECT
+    c.customer_id,
+
+    COUNT(t.transaction_id) AS total_transactions,
+
+    COUNT(
+        CASE
+            WHEN r.risk_category = 'High'
+            THEN 1
+        END
+    ) AS high_risk_transactions,
+
+    SUM(
+        CASE
+            WHEN r.risk_category = 'High'
+            THEN t.amount
+        END
+    ) AS high_risk_transaction_value,
+
+    ROUND(
+        COUNT(
+            CASE
+                WHEN r.risk_category = 'High'
+                THEN 1
+            END
+        ) * 100.0
+        / NULLIF(COUNT(t.transaction_id), 0),
+        2
+    ) AS high_risk_transaction_percentage,
+
+    ROUND(
+        AVG(r.risk_score),
+        2
+    ) AS average_risk_score
+
+FROM customer AS c
+
+INNER JOIN transactions AS t
+    ON c.customer_id = t.customer_id
+
+INNER JOIN risk_score AS r
+    ON c.customer_id = r.customer_id
+
+GROUP BY
+    c.customer_id
+
+HAVING
+    COUNT(
+        CASE
+            WHEN r.risk_category = 'High'
+            THEN 1
+        END
+    ) > 0
+
+ORDER BY
+    high_risk_transaction_value DESC;
+
+
+--=============================================================
+--07: High-Risk Merchant Analysis
+--=============================================================
+
+SELECT
+    m.merchant_id,
+    m.merchant_name,
+
+    COUNT(t.transaction_id) AS total_transactions,
+
+    COUNT(
+        CASE
+            WHEN r.risk_category = 'High'
+            THEN 1
+        END
+    ) AS high_risk_transactions,
+
+    SUM(
+        CASE
+            WHEN r.risk_category = 'High'
+            THEN t.amount
+        END
+    ) AS high_risk_transaction_value,
+
+    ROUND(
+        COUNT(
+            CASE
+                WHEN r.risk_category = 'High'
+                THEN 1
+            END
+        ) * 100.0
+        / NULLIF(COUNT(t.transaction_id), 0),
+        2
+    ) AS high_risk_transaction_percentage,
+
+    ROUND(
+        AVG(r.risk_score),
+        2
+    ) AS average_risk_score
+
+FROM merchant AS m
+
+INNER JOIN transactions AS t
+    ON m.merchant_id = t.merchant_id
+
+INNER JOIN risk_score AS r
+    ON t.customer_id = r.customer_id
+
+GROUP BY
+    m.merchant_id,
+    m.merchant_name
+
+HAVING
+    COUNT(
+        CASE
+            WHEN r.risk_category = 'High'
+            THEN 1
+        END
+    ) > 0
+
+ORDER BY
+    high_risk_transaction_value DESC;
+
+
+--=============================================================
+--08: Risk vs Transaction Value Analysis
+--=============================================================
+
+SELECT
+    r.risk_category,
+
+    COUNT(t.transaction_id) AS total_transactions,
+
+    SUM(t.amount) AS total_transaction_value,
+
+    ROUND(
+        AVG(t.amount),
+        2
+    ) AS average_transaction_value,
+
+    ROUND(
+        AVG(r.risk_score),
+        2
+    ) AS average_risk_score,
+
+    MAX(t.amount) AS maximum_transaction_value
+
+FROM risk_score AS r
+
+INNER JOIN transactions AS t
+    ON r.customer_id = t.customer_id
+
+GROUP BY
+    r.risk_category
+
+ORDER BY
+    average_risk_score DESC;
+
+
+--=============================================================
+--09: Risk Trend Analysis
+--=============================================================
+
+SELECT
+    DATE_TRUNC(
+        'month',
+        t.transaction_timestamp
+    ) AS transaction_month,
+
+    COUNT(t.transaction_id) AS total_transactions,
+
+    COUNT(
+        CASE
+            WHEN r.risk_category = 'High'
+            THEN 1
+        END
+    ) AS high_risk_transactions,
+
+    SUM(
+        CASE
+            WHEN r.risk_category = 'High'
+            THEN t.amount
+        END
+    ) AS high_risk_transaction_value,
+
+    ROUND(
+        COUNT(
+            CASE
+                WHEN r.risk_category = 'High'
+                THEN 1
+            END
+        ) * 100.0
+        / NULLIF(COUNT(t.transaction_id), 0),
+        2
+    ) AS high_risk_transaction_percentage,
+
+    ROUND(
+        AVG(r.risk_score),
+        2
+    ) AS average_risk_score
+
+FROM risk_score AS r
+
+INNER JOIN transactions AS t
+    ON r.customer_id = t.customer_id
+
+GROUP BY
+    DATE_TRUNC('month', t.transaction_timestamp)
+
+ORDER BY
+    transaction_month;
+
+
+--=============================================================
+--10: Fraud vs Risk Performance
+--=============================================================
+
+SELECT
+    risk_category,
+    total_transactions,
+    fraudulent_transactions,
+    legitimate_transactions,
+
+    ROUND(
+        fraudulent_transactions * 100.0
+        / NULLIF(total_transactions, 0),
+        2
+    ) AS fraud_rate_percentage,
+
+    average_risk_score,
+    total_transaction_value
+
+FROM (
+    SELECT
+        r.risk_category,
+
+        COUNT(*) AS total_transactions,
+
+        COUNT(
+            CASE
+                WHEN f.fraud_prediction = 'Fraud'
+                THEN 1
+            END
+        ) AS fraudulent_transactions,
+
+        COUNT(
+            CASE
+                WHEN f.fraud_prediction = 'Legitimate'
+                THEN 1
+            END
+        ) AS legitimate_transactions,
+
+        ROUND(
+            AVG(r.risk_score),
+            2
+        ) AS average_risk_score,
+
+        SUM(t.amount) AS total_transaction_value
+
+    FROM risk_score AS r
+
+    INNER JOIN transactions AS t
+        ON r.customer_id = t.customer_id
+
+    INNER JOIN fraud_prediction AS f
+        ON t.transaction_id = f.transaction_id
+
+    GROUP BY
+        r.risk_category
+) AS risk_analysis
+
+ORDER BY
+    average_risk_score DESC;
+
