@@ -1,0 +1,649 @@
+--=============================================================
+--01: Overall Customer Churn
+--=============================================================
+
+SELECT
+    COUNT(DISTINCT customer_id) AS total_customers,
+
+    COUNT(
+        DISTINCT CASE
+            WHEN churn_prediction = 'Churn'
+            THEN customer_id
+        END
+    ) AS predicted_churn_customers,
+
+    COUNT(
+        DISTINCT CASE
+            WHEN churn_prediction = 'Not Churn'
+            THEN customer_id
+        END
+    ) AS predicted_active_customers,
+
+    ROUND(
+        COUNT(
+            DISTINCT CASE
+                WHEN churn_prediction = 'Churn'
+                THEN customer_id
+            END
+        ) * 100.0
+        / NULLIF(COUNT(DISTINCT customer_id), 0),
+        2
+    ) AS churn_rate_percentage
+
+
+--=============================================================
+--02: Customer Churn by Institution
+--=============================================================
+
+SELECT
+    i.institution_name,
+
+    COUNT(DISTINCT c.customer_id) AS total_customers,
+
+    COUNT(
+        DISTINCT CASE
+            WHEN cp.churn_prediction = 'Churn'
+            THEN c.customer_id
+        END
+    ) AS predicted_churn_customers,
+
+    COUNT(
+        DISTINCT CASE
+            WHEN cp.churn_prediction = 'Not Churn'
+            THEN c.customer_id
+        END
+    ) AS predicted_active_customers,
+
+    ROUND(
+        COUNT(
+            DISTINCT CASE
+                WHEN cp.churn_prediction = 'Churn'
+                THEN c.customer_id
+            END
+        ) * 100.0
+        / NULLIF(COUNT(DISTINCT c.customer_id), 0),
+        2
+    ) AS churn_rate_percentage
+
+FROM institution AS i
+
+INNER JOIN customer AS c
+    ON i.institution_id = c.institution_id
+
+INNER JOIN churn_prediction AS cp
+    ON c.customer_id = cp.customer_id
+
+GROUP BY
+    i.institution_name
+
+ORDER BY
+    churn_rate_percentage DESC;
+
+
+--=============================================================
+--03: Customer Churn by Occupation
+--=============================================================
+
+SELECT
+    c.occupation,
+
+    COUNT(c.customer_id) AS total_customers,
+
+    COUNT(
+         CASE
+            WHEN cp.churn_prediction = 'Churn'
+            THEN c.customer_id
+        END
+    ) AS predicted_churn_customers,
+
+    COUNT(
+         CASE
+            WHEN cp.churn_prediction = 'Not Churn'
+            THEN c.customer_id
+        END
+    ) AS predicted_active_customers,
+
+    ROUND(
+        COUNT(
+             CASE
+                WHEN cp.churn_prediction = 'Churn'
+                THEN c.customer_id
+            END
+        ) * 100.0
+        / NULLIF(COUNT(c.customer_id), 0),
+        2
+    ) AS churn_rate_percentage,
+
+    ROUND(
+        AVG(cp.churn_probability),
+        4
+    ) AS average_churn_probability
+
+FROM customer AS c
+
+INNER JOIN churn_prediction AS cp
+    ON c.customer_id = cp.customer_id
+
+GROUP BY
+    c.occupation
+
+ORDER BY
+    churn_rate_percentage DESC;
+
+
+--=============================================================
+--04: Churn by Customer Tenure
+--=============================================================
+
+SELECT
+CASE
+    WHEN (current_date - customer_since) /360 <= 1 then 'Less than 1 year'
+    WHEN (current_date - customer_since) /360 <= 3 then '1-3 years'
+    WHEN(current_date - customer_since) /360 <= 5 then '3-5 years'
+    else '5+ year'
+    END AS customer_tenure,
+
+    COUNT(c.customer_id) AS total_customers,
+
+    COUNT(
+        CASE
+            WHEN p.churn_prediction = 'Churn'
+            THEN 1
+        END
+    ) AS predicted_churn_customers,
+
+    COUNT(
+        CASE
+            WHEN p.churn_prediction = 'Not Churn'
+            THEN 1
+        END
+    ) AS predicted_active_customers,
+
+    ROUND(
+        COUNT(
+            CASE
+                WHEN p.churn_prediction = 'Churn'
+                THEN 1
+            END
+        ) * 100.0
+        / NULLIF(COUNT(c.customer_id), 0),
+        2
+    ) AS churn_rate_percentage,
+
+    ROUND(
+        AVG(p.churn_probability),
+        4
+    ) AS average_churn_probability
+
+FROM customer AS c
+
+INNER JOIN churn_prediction AS p
+    ON c.customer_id = p.customer_id
+
+GROUP BY 1
+ORDER BY 1
+
+
+--=============================================================
+--05: Churn vs Transaction Activity
+--=============================================================
+
+WITH customer_activity AS (
+    SELECT
+        c.customer_id,
+
+        COUNT(t.transaction_id) AS transaction_count,
+
+        p.churn_prediction,
+
+        p.churn_probability
+
+    FROM customer AS c
+
+    LEFT JOIN transactions AS t
+        ON c.customer_id = t.customer_id
+
+    INNER JOIN churn_prediction AS p
+        ON c.customer_id = p.customer_id
+
+    GROUP BY
+        c.customer_id,
+        p.churn_prediction,
+        p.churn_probability
+)
+
+SELECT
+    CASE
+        WHEN transaction_count = 0
+            THEN 'No Activity'
+
+        WHEN transaction_count <= 10
+            THEN 'Low Activity'
+
+        WHEN transaction_count <= 50
+            THEN 'Medium Activity'
+
+        ELSE 'High Activity'
+    END AS transaction_activity,
+
+    COUNT(*) AS total_customers,
+
+    COUNT(
+        CASE
+            WHEN churn_prediction = 'Churn'
+            THEN 1
+        END
+    ) AS predicted_churn_customers,
+
+    COUNT(
+        CASE
+            WHEN churn_prediction = 'Not Churn'
+            THEN 1
+        END
+    ) AS predicted_active_customers,
+
+    ROUND(
+        COUNT(
+            CASE
+                WHEN churn_prediction = 'Churn'
+                THEN 1
+            END
+        ) * 100.0
+        / NULLIF(COUNT(*), 0),
+        2
+    ) AS churn_rate_percentage,
+
+    ROUND(
+        AVG(churn_probability),
+        4
+    ) AS average_churn_probability
+
+FROM customer_activity
+
+GROUP BY
+    transaction_activity
+ORDER BY 
+transaction_activity;
+
+
+--=============================================================
+--06: Churn vs Customer Value
+--=============================================================
+
+WITH customer_value AS (
+    SELECT
+        c.customer_id,
+
+        COALESCE(
+            SUM(t.amount),
+            0
+        ) AS total_transaction_value,
+
+        COALESCE(
+            COUNT(t.transaction_id),
+            0
+        ) AS total_transactions,
+
+        p.churn_prediction,
+
+        p.churn_probability
+
+    FROM customer AS c
+
+    LEFT JOIN transactions AS t
+        ON c.customer_id = t.customer_id
+
+    INNER JOIN churn_prediction AS p
+        ON c.customer_id = p.customer_id
+
+    GROUP BY
+        c.customer_id,
+        p.churn_prediction,
+        p.churn_probability
+),
+
+customer_segments AS (
+    SELECT
+        customer_id,
+        total_transaction_value,
+        total_transactions,
+        churn_prediction,
+        churn_probability,
+
+        CASE
+            WHEN total_transaction_value < 100000
+                THEN 'Low Value'
+
+            WHEN total_transaction_value < 500000
+                THEN 'Medium Value'
+
+            WHEN total_transaction_value < 1000000
+                THEN 'High Value'
+
+            ELSE 'Very High Value'
+        END AS customer_value_segment
+
+    FROM customer_value
+)
+
+SELECT
+    customer_value_segment,
+
+    COUNT(*) AS total_customers,
+
+    COUNT(
+        CASE
+            WHEN churn_prediction = 'Churn'
+            THEN 1
+        END
+    ) AS predicted_churn_customers,
+
+    COUNT(
+        CASE
+            WHEN churn_prediction = 'Not Churn'
+            THEN 1
+        END
+    ) AS predicted_active_customers,
+
+    ROUND(
+        COUNT(
+            CASE
+                WHEN churn_prediction = 'Churn'
+                THEN 1
+            END
+        ) * 100.0
+        / NULLIF(COUNT(*), 0),
+        2
+    ) AS churn_rate_percentage,
+
+    ROUND(
+        AVG(total_transaction_value),
+        2
+    ) AS average_customer_value,
+
+    ROUND(
+        AVG(churn_probability),
+        4
+    ) AS average_churn_probability
+
+FROM customer_segments
+
+GROUP BY
+    customer_value_segment
+    
+
+
+--=============================================================
+--07: Churn vs Risk Category
+--=============================================================
+
+SELECT
+    r.risk_category,
+
+    COUNT(c.customer_id) AS total_customers,
+
+    COUNT(
+        CASE
+            WHEN p.churn_prediction = 'Churn'
+            THEN 1
+        END
+    ) AS predicted_churn_customers,
+
+    COUNT(
+        CASE
+            WHEN p.churn_prediction = 'Not Churn'
+            THEN 1
+        END
+    ) AS predicted_active_customers,
+
+    ROUND(
+        COUNT(
+            CASE
+                WHEN p.churn_prediction = 'Churn'
+                THEN 1
+            END
+        ) * 100.0
+        / NULLIF(COUNT(c.customer_id), 0),
+        2
+    ) AS churn_rate_percentage,
+
+    ROUND(
+        AVG(p.churn_probability),
+        4
+    ) AS average_churn_probability,
+
+    ROUND(
+        AVG(r.risk_score),
+        2
+    ) AS average_risk_score
+
+FROM customer AS c
+
+INNER JOIN risk_score AS r
+    ON c.customer_id = r.customer_id
+
+INNER JOIN churn_prediction AS p
+    ON c.customer_id = p.customer_id
+
+GROUP BY
+    r.risk_category
+
+ORDER BY
+    average_risk_score DESC;
+
+
+--=============================================================
+--08: Churn vs Support Activity
+--=============================================================
+
+WITH customer_support AS (
+    SELECT
+        c.customer_id,
+
+        COUNT(s.ticket_id) AS support_ticket_count,
+
+        p.churn_prediction,
+
+        p.churn_probability
+
+    FROM customer AS c
+
+    LEFT JOIN support_ticket AS s
+        ON c.customer_id = s.customer_id
+
+    INNER JOIN churn_prediction AS p
+        ON c.customer_id = p.customer_id
+
+    GROUP BY
+        c.customer_id,
+        p.churn_prediction,
+        p.churn_probability
+),
+
+support_segments AS (
+    SELECT
+        customer_id,
+        support_ticket_count,
+        churn_prediction,
+        churn_probability,
+
+        CASE
+            WHEN support_ticket_count = 0
+                THEN 'No Tickets'
+
+            WHEN support_ticket_count <= 2
+                THEN 'Low'
+
+            WHEN support_ticket_count <= 5
+                THEN 'Medium'
+
+            ELSE 'High'
+        END AS support_activity
+
+    FROM customer_support
+)
+
+SELECT
+    support_activity,
+
+    COUNT(*) AS total_customers,
+
+    COUNT(
+        CASE
+            WHEN churn_prediction = 'Churn'
+            THEN 1
+        END
+    ) AS predicted_churn_customers,
+
+    COUNT(
+        CASE
+            WHEN churn_prediction = 'Not Churn'
+            THEN 1
+        END
+    ) AS predicted_active_customers,
+
+    ROUND(
+        COUNT(
+            CASE
+                WHEN churn_prediction = 'Churn'
+                THEN 1
+            END
+        ) * 100.0
+        / NULLIF(COUNT(*), 0),
+        2
+    ) AS churn_rate_percentage,
+
+    ROUND(
+        AVG(churn_probability),
+        4
+    ) AS average_churn_probability
+
+FROM support_segments
+
+GROUP BY
+    support_activity
+ORDER BY 
+    support_activity;
+
+
+--=============================================================
+--09: Churn by Customer Status
+--=============================================================
+
+SELECT
+    c.customer_status,
+
+    COUNT(c.customer_id) AS total_customers,
+
+    COUNT(
+        CASE
+            WHEN p.churn_prediction = 'Churn'
+            THEN 1
+        END
+    ) AS predicted_churn_customers,
+
+    COUNT(
+        CASE
+            WHEN p.churn_prediction = 'Not Churn'
+            THEN 1
+        END
+    ) AS predicted_active_customers,
+
+    ROUND(
+        COUNT(
+            CASE
+                WHEN p.churn_prediction = 'Churn'
+                THEN 1
+            END
+        ) * 100.0
+        / NULLIF(COUNT(c.customer_id), 0),
+        2
+    ) AS churn_rate_percentage,
+
+    ROUND(
+        AVG(p.churn_probability),
+        4
+    ) AS average_churn_probability
+
+FROM customer AS c
+
+INNER JOIN churn_prediction AS p
+    ON c.customer_id = p.customer_id
+
+GROUP BY
+    c.customer_status
+
+ORDER BY
+    churn_rate_percentage DESC;
+
+
+--=============================================================
+--10: Customer Churn Risk Prioritization
+--=============================================================
+
+WITH customer_value AS (
+    SELECT
+        c.customer_id,
+
+        COALESCE(
+            SUM(t.amount),
+            0
+        ) AS total_transaction_value,
+
+        COUNT(t.transaction_id) AS total_transactions
+
+    FROM customer AS c
+
+    LEFT JOIN transactions AS t
+        ON c.customer_id = t.customer_id
+
+    GROUP BY
+        c.customer_id
+)
+
+SELECT
+    cv.customer_id,
+
+    cv.total_transactions,
+
+    ROUND(
+        cv.total_transaction_value,
+        2
+    ) AS total_transaction_value,
+
+    ROUND(
+        p.churn_probability,
+        4
+    ) AS churn_probability,
+
+    p.churn_risk_level,
+
+    CASE
+        WHEN p.churn_probability >= 0.70
+             AND cv.total_transaction_value >= 500000
+            THEN 'Critical'
+
+        WHEN p.churn_probability >= 0.70
+             AND cv.total_transaction_value < 500000
+            THEN 'High'
+
+        WHEN p.churn_probability >= 0.40
+             AND cv.total_transaction_value >= 500000
+            THEN 'High'
+
+        WHEN p.churn_probability >= 0.40
+             AND cv.total_transaction_value < 500000
+            THEN 'Medium'
+
+        ELSE 'Low'
+    END AS retention_priority
+
+FROM customer_value AS cv
+
+INNER JOIN churn_prediction AS p
+    ON cv.customer_id = p.customer_id
+
+WHERE
+    p.churn_prediction = 'Churn'
+ORDER BY 
+    retention_priority;
