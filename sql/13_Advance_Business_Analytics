@@ -1,0 +1,673 @@
+--======================================================
+-- 01 Customer Lifetime Value (CLV)
+--======================================================
+WITH customer_value AS (
+    SELECT
+        i.institution_name,
+        c.customer_id,
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS total_transaction_value
+    FROM institution i
+    INNER JOIN customer c
+        ON i.institution_id = c.institution_id
+    INNER JOIN transactions t
+        ON c.customer_id = t.customer_id
+    GROUP BY
+        i.institution_name,
+        c.customer_id
+),
+
+ranked_customers AS (
+    SELECT
+        institution_name,
+        customer_id,
+        total_transaction_value,
+        DENSE_RANK() OVER (
+            PARTITION BY institution_name
+            ORDER BY total_transaction_value DESC
+        ) AS customer_rank
+    FROM customer_value
+)
+
+SELECT
+    institution_name,
+    customer_id,
+    total_transaction_value,
+    customer_rank
+FROM ranked_customers
+WHERE customer_rank <= 3
+ORDER BY
+    institution_name,
+    customer_rank;
+
+
+--======================================================================
+--02 Customer Transaction Growth
+--======================================================================
+
+WITH cte AS (
+    SELECT
+        c.customer_id,
+        c.first_name,
+        c.last_name,
+
+        SUM(
+            CASE
+                WHEN EXTRACT(YEAR FROM t.transaction_timestamp) = 2024
+                     AND t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS transaction_value_2024,
+
+        SUM(
+            CASE
+                WHEN EXTRACT(YEAR FROM t.transaction_timestamp) = 2025
+                     AND t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS transaction_value_2025
+
+    FROM customer c
+    INNER JOIN transactions t
+        ON c.customer_id = t.customer_id
+
+    GROUP BY
+        c.customer_id,
+        c.first_name,
+        c.last_name
+),
+
+growth AS (
+    SELECT
+        *,
+        ROUND(
+            (
+                (transaction_value_2025 - transaction_value_2024)
+                / NULLIF(transaction_value_2024, 0)
+            ) * 100,
+            3
+        ) AS growth_percentage
+    FROM cte
+)
+
+SELECT *
+FROM growth
+WHERE growth_percentage > 0
+ORDER BY growth_percentage DESC;
+
+
+--=================================================================
+-- 03Customer Revenue Contribution
+--=================================================================
+
+WITH customer_revenue AS (
+    SELECT
+        c.customer_id,
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS total_transaction_value
+    FROM customer c
+    INNER JOIN transactions t
+        ON c.customer_id = t.customer_id
+    GROUP BY c.customer_id
+),
+
+customer_contribution AS (
+    SELECT
+        customer_id,
+        total_transaction_value,
+        ROUND(
+            (
+                total_transaction_value
+                / NULLIF(SUM(total_transaction_value) OVER (), 0)
+            ) * 100,
+            2
+        ) AS revenue_contribution_percentage
+    FROM customer_revenue
+),
+
+ranked_customers AS (
+    SELECT
+        customer_id,
+        total_transaction_value,
+        revenue_contribution_percentage,
+        RANK() OVER (
+            ORDER BY total_transaction_value DESC
+        ) AS customer_rank
+    FROM customer_contribution
+)
+
+SELECT
+    customer_id,
+    total_transaction_value,
+    revenue_contribution_percentage,
+    customer_rank
+FROM ranked_customers
+WHERE customer_rank <= 10
+ORDER BY customer_rank;
+
+
+--====================================================================
+--04 Customer Engagement & Transaction Frequency
+--====================================================================
+
+-- The business wants to identify high-value but low-engagement customers who may represent an opportunity for targeted engagement.
+
+-- Write a SQL query to:
+
+-- Calculate each customer's total completed transaction value.
+-- Calculate each customer's number of completed transactions.
+-- Calculate their average transaction value.
+-- Classify customers into:
+-- High Value – Low Frequency
+-- High Value – High Frequency
+-- Low Value – Low Frequency
+-- Low Value – High Frequency
+
+WITH customer_metrics AS (
+    SELECT
+        c.customer_id,
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS total_transaction_value,
+
+        COUNT(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN 1
+            END
+        ) AS transaction_count
+
+    FROM customer c
+    INNER JOIN transactions t
+        ON c.customer_id = t.customer_id
+
+    GROUP BY c.customer_id
+),
+
+customer_stats AS (
+    SELECT
+        *,
+        ROUND(
+            total_transaction_value / NULLIF(transaction_count, 0),
+            2
+        ) AS average_transaction_value
+    FROM customer_metrics
+),
+
+median_values AS (
+    SELECT
+        PERCENTILE_CONT(0.5)
+            WITHIN GROUP (ORDER BY total_transaction_value) AS median_value,
+
+        PERCENTILE_CONT(0.5)
+            WITHIN GROUP (ORDER BY transaction_count) AS median_frequency
+    FROM customer_stats
+)
+
+SELECT
+    cs.customer_id,
+    cs.total_transaction_value,
+    cs.transaction_count,
+    cs.average_transaction_value,
+
+    CASE
+        WHEN cs.total_transaction_value >= mv.median_value
+             AND cs.transaction_count >= mv.median_frequency
+        THEN 'High Value - High Frequency'
+
+        WHEN cs.total_transaction_value >= mv.median_value
+             AND cs.transaction_count < mv.median_frequency
+        THEN 'High Value - Low Frequency'
+
+        WHEN cs.total_transaction_value < mv.median_value
+             AND cs.transaction_count >= mv.median_frequency
+        THEN 'Low Value - High Frequency'
+
+        ELSE 'Low Value - Low Frequency'
+    END AS customer_segment
+
+FROM customer_stats cs
+CROSS JOIN median_values mv
+ORDER BY
+    cs.total_transaction_value DESC;
+    
+
+--=====================================================================
+-- 05 Transaction Risk & Customer Behavior
+--=====================================================================
+
+-- The risk team wants to understand whether high-risk customers are generating more transaction failures.
+-- Write a SQL query to analyze customers based on their risk category.
+
+-- Your query should:
+
+-- Calculate the total number of transactions for each risk category.
+-- Calculate the number of failed transactions.
+-- Calculate the failed transaction rate (%).
+-- Calculate the total transaction value.
+-- Calculate the average transaction value.
+-- Rank the risk categories based on their failed transaction rate.
+
+WITH risk_analysis AS (
+    SELECT
+        r.risk_category,
+
+        COUNT(*) AS total_transactions,
+
+        COUNT(
+            CASE
+                WHEN t.transaction_status = 'Failed'
+                THEN 1
+            END
+        ) AS failed_transactions,
+
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS total_transaction_value,
+
+        AVG(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+            END
+        ) AS avg_transaction_value
+
+    FROM transactions t
+    INNER JOIN risk_score r
+        ON t.customer_id = r.customer_id
+
+    GROUP BY r.risk_category
+),
+
+final_analysis AS (
+    SELECT
+        *, 
+		ROUND((failed_transactions:: NUMERIC /NULLIF(total_transactions, 0)) * 100,2    
+        ) AS failed_transaction_rate
+    FROM risk_analysis)
+
+SELECT
+    *,
+    RANK() OVER (
+        ORDER BY failed_transaction_rate DESC
+    ) AS risk_rank
+FROM final_analysis
+ORDER BY risk_rank;
+
+
+--=====================================================================
+-- 06 Institution Performance Analysis
+--=====================================================================
+
+-- SuFinex wants to identify which financial institutions are performing best across transaction activity and customer engagement.
+
+-- Write a SQL query that calculates for each institution:
+
+-- Total customers
+-- Active customers — customers who have at least one completed transaction
+-- Total completed transactions
+-- Total completed transaction value
+-- Average transaction value
+-- Customer activation rate (%)
+-- Rank institutions based on total completed transaction value
+
+WITH institution_analysis AS (
+    SELECT
+        i.institution_name,
+
+        COUNT(DISTINCT c.customer_id) AS total_customers,
+
+        COUNT(
+            DISTINCT CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN c.customer_id
+            END
+        ) AS active_customers,
+
+        COUNT(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN 1
+            END
+        ) AS completed_transactions,
+
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS total_transaction_value,
+
+        AVG(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+            END
+        ) AS avg_transaction_value
+
+    FROM transactions t
+    INNER JOIN customer c
+        ON t.customer_id = c.customer_id
+    INNER JOIN institution i
+        ON c.institution_id = i.institution_id
+
+    GROUP BY i.institution_name
+),
+
+final_analysis AS (
+    SELECT
+        *,
+        ROUND(
+            active_customers::NUMERIC
+            / NULLIF(total_customers, 0) * 100,
+            2
+        ) AS activation_rate
+    FROM institution_analysis
+)
+
+SELECT
+    *,
+    RANK() OVER (
+        ORDER BY total_transaction_value DESC
+    ) AS institution_rank
+FROM final_analysis
+ORDER BY institution_rank;
+
+
+--=====================================================================
+-- 06 Monthly Revenue Trend & Growth Analysis
+--=====================================================================
+
+-- The business wants to understand how transaction revenue is changing month-over-month.
+
+-- Write a SQL query to calculate, for each month:
+
+-- Total completed transaction value
+-- Total completed transactions
+-- Previous month's transaction value
+-- Month-over-month (MoM) revenue growth %
+-- Rank months based on total transaction value
+
+WITH cte AS (
+    SELECT
+        EXTRACT(MONTH FROM transaction_timestamp) AS mnt,
+
+        COUNT(
+            CASE
+                WHEN transaction_status = 'Completed'
+                THEN 1
+            END
+        ) AS completed_transactions,
+
+        SUM(
+            CASE
+                WHEN transaction_status = 'Completed'
+                THEN amount
+            END
+        ) AS total_transaction_value
+
+    FROM transactions
+    GROUP BY 1
+),
+
+rerank AS (
+    SELECT
+        *,
+        LAG(total_transaction_value) OVER (
+            ORDER BY mnt
+        ) AS prev,
+
+        RANK() OVER (
+            ORDER BY total_transaction_value DESC
+        ) AS rnk
+
+    FROM cte
+)
+
+SELECT
+    *,
+    ROUND(
+        (
+            (total_transaction_value - prev)::NUMERIC
+            / NULLIF(prev, 0)
+        ) * 100,
+        2
+    ) AS growth
+
+FROM rerank
+ORDER BY mnt ASC;
+
+
+--=====================================================================
+-- 07 Customer Lifetime Value (CLV) Analysis
+--=====================================================================
+
+-- SuFinex wants to identify its most valuable customers based on their transaction history.
+
+-- Write a SQL query to calculate each customer's:
+
+-- Total completed transaction value
+-- Total number of completed transactions
+-- Average transaction value
+-- Customer lifetime in months — number of months between their first and latest completed transaction
+-- Average monthly transaction value
+-- Customer Lifetime Value (CLV)
+
+WITH customer_metrics AS (
+    SELECT
+        c.customer_id,
+
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS total_transaction_value,
+
+        COUNT(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN 1
+            END
+        ) AS completed_transactions,
+
+        AVG(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+            END
+        ) AS avg_transaction_value,
+
+        MIN(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.transaction_timestamp
+            END
+        ) AS first_transaction,
+
+        MAX(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.transaction_timestamp
+            END
+        ) AS last_transaction
+
+    FROM transactions t
+    INNER JOIN customer c
+        ON t.customer_id = c.customer_id
+
+    GROUP BY c.customer_id
+),
+
+lifetime_metrics AS (
+    SELECT
+        *,
+        DATE_PART(
+            'month',
+            AGE(last_transaction, first_transaction)
+        ) AS lifetime_months
+    FROM customer_metrics
+),
+
+clv_metrics AS (
+    SELECT
+        *,
+        (
+            total_transaction_value::NUMERIC
+            / NULLIF(lifetime_months, 0)
+         
+        ) AS avg_monthly_value
+    FROM lifetime_metrics
+)
+
+SELECT
+    customer_id,
+    total_transaction_value,
+    completed_transactions,
+    avg_transaction_value,
+    lifetime_months,
+    avg_monthly_value,
+
+    ROUND(
+        avg_monthly_value * lifetime_months,
+        2
+    ) AS clv,
+
+    RANK() OVER (
+        ORDER BY avg_monthly_value * lifetime_months DESC
+    ) AS customer_rank
+
+FROM clv_metrics
+ORDER BY customer_rank;
+
+
+--=====================================================================
+-- 08 Top 3 Customers per Institution
+--=====================================================================
+
+-- For each institution, identify the Top 3 customers by total completed transaction value.
+
+WITH customer_value AS (
+    SELECT
+        i.institution_name,
+        c.customer_id,
+		c.first_name,
+		c.last_name,
+        SUM(
+            CASE
+                WHEN t.transaction_status = 'Completed'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS total_transaction_value
+    FROM institution i
+    INNER JOIN customer c
+        ON i.institution_id = c.institution_id
+    INNER JOIN transactions t
+        ON c.customer_id = t.customer_id
+    GROUP BY i.institution_name, c.customer_id, 
+	         c.first_name,
+		     c.last_name
+),
+
+ranked_customers AS (
+    SELECT
+        *,
+        DENSE_RANK() OVER (
+            PARTITION BY institution_name
+            ORDER BY total_transaction_value DESC
+        ) AS customer_rank
+    FROM customer_value
+)
+
+SELECT *
+FROM ranked_customers
+WHERE customer_rank <= 3
+ORDER BY institution_name, customer_rank;
+
+
+--=====================================================================
+-- 09 Fraud Rate by Institution
+--=====================================================================
+
+-- For each institution, calculate:
+
+-- Total transactions
+-- Fraud transactions
+-- Fraud transaction rate (%)
+-- Total fraud transaction value
+-- Then rank institutions by fraud transaction rate.
+
+
+WITH institution_fraud AS (
+    SELECT
+        i.institution_name,
+
+        COUNT(*) AS total_transactions,
+
+        COUNT(
+            CASE
+                WHEN f.fraud_prediction = 'Fraud'
+                THEN 1
+            END
+        ) AS fraud_transactions,
+
+        SUM(
+            CASE
+                WHEN f.fraud_prediction = 'Fraud'
+                THEN t.amount
+                ELSE 0
+            END
+        ) AS fraud_transaction_value
+
+    FROM institution i
+    INNER JOIN customer c
+        ON i.institution_id = c.institution_id
+    INNER JOIN transactions t
+        ON c.customer_id = t.customer_id
+    INNER JOIN fraud_prediction f
+        ON t.transaction_id = f.transaction_id
+
+    GROUP BY i.institution_name
+),
+
+final_analysis AS (
+    SELECT
+        *,
+        ROUND(
+            fraud_transactions::NUMERIC
+            / NULLIF(total_transactions, 0) * 100,
+            2
+        ) AS fraud_transaction_rate
+    FROM institution_fraud
+)
+
+SELECT
+    *,
+    RANK() OVER (
+        ORDER BY fraud_transaction_rate DESC
+    ) AS fraud_rank
+FROM final_analysis
+ORDER BY fraud_rank;
